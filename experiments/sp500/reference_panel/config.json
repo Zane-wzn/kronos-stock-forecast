@@ -1,0 +1,67 @@
+{
+  "status": "preflight",
+  "dataset": "yahoo_sp500",
+  "market": "S&P500",
+  "data_root": "C:\\Users\\huawei_wzn\\Desktop\\Desktop\\时间序列预测\\股票预测\\data\\yahoo_sp500",
+  "output_root": "C:\\Users\\huawei_wzn\\Desktop\\Desktop\\时间序列预测\\股票预测\\train3\\sp500_csi800_aligned_seed100",
+  "constituent_pool": "current constituents backfilled over available history",
+  "bias_warning": "survivorship bias and current-constituent look-ahead bias are possible; this is not point-in-time membership",
+  "train_end": "2024-12-15",
+  "val_start": "2025-01-02",
+  "val_end": "2025-06-14",
+  "test_start": "2025-07-01",
+  "test_end": "2026-06-05",
+  "lookback": 90,
+  "pred_len": 10,
+  "seed": 100,
+  "native_top_k": 50,
+  "native_drop_n": 5,
+  "cost_rate": 0.0015,
+  "ordinary_portfolio": {
+    "top_k": 50,
+    "drop_n": 5,
+    "min_hold_days": 5,
+    "cost_rate": 0.0015
+  },
+  "aer": {
+    "top_k": 50,
+    "drop_n": 5,
+    "min_hold_days": 5,
+    "open_cost": 0.001,
+    "close_cost": 0.0015,
+    "minimum_fee": 5,
+    "risk_degree": 0.95,
+    "annualization_days": 238,
+    "execution": "next trading day open",
+    "benchmark": "formal test universe equal-weight close-to-close proxy"
+  },
+  "inference": {
+    "temperature": 0.6,
+    "top_p": 0.9,
+    "top_k": 0,
+    "sample_count": 10,
+    "batch_size": 32,
+    "oom_fallback_batch_size": 16
+  },
+  "static_training": {
+    "epochs": 5,
+    "head_lr": 0.0003,
+    "adapter_lr": 0.0001,
+    "weight_decay": 0.0001,
+    "lambda_rank": 0.2,
+    "bottleneck": 64,
+    "dropout": 0.1,
+    "patience": 2
+  },
+  "continual": {
+    "schedule": "monthly test-then-train",
+    "update_epochs": 2,
+    "rankic_gate": true,
+    "replay_max_rows": 120000,
+    "recent_months": 24,
+    "recent_fraction": 0.7,
+    "historical_fraction": 0.3
+  },
+  "direction_definition": "positive return > 0, negative return <= 0; zero-return handling must match CSI800 evaluator; missing labels excluded, never imputed",
+  "split_rule": "market-native observed calendar; no non-trading-day padding or cross-market date alignment"
+}

@@ -1,0 +1,36 @@
+{
+  "cache_dir": "D:\\Desktop\\时间序列预测\\股票预测\\train3\\abcd_yahoo_sp500_hidden_cache_strict_20260821",
+  "panel_dir": "D:\\Desktop\\时间序列预测\\股票预测\\train3\\abcd_yahoo_sp500_recent50_strict_panel_20260821",
+  "initial_checkpoint": "D:\\Desktop\\时间序列预测\\股票预测\\train3\\abcd_yahoo_sp500_D_adapter_rank_recent50_strict_seed100_20260821\\model.pt",
+  "output_dir": "D:\\Desktop\\时间序列预测\\股票预测\\train3\\kronos_yahoo_sp500_adapter_continual_strict90x10_20260826_seed100",
+  "device": "cuda:0",
+  "seed": 100,
+  "batch_size": 16,
+  "update_epochs": 2,
+  "head_lr": 0.0003,
+  "adapter_lr": 0.0001,
+  "weight_decay": 0.0001,
+  "lambda_rank": 0.2,
+  "patience": 2,
+  "replay_max_rows": 120000,
+  "replay_recent_months": 24,
+  "replay_recent_fraction": 0.7,
+  "experiment_type": "adapter_plus_continual_test_then_train",
+  "lookback": 90,
+  "pred_len": 10,
+  "test_start": "2026-05-27",
+  "test_end": "2026-08-05",
+  "test_dates": 49,
+  "test_rows": 24366,
+  "update_dates": [
+    "2026-05-29",
+    "2026-06-30",
+    "2026-07-31"
+  ],
+  "device_resolved": "cuda:0",
+  "cache_hashes": {
+    "meta_train.csv": "99caf7f1ae09db6511bbd20bd8bda74e24071fdf1c273e93b02745a2a40ccb7e",
+    "meta_val.csv": "8832f4df6cb5135c2d20cba52f52e26417293e7320d2d59cbda54f5651dff060",
+    "meta_test.csv": "b4c79e5f2f119cf10cdd70395fc9dbd89043aa539b7d6430a53820ff4dbe5785"
+  }
+}

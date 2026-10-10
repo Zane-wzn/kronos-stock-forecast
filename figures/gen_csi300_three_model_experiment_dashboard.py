@@ -9,10 +9,10 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "results/dashboards"
 JSON_OUT = OUT / "csi300_three_model_experiment_dashboard_data.json"
 HTML_OUT = OUT / "csi300_three_model_experiment_dashboard.html"
-TRADE_CSV = ROOT / "results/cumulative_return_curves/csi300_three_model_cumulative_return_summary.csv"
+TRADE_CSV = ROOT / "results/cumulative_return_curves/csi300/csi300_three_model_cumulative_return_summary.csv"
 
 SPECS = {
- "Kronos": {"stable_id":"Kronos","evaluation":"timesfm3/results/evaluation/Kronos","prediction":"train3/csi300_csi800_aligned_seed100/experiments/A_zero_shot/predictions/by_date","model_id":"Kronos zero-shot","revision":None,"source_commit":None,"point_estimator":"sampled forecast path mean","device":None,"dtype":None,"inference":{"temperature":0.6,"top_p":0.9,"top_k":0,"sample_count":10,"batch_size":32,"oom_fallback_batch_size":16}},
+ "Kronos": {"stable_id":"Kronos","evaluation":"timesfm3/results/evaluation/Kronos","prediction":"experiments/csi300_aligned/models/zero_shot/predictions/by_date","model_id":"Kronos zero-shot","revision":None,"source_commit":None,"point_estimator":"sampled forecast path mean","device":None,"dtype":None,"inference":{"temperature":0.6,"top_p":0.9,"top_k":0,"sample_count":10,"batch_size":32,"oom_fallback_batch_size":16}},
  "Chronos-2": {"stable_id":"chronos2","evaluation":"chronos2/results/evaluation/chronos2","prediction":"chronos2/results/predictions/by_date","config":"chronos2/config.json","provenance":"chronos2/provenance.json","model_id":"amazon/chronos-2","revision":"29ec3766d36d6f73f0696f85560a422f50e8498c","source_commit":"4dbf163c2734c089cdf7da2b86fde48862ff9c6f","point_estimator":"q0.5","device":"cpu","dtype":"float32","inference":{"quantile":0.5,"sample_count":None}},
  "TimesFM 3": {"stable_id":"timesfm3","evaluation":"timesfm3/results/evaluation/timesfm3","prediction":"timesfm3/results/predictions/by_date","config":"timesfm3/config.json","provenance":"timesfm3/provenance.json","model_id":"google/timesfm-3.0-pytorch","revision":"43046b85ec22d584a13f8098c2ed39c889e129c2","source_commit":"e31dadd84cb26bd5153fde6687502b8312e918fb","point_estimator":"q0.5","device":"cpu","dtype":"float32","inference":{"quantile":0.5,"sample_count":None}},
 }
@@ -66,7 +66,7 @@ def finite(value,context):
 def build():
  trades=rows(TRADE_CSV)
  if len(trades)!=3 or {r["model"] for r in trades}!=set(SPECS):raise ValueError("Top30 summary model set mismatch")
- models=[]; sources={"formal_trade_summary":TRADE_CSV.relative_to(ROOT).as_posix(),"kronos_config":"train3/csi300_csi800_aligned_seed100/config.json","kronos_plan":"train3/csi300_csi800_aligned_seed100/experiment_plan.json"}
+ models=[]; sources={"formal_trade_summary":TRADE_CSV.relative_to(ROOT).as_posix(),"kronos_config":"experiments/csi300_aligned/reference/config.json","kronos_plan":"experiments/csi300_aligned/reference/experiment_plan.json"}
  for name,s in SPECS.items():
   base=ROOT/s["evaluation"]; pp=base/"point.csv"; dp=base/"direction.csv"; rp=base/"ranking_summary.json"
   p=one(rows(pp),"mode","Path",pp); d=one(rows(dp),"mode","Path",dp); rank=json.loads(rp.read_text(encoding="utf-8-sig")); t=one(trades,"model",name,TRADE_CSV)

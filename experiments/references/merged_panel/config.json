@@ -1,0 +1,66 @@
+{
+  "cohort": "CSI800-aligned retest",
+  "train_end": "2024-12-15",
+  "val_start": "2025-01-02",
+  "val_end": "2025-06-14",
+  "test_start": "2025-07-01",
+  "test_end": "2026-06-05",
+  "lookback": 90,
+  "pred_len": 10,
+  "seed": 100,
+  "stock_pool": "当前成分股池回溯，不是 point-in-time 历史成分股",
+  "warnings": [
+    "当前成分股池回溯，可能存在幸存者偏差",
+    "当前成分股前视偏差可能存在",
+    "交易日历按市场独立处理，不强制日期对齐"
+  ],
+  "datasets": {
+    "CSI800": {
+      "stock_count": 800,
+      "test_dates": 226,
+      "calendar": "China native"
+    },
+    "CSI300": {
+      "stock_count": 300,
+      "test_dates": 226,
+      "calendar": "China native"
+    },
+    "S&P500": {
+      "stock_count": 503,
+      "test_dates": 235,
+      "calendar": "US native"
+    }
+  },
+  "ordinary_portfolio": {
+    "CSI800": {
+      "top_k": 200,
+      "drop_n": 10,
+      "min_holding_days": 5,
+      "cost_rate": 0.0015
+    },
+    "CSI300": {
+      "top_k": 50,
+      "drop_n": 5,
+      "min_holding_days": 5,
+      "cost_rate": 0.0015
+    },
+    "S&P500": {
+      "top_k": 50,
+      "drop_n": 5,
+      "min_holding_days": 5,
+      "cost_rate": 0.0015
+    }
+  },
+  "aer": {
+    "top_k": 50,
+    "drop_n": 5,
+    "min_holding_days": 5,
+    "open_cost": 0.001,
+    "close_cost": 0.0015,
+    "minimum_fee": 5,
+    "risk_degree": 0.95,
+    "annualization_days_qlib": 238,
+    "execution": "信号日收盘后产生信号；下一交易日开盘执行；下一交易日收盘计价"
+  },
+  "direction_definition": "收益 > 0 为正类；收益 <= 0 为负类；非有限预测或标签剔除；不填充"
+}

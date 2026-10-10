@@ -1,0 +1,70 @@
+{
+  "status": "completed_with_audit_findings",
+  "generated_at": "2026-09-02T12:39:35.284670+08:00",
+  "checks": {
+    "endpoint_BCD_recovered": true,
+    "endpoint_n": [
+      176285
+    ],
+    "endpoint_daily_cross_section_dates": 226,
+    "endpoint_daily_cross_section_rows": 678,
+    "aer_available_units": 13,
+    "aer_unavailable_units": 3,
+    "continual_endpoint_remains_unavailable": true,
+    "html_embedded_json_matches": true,
+    "html_data_outside_structure_preserved": true,
+    "no_nonfinite_json": true,
+    "aer_config_separate_from_portfolio_cost": true,
+    "last_test_signal_audited": true,
+    "unavailable_reasons_nonempty": true,
+    "metric_status_unavailable_reasons_nonempty": true,
+    "metric_status_csi800_bcd_endpoint_updated": true,
+    "sp500_key_resolvable": true,
+    "legacy_sp500_key_removed_from_live_objects": true,
+    "strict_boundary_aligned": true,
+    "ordinary_portfolio_parameters_aligned": true,
+    "original_html_backup_hash_verified": true,
+    "current_html_hash_recorded": true,
+    "sp500_ui_alias_resolves": true,
+    "unsupported_sp500_live_values_cleared": true,
+    "html_data_outside_structure_preserved_after_availability_sync": true
+  },
+  "unavailable_count": 116,
+  "audit_rows": 129,
+  "pre_update_html_sha256": "6db8472742f1304c5424f6ac50536fcbaf0d7132a66f37534fb4b25c6c427fcd",
+  "original_html_sha256": "12aceaa2727fbb215bcc8cdb9dbcd8af6875f36cf5743c53b5e6b80a8b17a7b3",
+  "current_html_sha256": "8ebf0e2216fe04c9fadac5944f549a84b8ecb49a49a229ab4d5e8dc1710e215e",
+  "notes": [
+    "仅对存在真实预测字段、真实标签和可追溯行情的指标回填；其余保留无法验证。",
+    "CSI300/S&P500 的长窗口股票级信号和持续学习逐日持仓未从摘要反推。",
+    "S&P500 页面数据键已统一为 S&P500；来源中的短窗口字段保留为 source_* 审计字段，未用短窗口结果冒充 CSI800-aligned 长窗口结果。"
+  ],
+  "availability_sync": {
+    "status": "completed_with_audit_findings",
+    "generated_at": "2026-09-02T15:46:08.044492+08:00",
+    "root_cause": "页面按钮使用 data-dataset='Yahoo S&P 500'，而内嵌数据已规范为 'S&P500'；原有 getABCD/getCont/exp 按精确键查找，导致整组数据查找失败并统一显示无法验证。",
+    "fix": "仅更新数据对象：保留规范键 S&P500，并添加与现有按钮兼容的 Yahoo S&P 500 数据别名；同时把审计标记为无法验证的活动字段置为 null。",
+    "canonical_key": "S&P500",
+    "legacy_ui_alias": "Yahoo S&P 500",
+    "sp500_alias_paths": [
+      "ref.metrics",
+      "ref.decile",
+      "continual.datasets",
+      "experiments[].dataset"
+    ],
+    "unsupported_display_values_cleared": true,
+    "unsupported_values_remaining": [],
+    "source_values_preserved_for_supported_metrics": true,
+    "html_data_outside_structure_preserved": true,
+    "html_embedded_data_matches_json": true,
+    "pre_update_html_sha256": "5ff17c24781719c357908b3dd93cabce818273c83a18129a2b88136fe771c999",
+    "post_update_html_sha256": "1d5a4384c4d857250fccef79282ce7a8e649dda2a4dcebbfffa3f0a10553d146",
+    "pre_update_json_sha256": "7cd6b13658b26132f1e0567401d2180a67daa6096f8adda1ac2eaa3deec7a8e9",
+    "post_update_json_sha256": "50c38cea55566352788490b37e0455721ed158575a6ce607a2eb64a890e59842",
+    "notes": [
+      "S&P500 静态/Adapter + Continual 的已有可验证摘要值没有被清零。",
+      "S&P500 AER 因缺少当前正式长窗口股票级预测信号显示无法验证。",
+      "S&P500 Continual A/B/C 的 Endpoint 与普通组合因缺少独立 Endpoint/股票级明细显示无法验证。"
+    ]
+  }
+}

@@ -18,23 +18,23 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE_HTML = Path(r"C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\results\dashboards\all_experiments_dashboard.html")
+SOURCE_HTML = ROOT / "results" / "dashboards" / "all_experiments_dashboard.html"
 OUT_DIR = ROOT / "results" / "dashboards"
 OUT_HTML = OUT_DIR / "all_experiments_dashboard_226d.html"
 OUT_JSON = OUT_DIR / "all_experiments_dashboard_226d_data.json"
-EXP = ROOT / "train3" / "csi300_csi800_aligned_seed100" / "experiments"
-BT = ROOT / "train3" / "csi300_top10pct_20250701_20260605_seed100"
+EXP = ROOT / "experiments" / "csi300_aligned" / "models"
+BT = ROOT / "experiments" / "csi300_backtest" / "top10pct_drop3"
 START, END, ROWS, DATES = "2025-07-01", "2026-06-05", 66103, 226
 TOP_K, DROP_N, MIN_HOLD, COST, ANNUAL = 30, 3, 5, 0.0015, 252
 
 SOURCE_MAP = {
-    "A": EXP / "A_zero_shot" / "predictions" / "by_date",
-    "B": EXP / "B_linear_head" / "predictions.csv",
-    "C": EXP / "C_prediction_adapter" / "predictions.csv",
-    "D": EXP / "D_ranking_adapter" / "predictions.csv",
-    "Continual A": EXP / "continual_ABC" / "predictions.csv",
-    "Continual B": EXP / "continual_ABC" / "predictions.csv",
-    "Continual C": EXP / "continual_ABC" / "predictions.csv",
+    "A": EXP / "zero_shot" / "predictions" / "by_date",
+    "B": EXP / "linear_head" / "predictions.csv",
+    "C": EXP / "prediction_adapter" / "predictions.csv",
+    "D": EXP / "ranking_adapter" / "predictions.csv",
+    "Continual A": EXP / "continual_abc" / "predictions.csv",
+    "Continual B": EXP / "continual_abc" / "predictions.csv",
+    "Continual C": EXP / "continual_abc" / "predictions.csv",
     "Adapter + Continual": EXP / "adapter_continual" / "predictions.csv",
 }
 BT_MAP = {
@@ -436,10 +436,10 @@ def patch_data(d: dict[str, Any], frames: dict[str, pd.DataFrame]) -> dict[str, 
                                                     "mean_n": ROWS/DATES, "mean_k": TOP_K,
                                                     "alignment_key": ["as_of_date", "stock"]}
 
-    full_cont_summary = json.loads((EXP / "continual_ABC" / "summary.json").read_text(encoding="utf-8"))
+    full_cont_summary = json.loads((EXP / "continual_abc" / "summary.json").read_text(encoding="utf-8"))
     cont_cfg = deepcopy(out["continual"]["datasets"]["CSI300"].get("config", {}))
-    cont_cfg.update({"cache_dir": str(EXP.parent), "output_dir": str(EXP / "continual_ABC"),
-                     "raw_signal_file": str(EXP / "continual_ABC" / "predictions.csv"),
+    cont_cfg.update({"cache_dir": str(EXP.parent), "output_dir": str(EXP / "continual_abc"),
+                     "raw_signal_file": str(EXP / "continual_abc" / "predictions.csv"),
                      "test_start": START, "test_end": END, "test_dates": DATES, "test_rows": ROWS,
                      "resolved_test_dates": sorted(frames["Continual A"]["as_of_date"].unique().tolist()),
                      "top_k": TOP_K, "drop_n": DROP_N, "min_holding_days": MIN_HOLD, "cost_rate": COST,
@@ -449,7 +449,7 @@ def patch_data(d: dict[str, Any], frames: dict[str, pd.DataFrame]) -> dict[str, 
     out["continual"]["datasets"]["CSI300"] = {
         "config": cont_cfg, "run_summary": full_cont_summary,
         "metrics_config": {"cost_rate": COST, "bootstrap_reps": 5000, "bootstrap_block": 10,
-                           "source_prediction_file": str(EXP / "continual_ABC" / "predictions.csv")},
+                           "source_prediction_file": str(EXP / "continual_abc" / "predictions.csv")},
         "groups": {g: metrics[f"Continual {g}"] for g in "ABC"},
         "endpoint_status": "无法验证：正式 Continual A/B/C 源文件只保存 Path 聚合信号。",
     }

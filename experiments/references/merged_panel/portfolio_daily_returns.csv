@@ -1,0 +1,49 @@
+﻿dataset,experiment,path_or_endpoint,prediction_date,metric_status,unavailable_reason,source_file,record_type
+CSI800,A,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI800,A,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI800,B,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI800,B,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI800,C,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI800,C,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI800,D,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI800,D,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI800,Continual A,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI800,Continual A,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI800,Continual B,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI800,Continual B,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI800,Continual C,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI800,Continual C,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI800,Adapter + Continual,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI800,Adapter + Continual,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI300,A,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI300,A,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI300,B,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI300,B,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI300,C,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI300,C,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI300,D,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI300,D,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI300,Continual A,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI300,Continual A,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI300,Continual B,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI300,Continual B,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI300,Continual C,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI300,Continual C,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI300,Adapter + Continual,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+CSI300,Adapter + Continual,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+S&P500,A,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+S&P500,A,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+S&P500,B,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+S&P500,B,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+S&P500,C,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+S&P500,C,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+S&P500,D,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+S&P500,D,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+S&P500,Continual A,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+S&P500,Continual A,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+S&P500,Continual B,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+S&P500,Continual B,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+S&P500,Continual C,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+S&P500,Continual C,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+S&P500,Adapter + Continual,Path,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker
+S&P500,Adapter + Continual,Endpoint,,无法验证,现有来源没有可独立复核的逐日普通组合持仓/收益记录；未用摘要值伪造逐日明细。,C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\train3\csi800_aligned_retest_dashboard_data.json,availability_marker

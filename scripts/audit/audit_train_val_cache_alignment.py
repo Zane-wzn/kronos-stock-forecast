@@ -3,8 +3,8 @@ from pathlib import Path
 import pandas as pd
 
 project = Path(__file__).resolve().parents[2]
-cache = project / 'train3' / 'abcd_hidden_cache_strict_20260820'
-smoke_root = project / 'train3' / 'kronos_csi300_continual_abc_recent50_smoke_single_20260824_seed100'
+cache = project / 'experiments' / 'csi300_aligned' / 'reference' / 'hidden_cache'
+smoke_root = project / 'experiments' / 'smoke' / 'continual_abc_recent50'
 panel = smoke_root / 'panel_smoke'
 report = {'cache': str(cache), 'panel': str(panel), 'splits': {}, 'matching_panel_summaries': []}
 for split in ('train','val'):
@@ -27,7 +27,7 @@ for split in ('train','val'):
         'recent_intersection_rows':int(m[m.as_of_date.isin(recent_dates)].shape[0]),
         'recent_extra_vs_panel':len(set(zip(m[m.as_of_date.isin(recent_dates)].as_of_date,m[m.as_of_date.isin(recent_dates)].stock))-pk),
     }
-for path in (project/'train3').rglob('panel_summary.json'):
+for path in (project/'experiments').rglob('panel_summary.json'):
     try:
         obj=json.loads(path.read_text(encoding='utf-8'))
     except Exception:

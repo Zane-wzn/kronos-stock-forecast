@@ -23,23 +23,11 @@ experiments/
 │       ├── page1_abcd_top30_drop3/        # 零样本、线性头和 Adapter
 │       ├── page2_continual_abc_top30_drop3/ # Continual ABC
 │       └── page3_adapter_continual_top30_drop3/ # Adapter 持续学习
-├── baselines/                             # 非主模型基线和统一比较
-│   ├── comparison_recent50/
-│   ├── lstm_recent50/
-│   ├── rolling_window_recent50/
-│   ├── swvmd_kronos_recent50/
-│   ├── swvmd_gain_recent50/
-│   ├── swvmd_snr_recent10/
-│   ├── swvmd_snr_recent10_clipped/
-│   └── hidden_fusion_swvmd_recent10/
-├── continual/                             # 持续学习和排序奖励实验
+├── continual/                             # 持续学习实验
 │   ├── adapter_metrics/
-│   ├── sorting_reward/                    # CSI300、CSI800、S&P500 多种子
 │   └── yahoo_formal/
 ├── sp500/                                  # S&P500 参考面板和 Adapter 持续学习
-├── smoke/                                  # 独立的小规模验证实验
-├── references/                             # 跨实验合并面板和来源清单
-└── notes/                                  # 当前实验说明和结果注记
+└── references/                             # 跨实验合并面板和来源清单
 ```
 
 ## 归档规则

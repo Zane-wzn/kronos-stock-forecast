@@ -1,0 +1,312 @@
+{
+  "status": "complete",
+  "validation_metric": "path_mae",
+  "validation_tolerance": 0.001,
+  "experiment_type": "continual_learning_ranking_head",
+  "groups": [
+    "A",
+    "B",
+    "C"
+  ],
+  "test_start": "2025-07-01",
+  "test_end": "2026-06-05",
+  "test_dates": 226,
+  "test_rows": 66103,
+  "common_rows": 66103,
+  "update_dates": 11,
+  "accepted_updates": 7,
+  "final_c_version": 7,
+  "initial_validation_rankic": 0.05095108803780327,
+  "final_champion_validation_rankic": 0.027089260333308388,
+  "initial_validation_mae": 0.030211035074683208,
+  "final_champion_validation_mae": 0.03175208546177719,
+  "backend": "torch",
+  "seed": 100,
+  "initial_training_history": [
+    {
+      "epoch": 1.0,
+      "loss": 0.13975804038208778
+    },
+    {
+      "epoch": 2.0,
+      "loss": 0.13954074534380326
+    },
+    {
+      "epoch": 3.0,
+      "loss": 0.1394967131843981
+    },
+    {
+      "epoch": 4.0,
+      "loss": 0.13947172297846483
+    },
+    {
+      "epoch": 5.0,
+      "loss": 0.13945170590179903
+    }
+  ],
+  "continual_history": [
+    {
+      "version": 1,
+      "validation_metric": "path_mae",
+      "validation_mae": 0.030725280584767402,
+      "validation_rankic": 0.04208775580172529,
+      "training_rows": 120000,
+      "replay": {
+        "pool_rows": 529509,
+        "recent_pool_rows": 104953,
+        "historical_pool_rows": 424556,
+        "selected_rows": 120000,
+        "selected_recent_rows": 84000,
+        "selected_historical_rows": 36000,
+        "recent_cutoff": "2023-07-31",
+        "recent_fraction_target": 0.7,
+        "historical_year_counts": {
+          "2016": 4500,
+          "2017": 4500,
+          "2018": 4500,
+          "2019": 4500,
+          "2020": 4500,
+          "2021": 4500,
+          "2022": 4500,
+          "2023": 4500
+        }
+      },
+      "history": [
+        {
+          "epoch": 1.0,
+          "loss": 0.13892371776054857
+        },
+        {
+          "epoch": 2.0,
+          "loss": 0.1388680460505601
+        }
+      ]
+    },
+    {
+      "version": 2,
+      "validation_metric": "path_mae",
+      "validation_mae": 0.03170965343102969,
+      "validation_rankic": 0.04023620469230911,
+      "training_rows": 120000,
+      "replay": {
+        "pool_rows": 535663,
+        "recent_pool_rows": 104954,
+        "historical_pool_rows": 430709,
+        "selected_rows": 120000,
+        "selected_recent_rows": 84000,
+        "selected_historical_rows": 36000,
+        "recent_cutoff": "2023-08-29",
+        "recent_fraction_target": 0.7,
+        "historical_year_counts": {
+          "2016": 4500,
+          "2017": 4500,
+          "2018": 4500,
+          "2019": 4500,
+          "2020": 4500,
+          "2021": 4500,
+          "2022": 4500,
+          "2023": 4500
+        }
+      },
+      "history": [
+        {
+          "epoch": 1.0,
+          "loss": 0.13915958774964798
+        },
+        {
+          "epoch": 2.0,
+          "loss": 0.13909735058186892
+        }
+      ]
+    },
+    {
+      "version": 3,
+      "validation_metric": "path_mae",
+      "validation_mae": 0.03257500985133792,
+      "validation_rankic": 0.032393194473124484,
+      "training_rows": 120000,
+      "replay": {
+        "pool_rows": 547051,
+        "recent_pool_rows": 104885,
+        "historical_pool_rows": 442166,
+        "selected_rows": 120000,
+        "selected_recent_rows": 84000,
+        "selected_historical_rows": 36000,
+        "recent_cutoff": "2023-10-31",
+        "recent_fraction_target": 0.7,
+        "historical_year_counts": {
+          "2016": 4500,
+          "2017": 4500,
+          "2018": 4500,
+          "2019": 4500,
+          "2020": 4500,
+          "2021": 4500,
+          "2022": 4500,
+          "2023": 4500
+        }
+      },
+      "history": [
+        {
+          "epoch": 1.0,
+          "loss": 0.13943157416883387
+        },
+        {
+          "epoch": 2.0,
+          "loss": 0.1393741818265942
+        }
+      ]
+    },
+    {
+      "version": 4,
+      "validation_metric": "path_mae",
+      "validation_mae": 0.03117526020309166,
+      "validation_rankic": 0.03187598237499409,
+      "training_rows": 120000,
+      "replay": {
+        "pool_rows": 552901,
+        "recent_pool_rows": 104835,
+        "historical_pool_rows": 448066,
+        "selected_rows": 120000,
+        "selected_recent_rows": 84000,
+        "selected_historical_rows": 36000,
+        "recent_cutoff": "2023-11-28",
+        "recent_fraction_target": 0.7,
+        "historical_year_counts": {
+          "2016": 4500,
+          "2017": 4500,
+          "2018": 4500,
+          "2019": 4500,
+          "2020": 4500,
+          "2021": 4500,
+          "2022": 4500,
+          "2023": 4500
+        }
+      },
+      "history": [
+        {
+          "epoch": 1.0,
+          "loss": 0.1393842065758183
+        },
+        {
+          "epoch": 2.0,
+          "loss": 0.13932819154091503
+        }
+      ]
+    },
+    {
+      "version": 5,
+      "validation_metric": "path_mae",
+      "validation_mae": 0.031964468356481694,
+      "validation_rankic": 0.026453247186129486,
+      "training_rows": 120000,
+      "replay": {
+        "pool_rows": 569518,
+        "recent_pool_rows": 104289,
+        "historical_pool_rows": 465229,
+        "selected_rows": 120000,
+        "selected_recent_rows": 84000,
+        "selected_historical_rows": 36000,
+        "recent_cutoff": "2024-02-27",
+        "recent_fraction_target": 0.7,
+        "historical_year_counts": {
+          "2016": 4000,
+          "2017": 4000,
+          "2018": 4000,
+          "2019": 4000,
+          "2020": 4000,
+          "2021": 4000,
+          "2022": 4000,
+          "2023": 4000,
+          "2024": 4000
+        }
+      },
+      "history": [
+        {
+          "epoch": 1.0,
+          "loss": 0.13921208029130572
+        },
+        {
+          "epoch": 2.0,
+          "loss": 0.13915970857700594
+        }
+      ]
+    },
+    {
+      "version": 6,
+      "validation_metric": "path_mae",
+      "validation_mae": 0.03168841739787835,
+      "validation_rankic": 0.02984284969184567,
+      "training_rows": 120000,
+      "replay": {
+        "pool_rows": 575942,
+        "recent_pool_rows": 103617,
+        "historical_pool_rows": 472325,
+        "selected_rows": 120000,
+        "selected_recent_rows": 84000,
+        "selected_historical_rows": 36000,
+        "recent_cutoff": "2024-03-31",
+        "recent_fraction_target": 0.7,
+        "historical_year_counts": {
+          "2016": 4000,
+          "2017": 4000,
+          "2018": 4000,
+          "2019": 4000,
+          "2020": 4000,
+          "2021": 4000,
+          "2022": 4000,
+          "2023": 4000,
+          "2024": 4000
+        }
+      },
+      "history": [
+        {
+          "epoch": 1.0,
+          "loss": 0.13942813370502402
+        },
+        {
+          "epoch": 2.0,
+          "loss": 0.13934257370755407
+        }
+      ]
+    },
+    {
+      "version": 7,
+      "validation_metric": "path_mae",
+      "validation_mae": 0.03175208546177719,
+      "validation_rankic": 0.027089260333308388,
+      "training_rows": 120000,
+      "replay": {
+        "pool_rows": 587364,
+        "recent_pool_rows": 104144,
+        "historical_pool_rows": 483220,
+        "selected_rows": 120000,
+        "selected_recent_rows": 84000,
+        "selected_historical_rows": 36000,
+        "recent_cutoff": "2024-05-29",
+        "recent_fraction_target": 0.7,
+        "historical_year_counts": {
+          "2016": 4000,
+          "2017": 4000,
+          "2018": 4000,
+          "2019": 4000,
+          "2020": 4000,
+          "2021": 4000,
+          "2022": 4000,
+          "2023": 4000,
+          "2024": 4000
+        }
+      },
+      "history": [
+        {
+          "epoch": 1.0,
+          "loss": 0.13929174812114292
+        },
+        {
+          "epoch": 2.0,
+          "loss": 0.139232567026177
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 2209.861061811447
+}

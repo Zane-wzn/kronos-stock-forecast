@@ -1,0 +1,28 @@
+{
+  "status": "completed_with_audit_findings",
+  "generated_at": "2026-09-02T15:46:08.044492+08:00",
+  "root_cause": "页面按钮使用 data-dataset='Yahoo S&P 500'，而内嵌数据已规范为 'S&P500'；原有 getABCD/getCont/exp 按精确键查找，导致整组数据查找失败并统一显示无法验证。",
+  "fix": "仅更新数据对象：保留规范键 S&P500，并添加与现有按钮兼容的 Yahoo S&P 500 数据别名；同时把审计标记为无法验证的活动字段置为 null。",
+  "canonical_key": "S&P500",
+  "legacy_ui_alias": "Yahoo S&P 500",
+  "sp500_alias_paths": [
+    "ref.metrics",
+    "ref.decile",
+    "continual.datasets",
+    "experiments[].dataset"
+  ],
+  "unsupported_display_values_cleared": true,
+  "unsupported_values_remaining": [],
+  "source_values_preserved_for_supported_metrics": true,
+  "html_data_outside_structure_preserved": true,
+  "html_embedded_data_matches_json": true,
+  "pre_update_html_sha256": "5ff17c24781719c357908b3dd93cabce818273c83a18129a2b88136fe771c999",
+  "post_update_html_sha256": "1d5a4384c4d857250fccef79282ce7a8e649dda2a4dcebbfffa3f0a10553d146",
+  "pre_update_json_sha256": "7cd6b13658b26132f1e0567401d2180a67daa6096f8adda1ac2eaa3deec7a8e9",
+  "post_update_json_sha256": "50c38cea55566352788490b37e0455721ed158575a6ce607a2eb64a890e59842",
+  "notes": [
+    "S&P500 静态/Adapter + Continual 的已有可验证摘要值没有被清零。",
+    "S&P500 AER 因缺少当前正式长窗口股票级预测信号显示无法验证。",
+    "S&P500 Continual A/B/C 的 Endpoint 与普通组合因缺少独立 Endpoint/股票级明细显示无法验证。"
+  ]
+}

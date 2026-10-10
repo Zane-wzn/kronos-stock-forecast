@@ -1,0 +1,39 @@
+{
+  "experiments": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "Continual A",
+    "Continual B",
+    "Continual C",
+    "Adapter + Continual"
+  ],
+  "modes": [
+    "Path",
+    "Endpoint"
+  ],
+  "test_window": [
+    "2025-07-01",
+    "2026-06-05"
+  ],
+  "notes": [
+    "当前成分股池回溯，可能存在幸存者偏差",
+    "当前成分股前视偏差可能存在",
+    "交易日历按市场独立处理，不强制日期对齐"
+  ],
+  "audit_findings": {
+    "portfolio_daily_detail_available": false,
+    "portfolio_daily_detail_reason": "现有来源没有可独立复核的逐日组合持仓/收益记录；组合摘要保留但不伪造逐日明细。",
+    "aer_execution_detail_available": false,
+    "aer_execution_detail_reason": "现有来源没有可独立复核的完整 next_open/next_close、持仓和交易映射；AER 仅显示无法验证。",
+    "stock_level_trace_markets": [
+      "CSI800"
+    ],
+    "stock_level_trace_missing_markets": [
+      "CSI300",
+      "S&P500"
+    ],
+    "stock_level_trace_missing_reason": "这两个市场当前仅有摘要 JSON，没有完整可审计的股票级预测轨迹。"
+  }
+}

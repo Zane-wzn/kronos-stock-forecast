@@ -1,24 +1,24 @@
-<<<<<<< HEAD
 # Python caches and local environments
 __pycache__/
 *.py[cod]
-=======
-# Python bytecode and caches
-__pycache__/
-*.py[cod]
 *$py.class
->>>>>>> origin/main
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 .coverage
 htmlcov/
-<<<<<<< HEAD
 .venv/
+.venv_kronos/
 venv/
 env/
 
-# Local configuration, logs and editor files
+# Editor, OS and local configuration files
+.idea/
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
 .env
 .env.*
 !.env.example
@@ -26,26 +26,11 @@ env/
 *.tmp
 *.temp
 ~$*
-=======
 
-# Local virtual environments
-.venv/
-.venv_kronos/
-venv/
-env/
-
-# Editor and OS files
->>>>>>> origin/main
-.idea/
-.vscode/
-*.code-workspace
-.DS_Store
-Thumbs.db
-desktop.ini
-
-<<<<<<< HEAD
 # Downloaded model/runtime environments
 .runtime/
+.cache/
+huggingface/
 chronos2/
 timesfm3/
 sspt/
@@ -55,28 +40,43 @@ master/
 data/csi300_daily/
 data/csi800_daily/
 data/yahoo_sp500/
+stocks(1)/
 
-# Large generated experiment directories and caches.
-train3/
+# Generated experiment outputs that remain local.
+experiments/**/predictions*.csv
+experiments/**/rolling_predictions*.csv
+experiments/**/online_loss*.csv
+experiments/**/cache/
+experiments/**/checkpoints/
+experiments/**/model.pt
+experiments/**/odestream_warmup.pt
+experiments/**/online_checkpoint.pt
+experiments/analysis/
+experiments/dashboards/
+
+# Keep compact, reviewable result pages and summaries only. Results are grouped
+# by dataset and experiment family below results/cumulative_return_curves/.
 results/analysis/
 results/continual_multiseed/
 results/continual_seed100_mae_gate_audit/
 results/dashboards/
 results/figures/
-
-# Keep only compact, reviewable result pages and summaries in the repository.
 results/cumulative_return_curves/*.csv
 results/cumulative_return_curves/*.json
+results/cumulative_return_curves/**/*.csv
+results/cumulative_return_curves/**/*.json
+!results/cumulative_return_curves/**/
+!results/cumulative_return_curves/**/*.html
+!results/cumulative_return_curves/**/*_summary.csv
+!results/cumulative_return_curves/**/*_summary.json
 results/cumulative_return_curves/odestream_vs_existing/*_daily_returns.csv
 results/cumulative_return_curves/odestream_vs_existing/*_normalized_predictions.csv
 results/cumulative_return_curves/odestream_vs_existing/*_portfolio_holdings.csv
-results/cumulative_return_curves/odestream_vs_existing/*_summary.json
 
-# Temporary analysis scripts and copied source/paper artifacts at the old root.
+# Temporary analysis scripts and copied source/paper artifacts.
 tmp_*
 refine-logs/
 MANIFEST.*
-findings.md
 odestream-*.py
 odestream-*.md
 odestream-*.png
@@ -90,21 +90,10 @@ continual_ABC_mae_strict_gate_retry01.zip
 *.ckpt
 *.npy
 *.npz
-=======
-# Logs and temporary files
-*.log
-*.tmp
-*.temp
-~$*
 
-# Local secrets and environment overrides
-.env
-.env.*
-!.env.example
+# Local reference papers (not redistributed).
+docs/references/
 
-# Model/download caches
-.cache/
-huggingface/
-
-# Keep train1/, train2/, train3/ and their experiment outputs tracked.
->>>>>>> origin/main
+# Large derived sample-key panels (>100MB, exceed GitHub limit; regenerate locally)
+experiments/csi300_aligned/reference/eligible_stock_date_pairs.csv
+experiments/sp500/reference_panel/eligible_stock_date_pairs.csv

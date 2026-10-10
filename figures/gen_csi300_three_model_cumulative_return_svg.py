@@ -2,8 +2,8 @@ from pathlib import Path
 import json, math
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "results" / "cumulative_return_curves" / "csi300_three_model_cumulative_return_data.json"
-OUT = ROOT / "results" / "cumulative_return_curves" / "csi300_three_model_cumulative_return_curve.svg"
+DATA = ROOT / "results" / "cumulative_return_curves" / "csi300" / "csi300_three_model_cumulative_return_data.json"
+OUT = ROOT / "results" / "cumulative_return_curves" / "csi300" / "csi300_three_model_cumulative_return_curve.svg"
 
 data = json.loads(DATA.read_text(encoding="utf-8"))
 series = data["series"]

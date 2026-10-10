@@ -25,7 +25,7 @@ from torch import nn
 
 DEFAULT_DATA_DIR = Path("data/csi300_daily/csi300_daily")
 DEFAULT_OUTPUT_DIR = Path(
-    "train3/csi300_csi800_aligned_seed100/experiments/odestream_direct_24x1"
+    "experiments/csi300_aligned/models/odestream_direct_24x1"
 )
 TRAIN_END = pd.Timestamp("2024-12-15")
 VAL_START = pd.Timestamp("2025-01-02")

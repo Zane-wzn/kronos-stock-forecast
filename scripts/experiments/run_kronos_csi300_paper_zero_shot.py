@@ -69,7 +69,7 @@ def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--stocks-dir", default=str(here / "data" / "data" / "csi300_daily"))
     p.add_argument("--kronos-repo", default=str(here / "third_party" / "Kronos_official_src" / "Kronos-master"))
-    p.add_argument("--output-dir", default=str(here / "train3" / "kronos_csi300_paper_zero_shot_small_20240701_20250605"))
+    p.add_argument("--output-dir", default=str(here / "experiments" / "csi300_aligned" / "models" / "zero_shot"))
     p.add_argument("--model-name", default="NeoQuasar/Kronos-small")
     p.add_argument("--tokenizer-name", default="NeoQuasar/Kronos-Tokenizer-base")
     p.add_argument("--device", default="cuda:0")

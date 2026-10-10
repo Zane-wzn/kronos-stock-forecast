@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "method": "ODEStream_direct",
+  "rows": 67006,
+  "stocks": 297,
+  "dates": 226,
+  "warmup_mse_normalized": [
+    0.06327398321217428
+  ],
+  "validation": {
+    "rows": 31429,
+    "mse_normalized": 0.03364518335038223,
+    "mae_normalized": 0.07485148160193614,
+    "direction_accuracy": 0.5062203697222311
+  },
+  "test_mse_normalized": 0.09148050863638214,
+  "test_mae_normalized": 0.14642228966485415,
+  "test_direction_accuracy": 0.5540996328686983,
+  "elapsed_seconds": 1434.067530632019,
+  "output_dir": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\train3\\csi300_csi800_aligned_seed100\\experiments\\odestream_direct_24x1"
+}

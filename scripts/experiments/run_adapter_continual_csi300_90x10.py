@@ -94,7 +94,19 @@ def verify_boundaries(train_m, val_m, test_m, strict=True):
     if strict and (test_m.as_of_date.min() != TEST_START or test_m.as_of_date.max() != TEST_END): raise AssertionError('test interval is not locked')
 
 def rankic(pred, actual, meta):
-    p = np.asarray(pred).reshape(-1); y = np.asarray(actual).mean(axis=1); vals=[]
+    pred = np.asarray(pred, dtype=np.float64)
+    actual = np.asarray(actual, dtype=np.float64)
+    if pred.ndim == 1:
+        pred = pred[:, None]
+    if actual.ndim == 1:
+        actual = actual[:, None]
+    if pred.ndim != 2 or actual.ndim != 2 or pred.shape != actual.shape:
+        raise ValueError(f'prediction/label shape mismatch: {pred.shape} vs {actual.shape}')
+    if len(pred) != len(meta):
+        raise ValueError(f'prediction/metadata row mismatch: {len(pred)} vs {len(meta)}')
+    if not isinstance(meta.index, pd.RangeIndex) or meta.index.start != 0 or meta.index.stop != len(meta):
+        raise ValueError('metadata index must be a zero-based contiguous RangeIndex aligned with predictions')
+    p = pred.mean(axis=1); y = actual.mean(axis=1); vals=[]
     for _, g in meta.groupby('as_of_date', sort=True):
         ix = g.index.to_numpy();
         if len(ix)<2: continue
@@ -133,11 +145,12 @@ def train_candidate(model, h, y, meta, val_h, val_y, val_m, cfg, device, seed, e
             hub=F.smooth_l1_loss(pred, yy); ps=pred.mean(1); ys=yy.mean(1); dp=ps[:,None]-ps[None,:]; dy=ys[:,None]-ys[None,:]; mask=dy!=0
             rl=F.softplus(-torch.sign(dy[mask])*dp[mask]).mean() if bool(mask.any()) else ps.sum()*0
             loss=hub+cfg['lambda_rank']*rl; opt.zero_grad(set_to_none=True); loss.backward(); nn.utils.clip_grad_norm_(model.parameters(),1.0); opt.step(); losses.append(float(hub.detach().cpu())); ranks.append(float(rl.detach().cpu()))
-        vp=[]
+        val_pred=np.empty((len(val_m), PRED_LEN), dtype=np.float32)
         model.eval()
         with torch.no_grad():
-            for ix in date_batches(val_m,256,0,False): vp.append(model(torch.as_tensor(np.asarray(val_h[ix]),dtype=torch.float32,device=device)).cpu().numpy())
-        val_pred=np.concatenate(vp) if vp else np.empty((0,PRED_LEN)); metric=rankic(val_pred,val_y,val_m)
+            for ix in date_batches(val_m,256,0,False):
+                val_pred[ix] = model(torch.as_tensor(np.asarray(val_h[ix]),dtype=torch.float32,device=device)).cpu().numpy()
+        metric=rankic(val_pred,val_y,val_m)
         row={'epoch':ep,'train_huber':float(np.mean(losses)),'train_rank_loss':float(np.mean(ranks)),'val_rankic':metric}; hist.append(row); print('[TRAIN]',json.dumps(row),flush=True)
         if best is None or metric>best[0]: best=(metric,copy.deepcopy(model.state_dict()),ep); bad=0
         else: bad += 1
@@ -211,10 +224,11 @@ def main():
         if len(test_m) == 0 or test_m.as_of_date.nunique() == 0: raise AssertionError('formal test metadata is empty')
         if test_y.shape[1] != 10: raise AssertionError('formal output window is not 10')
         model=Model(512,PRED_LEN,64,.1).to(device); state=torch.load(cfg['initial_checkpoint'],map_location='cpu',weights_only=True); model.load_state_dict(state,strict=True)
-        model.eval(); init_pred=[]
+        model.eval(); init_pred=np.empty((len(val_m), PRED_LEN), dtype=np.float32)
         with torch.no_grad():
-            for ix in date_batches(val_m,256,0,False): init_pred.append(model(torch.as_tensor(np.asarray(val_h[ix]),dtype=torch.float32,device=device)).cpu().numpy())
-        champion=rankic(np.concatenate(init_pred),val_y,val_m); version=0; checkpoints=out/'checkpoints'; checkpoints.mkdir(); torch.save(model.state_dict(),checkpoints/'version_000.pt')
+            for ix in date_batches(val_m,256,0,False):
+                init_pred[ix] = model(torch.as_tensor(np.asarray(val_h[ix]),dtype=torch.float32,device=device)).cpu().numpy()
+        champion=rankic(init_pred,val_y,val_m); version=0; checkpoints=out/'checkpoints'; checkpoints.mkdir(); torch.save(model.state_dict(),checkpoints/'version_000.pt')
         dates=pd.DatetimeIndex(sorted(test_m.as_of_date.unique())); updates=[]
         for i in range(len(dates)-1):
             if dates[i].month != dates[i+1].month: updates.append(dates[i])
@@ -246,7 +260,7 @@ def main():
         for _,r in pred.iterrows():
             pass
         config=dict(cfg); config.update({'experiment_type':'adapter_plus_continual_test_then_train','lookback':LOOKBACK,'pred_len':PRED_LEN,'test_start':str(TEST_START.date()),'test_end':str(TEST_END.date()),'test_dates':len(dates),'test_rows':len(pred),'update_dates':[d.date().isoformat() for d in updates],'device_resolved':str(device),'cache_hashes':{f:sha256_file(cache/f) for f in ['meta_train.csv','meta_val.csv','meta_test.csv']}}); atomic_json(out/'run_config.json',config)
-        summary={'status':'complete','method':'frozen_hidden_adapter_head_continual','seed':cfg['seed'],'test_dates':len(dates),'test_rows':len(pred),'initial_version':0,'final_version':version,'updates':len(logs),'accepted_updates':int(sum(bool(x['accepted']) for x in logs)),'initial_validation_rankic':float(rankic(np.concatenate(init_pred),val_y,val_m)),'final_champion_validation_rankic':float(champion),'elapsed_seconds':time.time()-started,'device':str(device)}; atomic_json(out/'summary.json',summary); print(json.dumps(summary,ensure_ascii=False,indent=2),flush=True)
+        summary={'status':'complete','method':'frozen_hidden_adapter_head_continual','seed':cfg['seed'],'test_dates':len(dates),'test_rows':len(pred),'initial_version':0,'final_version':version,'updates':len(logs),'accepted_updates':int(sum(bool(x['accepted']) for x in logs)),'initial_validation_rankic':float(rankic(init_pred,val_y,val_m)),'final_champion_validation_rankic':float(champion),'elapsed_seconds':time.time()-started,'device':str(device)}; atomic_json(out/'summary.json',summary); print(json.dumps(summary,ensure_ascii=False,indent=2),flush=True)
     except Exception as e:
         atomic_json(out/'FAILED.json',{'status':'failed','error':repr(e),'traceback':traceback.format_exc()}); raise
 

@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "experiment_type": "continual_learning_ranking_head",
+  "d_model": 512,
+  "lookback": 90,
+  "pred_len": 10,
+  "batch_size": 32,
+  "generated_splits": [
+    "train",
+    "val",
+    "test"
+  ],
+  "generated_rows": {
+    "train": 525700,
+    "val": 30889,
+    "test": 66103
+  },
+  "full_panel_rows": {
+    "train": 525700,
+    "val": 30889,
+    "test": 66103
+  },
+  "elapsed_seconds": 1330.2361617088318
+}

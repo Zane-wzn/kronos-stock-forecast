@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "dataset": "csi300",
+  "market": "CSI300",
+  "stocks_loaded": 300,
+  "calendar_dates": 2582,
+  "calendar_hash": "e0b1df9e2f0b7f777d93934bd76543f0f60bff87d5f044d35c296e863f3ad185",
+  "test_start": "2025-07-01",
+  "test_end": "2026-06-05",
+  "test_dates": 226,
+  "lookback": 90,
+  "pred_len": 10,
+  "min_cross_section": 30,
+  "dates_by_split": {
+    "train": 2086,
+    "val": 106,
+    "test": 226
+  },
+  "rows_by_split": {
+    "train": 525700,
+    "val": 30889,
+    "test": 66103
+  },
+  "current_constituent_backfill": true,
+  "bias_warning": "survivorship bias and current-constituent look-ahead bias are possible"
+}

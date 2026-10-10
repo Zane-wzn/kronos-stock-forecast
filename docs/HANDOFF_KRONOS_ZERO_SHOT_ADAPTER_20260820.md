@@ -1,8 +1,8 @@
 # Kronos CSI300 零样本与 Adapter 实验交接
 
 **更新时间**：2026-08-20  
-**项目目录（本地工作区）**：`C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测`  
-**远程项目目录**：`D:\Desktop\时间序列预测\股票预测`
+**项目目录（本地工作区）**：当前仓库根目录
+**远程项目目录**：以 GitHub 仓库 checkout 目录为准
 
 > 本文只记录本次对话中最重要的 Kronos CSI300 零样本实验结果，以及下一步共享 Adapter 实验设计。请明确区分“已完成实验”和“拟执行实验”。
 
@@ -40,10 +40,10 @@ ssh -i "C:\Users\huawei_wzn\.ssh\id_ed25519_gpu4060" -o IdentitiesOnly=yes -p 13
 
 ## 3. 完成状态
 
-远程运行目录：
+当前仓库对应实验目录：
 
 ```text
-D:\Desktop\时间序列预测\股票预测\train3\kronos_csi300_paper_zero_shot_small_20240701_20250605
+`experiments/csi300_aligned/models/zero_shot/`
 ```
 
 完成记录：
@@ -59,7 +59,7 @@ D:\Desktop\时间序列预测\股票预测\train3\kronos_csi300_paper_zero_shot_
 完成标志：
 
 ```text
-D:\Desktop\时间序列预测\股票预测\train3\kronos_csi300_paper_zero_shot_small_20240701_20250605\process_exit.json
+`experiments/csi300_aligned/models/zero_shot/progress.json`
 ```
 
 ## 4. 零样本实验配置
@@ -69,7 +69,7 @@ D:\Desktop\时间序列预测\股票预测\train3\kronos_csi300_paper_zero_shot_
 | 模型 | `NeoQuasar/Kronos-small` |
 | Tokenizer | `NeoQuasar/Kronos-Tokenizer-base` |
 | 设备 | `cuda:0` |
-| 数据目录 | `D:\Desktop\时间序列预测\股票预测\data\data\csi300_daily` |
+| 数据目录 | `data/csi300_daily/csi300_daily` |
 | 信号日 | `2024-07-01—2025-06-05` |
 | 信号日数量 | 225 |
 | Lookback | 90 条该股票有效交易记录 |
@@ -164,21 +164,17 @@ actual_close_10 / close_t - 1
 主要输出：
 
 ```text
-D:\Desktop\时间序列预测\股票预测\train3\kronos_csi300_paper_zero_shot_small_20240701_20250605\metrics\summary.json
+`experiments/csi300_aligned/models/zero_shot/metrics/summary.json`
 
-D:\Desktop\时间序列预测\股票预测\train3\kronos_csi300_paper_zero_shot_small_20240701_20250605\ranking_metrics_detailed\summary.json
-D:\Desktop\时间序列预测\股票预测\train3\kronos_csi300_paper_zero_shot_small_20240701_20250605\ranking_metrics_detailed\metric_summary.csv
-D:\Desktop\时间序列预测\股票预测\train3\kronos_csi300_paper_zero_shot_small_20240701_20250605\ranking_metrics_detailed\daily_metrics.csv
-D:\Desktop\时间序列预测\股票预测\train3\kronos_csi300_paper_zero_shot_small_20240701_20250605\ranking_metrics_detailed\quantile_summary.csv
-D:\Desktop\时间序列预测\股票预测\train3\kronos_csi300_paper_zero_shot_small_20240701_20250605\ranking_metrics_detailed\quantile_daily.csv
-D:\Desktop\时间序列预测\股票预测\train3\kronos_csi300_paper_zero_shot_small_20240701_20250605\ranking_metrics_detailed\errors.csv
+`experiments/csi300_aligned/models/zero_shot/metrics/summary.json`
+`experiments/csi300_aligned/models/zero_shot/metrics/daily_cross_section_metrics.csv`
 ```
 
 脚本：
 
 ```text
-D:\Desktop\时间序列预测\股票预测\run_kronos_csi300_paper_zero_shot.py
-D:\Desktop\时间序列预测\股票预测\compute_kronos_csi300_cross_section_metrics.py
+scripts/experiments/run_kronos_csi300_paper_zero_shot.py
+scripts/evaluation/compute_kronos_csi300_cross_section_metrics.py
 ```
 
 ## 7. 与原论文的比较
@@ -235,16 +231,16 @@ D:\Desktop\时间序列预测\股票预测\compute_kronos_csi300_cross_section_m
 现有旧结果目录：
 
 ```text
-D:\Desktop\时间序列预测\股票预测\train3\kronos_adapter_recent10_train20_ep5_seed20260521
+`experiments/csi300_aligned/models/adapter_continual/`
 ```
 
-旧实验仅为 `recent10/train20` 口径，不能代替新的 CSI300 完整测试期严格对照。
+旧的短窗口结果不能代替新的 CSI300 完整测试期严格对照。
 
 远程现有相关脚本：
 
 ```text
-D:\Desktop\时间序列预测\股票预测\kronos_adapter_experiment.py
-D:\Desktop\时间序列预测\股票预测\train3\run_kronos_adapter_experiment.ps1
+scripts/experiments/run_adapter_continual_csi300_90x10.py
+`scripts/experiments/run_adapter_continual_csi300_90x10.py`
 ```
 
 正式运行前必须审计并修改脚本，不要直接复用旧参数启动。
@@ -504,6 +500,6 @@ mean(future_close_1 ... future_close_10) / close_t - 1
 - 不要把终点收益 RankIC `0.04812` 当成 Eq.13 主 RankIC；主 RankIC 是 `0.02603`。
 - 不要把年化 `mean/std*sqrt(252)` 直接当成论文组合 IR。
 - 不要声称已经复现论文 AER `18.05%` 或 IR `1.2394`。
-- 不要把旧 `recent10/train20` Adapter 结果当成新的完整 CSI300 Adapter 对照。
+- 不要把旧的局部窗口 Adapter 结果当成新的完整 CSI300 Adapter 对照。
 - 不要在测试期上训练、早停或选择 lambda。
 - 新实验未经用户确认不要直接启动；用户要求先确认实验细节。

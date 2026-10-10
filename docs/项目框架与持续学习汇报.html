@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kronos 股票预测项目框架与持续学习实验</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #202a35;
+      --muted: #52616d;
+      --line: #d8e0e4;
+      --paper: #ffffff;
+      --canvas: #edf2f2;
+      --teal: #176b67;
+      --teal-soft: #e4f2ef;
+      --gold: #a76518;
+      --gold-soft: #fbf1df;
+      --red: #a63f3d;
+      --red-soft: #fae9e7;
+      --blue: #365d85;
+      --blue-soft: #eaf0f7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--canvas);
+      font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.68;
+    }
+    a { color: var(--teal); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .page { width: min(1080px, calc(100% - 36px)); margin: 28px auto 56px; }
+    header {
+      padding: 42px 48px 36px;
+      color: #fff;
+      background: #185b59;
+      border-radius: 8px 8px 0 0;
+    }
+    .eyebrow { margin: 0 0 10px; color: #d2e9e5; font-size: 13px; font-weight: 700; }
+    h1 { max-width: 820px; margin: 0; font-size: 34px; line-height: 1.22; }
+    header p { max-width: 820px; margin: 16px 0 0; color: #e4f0ef; font-size: 17px; }
+    nav {
+      display: flex; flex-wrap: wrap; gap: 8px 18px; padding: 15px 28px;
+      background: #fff; border-bottom: 1px solid var(--line);
+    }
+    nav a { font-size: 14px; font-weight: 650; text-decoration: none; }
+    main { padding: 10px 42px 42px; background: var(--paper); }
+    section { padding: 28px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 16px; }
+    section:last-child { border-bottom: 0; }
+    h2 { margin: 0 0 13px; font-size: 24px; line-height: 1.35; }
+    h3 { margin: 20px 0 8px; font-size: 18px; }
+    p { margin: 8px 0 12px; }
+    .lead { color: var(--muted); font-size: 17px; }
+    .callout { margin: 16px 0; padding: 13px 16px; border-left: 4px solid var(--teal); background: var(--teal-soft); }
+    .callout.warn { border-color: var(--gold); background: var(--gold-soft); }
+    .callout.alert { border-color: var(--red); background: var(--red-soft); }
+    .callout.info { border-color: var(--blue); background: var(--blue-soft); }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 16px 0; }
+    .panel { padding: 16px 18px; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+    .panel h3 { margin-top: 0; }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 3px; color: var(--teal); background: var(--teal-soft); font-size: 13px; font-weight: 700; }
+    .tag.warn { color: var(--gold); background: var(--gold-soft); }
+    .tag.alert { color: var(--red); background: var(--red-soft); }
+    .flow { display: grid; gap: 8px; margin: 18px 0; }
+    .flow-row { display: grid; grid-template-columns: 1fr 34px 1fr 34px 1fr; align-items: stretch; gap: 7px; }
+    .flow-box { display: flex; align-items: center; justify-content: center; min-height: 72px; padding: 12px; border: 1px solid var(--line); border-radius: 5px; background: #f8faf9; text-align: center; font-weight: 650; }
+    .flow-box.active { border-color: #9ac8c0; background: var(--teal-soft); }
+    .arrow { display: grid; place-items: center; color: var(--muted); font-size: 22px; }
+    .down { text-align: center; color: var(--muted); line-height: 1; }
+    .flow-two { display: grid; grid-template-columns: 1fr 34px 1fr; align-items: center; gap: 7px; }
+    .math { overflow-x: auto; margin: 11px 0; padding: 12px 15px; border: 1px solid var(--line); border-radius: 5px; background: #f7f9f9; font-family: "Cambria Math", Georgia, serif; font-size: 16px; white-space: nowrap; }
+    table { width: 100%; margin: 14px 0; border-collapse: collapse; font-size: 14px; }
+    th, td { padding: 10px 11px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { background: #eef4f3; font-weight: 700; }
+    code { padding: 1px 4px; border-radius: 3px; background: #eff2f3; font-family: Consolas, monospace; font-size: .92em; overflow-wrap: anywhere; }
+    pre { overflow-x: auto; padding: 14px 16px; border-radius: 5px; background: #f3f6f6; font-family: Consolas, monospace; font-size: 13px; line-height: 1.55; }
+    ul, ol { padding-left: 23px; }
+    li { margin: 5px 0; }
+    .small { color: var(--muted); font-size: 13px; }
+    .footer { padding: 18px 42px 24px; color: var(--muted); background: #fff; border-top: 1px solid var(--line); font-size: 13px; }
+    @media (max-width: 700px) {
+      .page { width: 100%; margin: 0 auto; }
+      header { padding: 30px 22px 26px; border-radius: 0; }
+      h1 { font-size: 28px; }
+      main { padding: 4px 20px 28px; }
+      .footer { padding: 16px 20px; }
+      .grid { grid-template-columns: 1fr; }
+      .flow-row { grid-template-columns: 1fr; }
+      .flow-two { grid-template-columns: 1fr; }
+      .arrow { transform: rotate(90deg); min-height: 20px; }
+      table { display: block; overflow-x: auto; white-space: normal; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11pt; }
+      .page { width: 100%; margin: 0; }
+      header { padding: 24px 30px; border-radius: 0; print-color-adjust: exact; }
+      nav { display: none; }
+      main { padding: 0 30px; }
+      section { break-inside: avoid; padding: 19px 0; }
+      .panel, .callout, th, .flow-box { print-color-adjust: exact; }
+      a { color: inherit; }
+      .footer { padding: 14px 30px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <p class="eyebrow">项目框架 · 实验设计 · 持续学习</p>
+      <h1>Kronos 股票预测项目框架与持续学习实验</h1>
+      <p>汇报主线：从历史行情构造时间序列样本，用预训练模型形成表示或预测，再通过 Adapter、排序头和持续更新适应市场变化，并在统一时间边界下评估。</p>
+    </header>
+    <nav aria-label="页面目录">
+      <a href="#overview">项目总览</a><a href="#layout">代码与实验位置</a><a href="#data">数据与任务</a>
+      <a href="#models">模型与Adapter</a><a href="#continual">持续学习</a><a href="#metrics">指标与门控</a>
+      <a href="#audit">审计与重跑</a><a href="#talk">汇报提纲</a>
+    </nav>
+    <main>
+      <section id="overview">
+        <h2>1. 项目在解决什么问题</h2>
+        <p class="lead">核心问题是：预训练时间序列模型能否从股票过去的行情中提取有用信息，预测未来收益；当市场规律改变时，轻量模型能否利用已经成熟的新标签持续调整。</p>
+        <div class="flow" aria-label="项目主流程">
+          <div class="flow-row">
+            <div class="flow-box active">历史股票行情<br>价格、成交量等</div><div class="arrow">→</div>
+            <div class="flow-box">样本构造<br>过去 90 日 → 未来 10 日</div><div class="arrow">→</div>
+            <div class="flow-box active">预训练模型<br>Kronos / Chronos-2 / TimesFM</div>
+          </div>
+          <div class="down">↓</div>
+          <div class="flow-row">
+            <div class="flow-box">Zero-shot 预测<br>直接使用预训练模型</div><div class="arrow">→</div>
+            <div class="flow-box active">轻量适配<br>Linear / Adapter / Ranking Head</div><div class="arrow">→</div>
+            <div class="flow-box">横截面评价<br>IC、RankIC、分组收益</div>
+          </div>
+          <div class="down">↓</div>
+          <div class="flow-two">
+            <div class="flow-box active">持续学习<br>成熟标签 + 历史回放</div><div class="arrow">→</div>
+            <div class="flow-box">候选模型验收<br>通过门控后用于下一阶段</div>
+          </div>
+        </div>
+        <div class="callout info"><strong>研究边界：</strong>Chronos-2 和 TimesFM 3.0 在仓库中有独立 CPU 零样本实验目录；CSI300 Adapter / Continual ABC 主要基于预先缓存的 Kronos 隐藏特征，不应把它们描述成持续微调 Chronos 或 TimesFM。</div>
+      </section>
+
+      <section id="layout">
+        <h2>2. 代码和实验结果放在哪里</h2>
+        <table>
+          <thead><tr><th>内容</th><th>项目路径</th><th>作用</th></tr></thead>
+          <tbody>
+            <tr><td>Chronos-2 CPU 零样本</td><td><code>chronos2/</code><br><code>docs/cpu_zero_shot_csi300.md</code></td><td>Chronos-2 独立环境、运行入口、日志与结果。</td></tr>
+            <tr><td>TimesFM 3.0 CPU 零样本</td><td><code>timesfm3/</code><br><code>docs/cpu_zero_shot_csi300.md</code></td><td>TimesFM 独立环境、权重记录、运行日志与结果。</td></tr>
+            <tr><td>Kronos / 主实验脚本</td><td><code>scripts/experiments/</code></td><td>集中存放零样本、Adapter、Continual ABC、回测等运行入口。</td></tr>
+            <tr><td>CSI300 对齐对照</td><td><code>experiments/csi300_aligned/models/</code></td><td>zero-shot、linear head、Adapter、Adapter continual、ABC 等同口径对照。</td></tr>
+            <tr><td>持续学习公共逻辑</td><td><code>continual_abcs/</code></td><td>面板构造、排序头、回放、更新和组合评估等可复用模块。</td></tr>
+            <tr><td>文档与可视化</td><td><code>docs/</code>、<code>results/</code>、<code>figures/</code></td><td>协议和审计文档、可浏览结果页、图表生成脚本。</td></tr>
+          </tbody>
+        </table>
+        <p>相关运行入口包括 <code>run_adapter_continual_csi300_90x10.py</code>、<code>run_continual_csi300_abc_experiment.py</code>、对应 CSI800 版本，以及 <code>run_kronos_csi300_paper_zero_shot.py</code>。</p>
+      </section>
+
+      <section id="data">
+        <h2>3. 数据怎么变成训练样本</h2>
+        <p>CSI300 对齐主实验采用按时间切分的股票日期面板。每条样本对应一只股票在一个预测日的输入与未来标签。主口径使用 90 个真实交易日作为历史窗口，预测后续 10 个交易日。</p>
+        <table>
+          <thead><tr><th>字段/概念</th><th>通俗解释</th><th>作用</th></tr></thead>
+          <tbody>
+            <tr><td><code>as_of_date</code></td><td>做出预测的日期</td><td>决定模型当时可以使用哪些信息。</td></tr>
+            <tr><td>输入窗口</td><td>预测日前 90 个交易日</td><td>描述股票近期的历史走势。</td></tr>
+            <tr><td><code>label_start_date</code> / <code>label_end_date</code></td><td>未来 10 日标签的开始与结束</td><td>判断标签是否已经完全揭晓。</td></tr>
+            <tr><td>目标收益</td><td>未来各日相对当前收盘价的收益</td><td>训练回归头或计算排序目标。</td></tr>
+            <tr><td><code>hidden</code></td><td>Kronos 对输入窗口形成的 512 维表示</td><td>供 Adapter 或预测头继续学习。</td></tr>
+          </tbody>
+        </table>
+        <div class="math">r<sub>h</sub> = P<sub>h</sub> / P<sub>0</sub> − 1；样本路径信号 = (r<sub>1</sub> + … + r<sub>10</sub>) / 10；终点信号 = r<sub>10</sub></div>
+        <div class="callout warn"><strong>时间边界：</strong>模型在预测日只能看过去。未来标签只有到 <code>label_end_date</code> 后才成熟；持续更新必须满足 <code>as_of_date &lt; update_date</code> 且 <code>label_end_date &lt;= update_date</code>，否则会泄漏未来信息。</div>
+      </section>
+
+      <section id="models">
+        <h2>4. 模型对照与 Adapter 结构</h2>
+        <div class="grid">
+          <div class="panel"><h3>Zero-shot</h3><p>直接调用预训练模型预测，不使用本项目训练出来的预测头。Chronos-2 和 TimesFM 3.0 的 CPU 实验属于独立零样本基线。</p></div>
+          <div class="panel"><h3>Linear / Ranking Head</h3><p>在 Kronos 缓存特征上训练较小的预测头。线性头主要拟合数值；排序头重点学习同一天股票之间的相对顺序。</p></div>
+          <div class="panel"><h3>Prediction Adapter</h3><p>在隐藏特征上增加小型可训练模块，改变表示后输出预测路径。Backbone 隐藏特征缓存固定，不在这套持续实验里反向更新 Kronos。</p></div>
+          <div class="panel"><h3>Continual ABC</h3><p>A 是原始信号对照，B 是测试前训练后冻结的排序头，C 是测试期间按计划持续更新的头。持续更新主体是 C。</p></div>
+        </div>
+        <h3>Adapter 的前向计算</h3>
+        <pre>h (512维)
+  → LayerNorm
+  → Linear(512 → 64)
+  → GELU
+  → Dropout(p=0.1)
+  → Linear(64 → 512)
+  → 与输入 h 残差相加
+  → Linear(512 → 10)，输出未来10步</pre>
+        <div class="math">z = γ ⊙ (h − μ) / √(σ² + ε) + β</div>
+        <div class="math">Adapter(h) = h + W<sub>up</sub> Dropout(GELU(W<sub>down</sub> z + b<sub>down</sub>)) + b<sub>up</sub></div>
+        <div class="math">ŷ = W<sub>head</sub> Adapter(h) + b<sub>head</sub></div>
+        <p>LayerNorm 的 γ、β 和两层 Linear 的权重、偏置是可训练参数；GELU、Dropout、残差连接本身没有训练参数。Adapter 的上投影初始化为零，使开始时 Adapter 分支对表示的改动为零。</p>
+        <h3>训练目标</h3>
+        <div class="math">L = L<sub>SmoothL1</sub>(ŷ, y) + λ<sub>rank</sub> L<sub>pairwise-rank</sub>，当前 λ<sub>rank</sub> 默认 0.2</div>
+        <p>Smooth L1 让预测收益数值接近真实收益；pairwise 排序损失鼓励真实收益较高的股票获得更高预测分数。训练使用 AdamW、梯度裁剪，并在验证集上保留本轮表现最好的 epoch。</p>
+      </section>
+
+      <section id="continual">
+        <h2>5. 持续学习：什么时候更新、拿什么更新</h2>
+        <p class="lead">持续学习不是每天拿当天结果训练，而是在新标签真正成熟后，定期把新信息加入训练，让模型尝试适应变化，同时用历史数据降低遗忘。</p>
+        <div class="flow" aria-label="持续学习更新循环">
+          <div class="flow-row">
+            <div class="flow-box">月末交易日<br>先用现有模型预测</div><div class="arrow">→</div>
+            <div class="flow-box active">筛选成熟标签<br>只用更新日已知结果</div><div class="arrow">→</div>
+            <div class="flow-box">构造回放集<br>近期 + 历史 + 成熟新数据</div>
+          </div>
+          <div class="down">↓</div>
+          <div class="flow-row">
+            <div class="flow-box">复制当前 Champion</div><div class="arrow">→</div>
+            <div class="flow-box active">训练 Challenger<br>最多若干 epoch</div><div class="arrow">→</div>
+            <div class="flow-box">固定验证集评估</div>
+          </div>
+          <div class="down">↓</div>
+          <div class="flow-two">
+            <div class="flow-box active">通过门控：晋升为新版本</div><div class="arrow">→</div>
+            <div class="flow-box">未通过：丢弃候选，旧版本继续</div>
+          </div>
+          <div class="down">↓</div>
+          <div class="flow-box">新版本从下一个测试交易日开始使用</div>
+        </div>
+        <table>
+          <thead><tr><th>更新概念</th><th>本项目做法</th><th>为什么这样做</th></tr></thead>
+          <tbody>
+            <tr><td>更新节奏</td><td>测试期每月最后一个交易日更新</td><td>模拟定期模型维护，而不是每天剧烈调整。</td></tr>
+            <tr><td>Test-then-train</td><td>更新日先预测，再训练；新模型下一交易日生效</td><td>保证当天预测没有使用当天之后的信息。</td></tr>
+            <tr><td>成熟标签</td><td>预测日期早于更新日，且标签结束日不晚于更新日</td><td>确保目标收益在更新时确实已知。</td></tr>
+            <tr><td>Replay 回放</td><td>最多 120,000 条；目标为近期 24 个月约 70%，较早历史约 30%，历史部分按年份分层抽样</td><td>兼顾近期适应性与旧规律，减少灾难性遗忘。</td></tr>
+            <tr><td>Warm start</td><td>从当前模型复制出候选模型继续训练</td><td>保留已有知识；失败候选可丢弃。</td></tr>
+            <tr><td>模型验收</td><td>候选在固定验证集通过对应门控后才替换当前模型</td><td>避免只因训练集损失变好就上线。</td></tr>
+          </tbody>
+        </table>
+        <h3>5.1 什么时候触发更新：月末日历条件</h3>
+        <p>代码先把测试集中的交易日按先后排列为 <i>d</i><sub>1</sub>, …, <i>d</i><sub>T</sub>。如果某个日期之后的下一个测试交易日已经进入新月份，就把当前日期定为更新日：</p>
+        <div class="math">U = { d<sub>i</sub> : month(d<sub>i</sub>) ≠ month(d<sub>i+1</sub>) }，i = 1, …, T−1</div>
+        <p>因此“月末”指该测试交易日序列中的最后一个交易日，不是固定的每月 30 日或 31 日。测试区间最后一天若后面没有下一个测试日期，代码不会仅凭它是区间终点额外触发一次更新。</p>
+        <div class="callout info"><strong>日期例子：</strong>假设 8 月最后一个测试交易日是 8 月 29 日，下一测试交易日是 9 月 1 日。模型先用当前版本预测 8 月 29 日；预测完成后才检查成熟标签并尝试更新；如果候选通过门控，从 9 月 1 日开始使用新版本。</div>
+
+        <h3>5.2 哪些新数据可以用：标签成熟条件</h3>
+        <p>令样本 <i>j</i> 的预测日为 <i>a</i><sub>j</sub>、未来标签结束日为 <i>e</i><sub>j</sub>，更新日为 <i>u</i>。该样本可以进入更新数据的必要条件是：</p>
+        <div class="math">M(u) = { j : a<sub>j</sub> &lt; u 且 e<sub>j</sub> ≤ u }</div>
+        <p>新成熟数据是这次更新相较上次新增的成熟样本：<span class="math">N(u) = M(u) \ M<sub>seen</sub></span>。若 <i>N(u)</i> 为空，脚本跳过本次训练。这个判定同时排除“预测日期在更新日或之后”的样本，以及未来 10 日标签尚未结束的样本。</p>
+
+        <h3>5.3 回放集怎样组成</h3>
+        <p>每次更新都从可用的训练历史和已经成熟的测试样本组成池子，再按标签结束日划分近期与较早历史：</p>
+        <div class="math">P(u) = P<sub>train</sub> ∪ M(u)，且所有样本满足 e<sub>j</sub> ≤ u</div>
+        <div class="math">近期 R(u) = { j ∈ P(u) : e<sub>j</sub> ≥ u − 24 个月 }</div>
+        <div class="math">目标配额：n<sub>recent</sub> ≈ 0.70K，n<sub>history</sub> ≈ 0.30K，K = min(120,000, |P(u)|)</div>
+        <p>近期样本随机抽取；历史样本按标签结束年份分层抽取。70/30 是目标比例：如果某一侧可用样本不足，空出的名额会优先补给另一侧，所以实际比例可能不同。</p>
+
+        <h3>5.4 从当前模型训练候选模型</h3>
+        <p>把当前参数记为 θ<sub>t</sub>。候选模型从 θ<sub>t</sub> 的副本开始，在回放集上训练 Adapter 与预测头：</p>
+        <div class="math">θ<sub>cand</sub><sup>(0)</sup> = θ<sub>t</sub>；　L = L<sub>SmoothL1</sub>(ŷ, y) + 0.2 L<sub>rank</sub></div>
+        <p>每个 epoch 后在固定验证集计算验证指标，并保留本轮训练中指标最好的参数，而不是无条件采用最后一个 epoch。Adapter 默认每次更新最多训练 2 个 epoch；早停耐心值为 2。可把优化过程概括为：</p>
+        <div class="math">θ<sub>cand</sub> = arg max<sub>θ ∈ checkpoints(训练过程)</sub> RankIC<sub>val</sub>(θ)</div>
+
+        <h3>5.5 门控公式：候选模型何时接替当前模型</h3>
+        <p><strong>Adapter 持续学习：</strong>若候选验证 RankIC 有限且不低于当前 Champion，就接受候选；否则拒绝。</p>
+        <div class="math">接受 Adapter 候选 ⇔ finite(RankIC<sub>cand</sub>) 且 RankIC<sub>cand</sub> ≥ RankIC<sub>champion</sub></div>
+        <p><strong>Continual ABC 的 MAE 门控版本：</strong>当前严格版本要求候选验证 MAE 有限且不高于 Champion；默认容忍度为 0。</p>
+        <div class="math">接受 ABC 候选 ⇔ finite(MAE<sub>cand</sub>) 且 MAE<sub>cand</sub> ≤ MAE<sub>champion</sub></div>
+        <p>通过后才更新模型版本、保存 checkpoint，并把候选设为新的 Champion；失败时当前模型参数和版本保持不变。RankIC 与 MAE 是不同目标：前者考察股票排序，后者考察数值误差，所以两种门控不能混成一个结论。</p>
+        <div class="callout warn"><strong>本项目的 Adapter 结果状态：</strong>Adapter 门控依赖验证 RankIC。该计算曾存在预测展平和行序对齐问题，相关 CSI300/CSI800 运行脚本现已修复；旧实验的 epoch 选择与更新接受记录应由修复后的完整重跑重新产生。</div>
+        <div class="callout info"><strong>形象理解：</strong>当前线上模型是“冠军模型”，更新出来的是“挑战者”。挑战者在同一套验证题上至少达到规定标准，才接替冠军；否则继续使用原模型。</div>
+      </section>
+
+      <section id="metrics">
+        <h2>6. 如何判断预测或更新有没有帮助</h2>
+        <table>
+          <thead><tr><th>指标</th><th>回答的问题</th><th>解读方向</th></tr></thead>
+          <tbody>
+            <tr><td>MAE / Smooth L1</td><td>预测数值离真实收益有多远？</td><td>通常越低越好。</td></tr>
+            <tr><td>IC</td><td>预测分数与真实收益的线性相关程度如何？</td><td>通常越高越好。</td></tr>
+            <tr><td>RankIC</td><td>预测的股票排序与真实排序是否一致？</td><td>越高表示横截面排序越一致。</td></tr>
+            <tr><td>Q5−Q1</td><td>预测最高组的真实收益是否高于最低组？</td><td>反映简单分组区分能力，不等于扣成本后的收益。</td></tr>
+            <tr><td>组合回测</td><td>按指定持仓与交易规则后，收益、回撤和成本如何？</td><td>必须结合交易成本、换手和回撤解读。</td></tr>
+          </tbody>
+        </table>
+        <p>数值预测更准不必然代表排序更好；排序更好也不必然代表扣除交易成本后盈利。汇报时应把预测指标与策略回测分开陈述。</p>
+        <p>ABC 实验存在 MAE 门控变体；Adapter 持续脚本的设计门控是验证集 RankIC。具体结果必须以对应运行的 <code>run_config.json</code>、<code>update_log.csv</code> 和模型代码为准。</p>
+      </section>
+
+      <section id="audit">
+        <h2>7. 当前审计结论与实验状态</h2>
+        <div class="callout alert"><strong>Adapter RankIC 修复：</strong>CSI300 与 CSI800 Adapter 持续运行脚本原先把 (N,10) 预测直接展平，却将标签压成每样本一个 10 日均值；验证预测还按日期批次拼接，可能与元数据原始行序错位。现在脚本改为每行保留原样本位置，并用每条样本的 10 步均值计算横截面 RankIC，同时对形状和索引做检查。</div>
+        <p>修复涉及：</p>
+        <ul>
+          <li><code>scripts/experiments/run_adapter_continual_csi300_90x10.py</code></li>
+          <li><code>scripts/experiments/run_adapter_continual_csi800_90x10.py</code></li>
+          <li>回归测试：<code>tests/test_adapter_rankic.py</code></li>
+        </ul>
+        <p>两份脚本与测试通过 Python 语法编译检查；当前 CPU Python 环境缺少 NumPy、pandas、PyTorch，新增数值测试尚未执行。Adapter 旧实验用验证 RankIC 选择 epoch 和接受更新，因此旧版本选择与接受记录应视为待复核；要得到可信的新持续学习结果，应从初始 checkpoint 完整重跑 Adapter，并重算其下游预测评估。</p>
+        <p>ABC 使用每只股票一个标量预测分数，其 RankIC 路径与 Adapter 的 10 步向量输出不同；本次审计没有发现同样的展平形状问题，代码已做静态核查，但这不等于全量端到端重跑验证。</p>
+        <div class="callout warn"><strong>运行环境建议：</strong>本机 i7-10700 有 8 核、16 线程，但当前 Python 环境没有运行依赖。曾有 Adapter GPU 运行记录约 354 秒；不能据此可靠换算 CPU 用时。完整重跑优先使用原远程 GPU 实验环境，且使用新的输出目录保留旧结果作对照。</div>
+      </section>
+
+      <section id="talk">
+        <h2>8. 向导师汇报时可按这条主线讲</h2>
+        <ol>
+          <li><strong>研究问题：</strong>检验预训练时间序列表示能否帮助 A 股未来收益预测，并研究市场变化下轻量模型的持续适应。</li>
+          <li><strong>数据协议：</strong>按股票与日期构造历史 90 日、未来 10 日样本，严格按时间切分，并用标签结束日约束可用信息。</li>
+          <li><strong>方法对照：</strong>从原始预训练模型零样本，到线性头、Adapter、排序头；再对比测试期冻结与持续更新。</li>
+          <li><strong>持续机制：</strong>月末先预测，等待标签成熟，将近期和分层历史样本回放训练候选模型，通过固定验证门控后让新版本从下一交易日生效。</li>
+          <li><strong>评价维度：</strong>用误差衡量数值预测，用 RankIC 衡量股票排序，用包含成本的回测检验策略结果。</li>
+          <li><strong>当前可信度：</strong>Adapter 的 RankIC 门控实现已修复，但需要重跑后才能更新关于 Adapter 持续学习有效性的实验结论；将 ABC 结果与 Adapter 结果分开说明。</li>
+        </ol>
+        <h3>建议的收尾表述</h3>
+        <div class="callout">“目前项目搭建了从预训练模型零样本预测、轻量适配到测试期持续更新的对照框架。持续更新通过成熟标签、历史回放和验证门控控制时间泄漏与更新风险。最近审计发现 Adapter 实验的验证 RankIC 计算存在对齐问题，代码已修复，后续会在原 GPU 环境从初始模型重跑，再据新结果判断持续适配是否带来稳定收益。”</div>
+      </section>
+    </main>
+    <div class="footer">内容按项目仓库代码、实验目录和对话中已核实信息整理。路径均相对仓库根目录；具体数值和结果请以对应实验的配置、日志及摘要文件为准。</div>
+  </div>
+</body>
+</html>

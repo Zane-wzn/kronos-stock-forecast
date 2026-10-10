@@ -1,7 +1,7 @@
 # 持续学习 ABC 实验时间泄漏审计
 
 **审计日期**：2026-08-25  
-**审计对象**：`D:\Desktop\时间序列预测\股票预测\train3\kronos_csi300_continual_abc_abcd_strict90x10_20260825_seed100_v3\run`  
+**审计对象**：`experiments/csi300_aligned/models/continual_abc/`
 **核心问题**：是否把尚未完成测试、或标签尚未成熟的未来测试样本放入训练集。
 
 ## 总体结论：PASS（无须因未来测试集泄漏而重跑）

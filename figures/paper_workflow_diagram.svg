@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1150" viewBox="0 0 1800 1150">
+  <defs>
+    <linearGradient id="title" x1="0" x2="1"><stop offset="0" stop-color="#12355B"/><stop offset="1" stop-color="#0B7285"/></linearGradient>
+    <linearGradient id="input" x1="0" x2="1"><stop offset="0" stop-color="#E5F3FF"/><stop offset="1" stop-color="#CDEBFF"/></linearGradient>
+    <linearGradient id="model" x1="0" x2="1"><stop offset="0" stop-color="#E4ECFF"/><stop offset="1" stop-color="#D8D1FF"/></linearGradient>
+    <linearGradient id="eval" x1="0" x2="1"><stop offset="0" stop-color="#E8F7F1"/><stop offset="1" stop-color="#D6F1E7"/></linearGradient>
+    <linearGradient id="output" x1="0" x2="1"><stop offset="0" stop-color="#FFF4D6"/><stop offset="1" stop-color="#FFE4A8"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#17324d" flood-opacity=".13"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#32566E"/></marker>
+    <style>
+      .sans{font-family:Arial,'Microsoft YaHei','Noto Sans CJK SC',sans-serif;fill:#16324F}
+      .title{font-size:38px;font-weight:700;fill:#fff;letter-spacing:1px}
+      .subtitle{font-size:18px;fill:#D9F1F4}
+      .section{font-size:20px;font-weight:700;fill:#244B62;letter-spacing:1px}
+      .head{font-size:25px;font-weight:700;fill:#16324F}
+      .body{font-size:18px;fill:#35556D}
+      .small{font-size:16px;fill:#4A6577}
+      .tiny{font-size:14px;fill:#587183}
+      .box{stroke:#7EA3B8;stroke-width:2}
+      .arrow{stroke:#32566E;stroke-width:3;fill:none;marker-end:url(#arrow)}
+      .dash{stroke:#5E8BA2;stroke-width:2.5;stroke-dasharray:8 8;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1800" height="1150" fill="#F7FAFC"/>
+  <rect x="45" y="35" width="1710" height="130" rx="28" fill="url(#title)" filter="url(#shadow)"/>
+  <text x="900" y="91" text-anchor="middle" class="sans title">Kronos 股票时间序列预测与截面评估流程</text>
+  <text x="900" y="130" text-anchor="middle" class="sans subtitle">Rolling-window evaluation with Kronos, Naive baseline, and cross-sectional ranking metrics</text>
+
+  <text x="90" y="220" class="sans section">01  数据与窗口构造</text>
+  <text x="690" y="220" class="sans section">02  预测分支</text>
+  <text x="1280" y="220" class="sans section">03  评估与产出</text>
+  <line x1="60" y1="238" x2="1740" y2="238" stroke="#D1E0E8" stroke-width="2"/>
+
+  <rect x="80" y="285" width="315" height="165" rx="22" fill="url(#input)" class="box" filter="url(#shadow)"/>
+  <text x="237" y="329" text-anchor="middle" class="sans head">股票 CSV 数据</text>
+  <text x="237" y="366" text-anchor="middle" class="sans body">OHLCVA 日线序列</text>
+  <text x="237" y="398" text-anchor="middle" class="sans small">date · open · high · low</text>
+  <text x="237" y="424" text-anchor="middle" class="sans small">close · volume · amount</text>
+
+  <path d="M395 368 H470" class="arrow"/>
+
+  <rect x="475" y="285" width="315" height="165" rx="22" fill="url(#input)" class="box" filter="url(#shadow)"/>
+  <text x="632" y="329" text-anchor="middle" class="sans head">清洗与滑动窗口</text>
+  <text x="632" y="366" text-anchor="middle" class="sans body">lookback = 400</text>
+  <text x="632" y="398" text-anchor="middle" class="sans small">历史窗口 → 未来 20 天</text>
+  <text x="632" y="424" text-anchor="middle" class="sans small">按真实日期对齐评估</text>
+
+  <path d="M790 350 H930 V300 H1010" class="arrow"/>
+  <path d="M790 385 H930 V510 H1010" class="arrow"/>
+  <text x="876" y="316" class="sans tiny">same window</text>
+  <text x="872" y="474" class="sans tiny">same window</text>
+
+  <rect x="1010" y="255" width="315" height="190" rx="22" fill="url(#model)" class="box" filter="url(#shadow)"/>
+  <circle cx="1060" cy="302" r="24" fill="#5964C5"/><text x="1060" y="310" text-anchor="middle" class="sans" style="font-size:23px;fill:#fff;font-weight:700">K</text>
+  <text x="1165" y="307" text-anchor="middle" class="sans head">Kronos 预测</text>
+  <text x="1167" y="350" text-anchor="middle" class="sans body">Tokenizer → Transformer</text>
+  <text x="1167" y="382" text-anchor="middle" class="sans small">OHLCVA → token sequence</text>
+  <text x="1167" y="414" text-anchor="middle" class="sans small">→ 未来 20 天价格路径</text>
+
+  <rect x="1010" y="475" width="315" height="165" rx="22" fill="url(#model)" class="box" filter="url(#shadow)"/>
+  <circle cx="1060" cy="522" r="24" fill="#0B7285"/><text x="1060" y="530" text-anchor="middle" class="sans" style="font-size:23px;fill:#fff;font-weight:700">N</text>
+  <text x="1165" y="527" text-anchor="middle" class="sans head">Naive 基线</text>
+  <text x="1167" y="570" text-anchor="middle" class="sans body">价格持平预测</text>
+  <text x="1167" y="602" text-anchor="middle" class="sans small">成交量：近期中位数</text>
+
+  <path d="M1325 350 H1400 V465 H1460" class="arrow"/>
+  <path d="M1325 557 H1400 V465 H1460" class="arrow"/>
+  <rect x="1460" y="380" width="260" height="170" rx="22" fill="url(#output)" class="box" filter="url(#shadow)"/>
+  <text x="1590" y="424" text-anchor="middle" class="sans head">预测明细表</text>
+  <text x="1590" y="460" text-anchor="middle" class="sans small">pred_close / actual_close</text>
+  <text x="1590" y="488" text-anchor="middle" class="sans small">as_of_date / step / stock</text>
+  <text x="1590" y="516" text-anchor="middle" class="sans small">预测收益率</text>
+
+  <path d="M1590 550 V690" class="arrow"/>
+  <rect x="85" y="700" width="390" height="270" rx="25" fill="url(#eval)" class="box" filter="url(#shadow)"/>
+  <text x="280" y="750" text-anchor="middle" class="sans head">误差与方向评估</text>
+  <text x="125" y="800" class="sans body">• MAE / RMSE / MAPE / R²</text>
+  <text x="125" y="840" class="sans body">• 涨跌方向准确率</text>
+  <text x="125" y="880" class="sans body">• 每窗口、每预测步聚合</text>
+  <text x="125" y="920" class="sans small">衡量价格拟合与方向判断</text>
+
+  <rect x="535" y="700" width="390" height="270" rx="25" fill="url(#eval)" class="box" filter="url(#shadow)"/>
+  <text x="730" y="750" text-anchor="middle" class="sans head">横截面排序评估</text>
+  <text x="575" y="800" class="sans body">• IC / RankIC</text>
+  <text x="575" y="840" class="sans body">• TopK / BottomK 收益</text>
+  <text x="575" y="880" class="sans body">• 同一 as_of_date + step</text>
+  <text x="575" y="920" class="sans small">比较同日股票信号的排序能力</text>
+
+  <rect x="985" y="700" width="390" height="270" rx="25" fill="url(#output)" class="box" filter="url(#shadow)"/>
+  <text x="1180" y="750" text-anchor="middle" class="sans head">汇总输出</text>
+  <text x="1025" y="800" class="sans body">• rolling_predictions_all.csv</text>
+  <text x="1025" y="840" class="sans body">• metrics_summary_by_asof.csv</text>
+  <text x="1025" y="880" class="sans body">• cross_section_metrics.csv</text>
+  <text x="1025" y="920" class="sans body">• portfolio_metrics + Markdown</text>
+
+  <path d="M1590 690 H280 V700" class="dash"/>
+  <path d="M1590 690 H730 V700" class="dash"/>
+  <path d="M1590 690 H1180 V700" class="dash"/>
+  <text x="1595" y="670" class="sans tiny">统一评估入口</text>
+
+  <rect x="85" y="1020" width="1290" height="72" rx="18" fill="#EAF1F5" stroke="#B8CCD7" stroke-width="2"/>
+  <text x="730" y="1065" text-anchor="middle" class="sans body">关键原则：窗口可按股票独立构造；横截面指标必须按真实预测日期与未来步长对齐</text>
+  <text x="1680" y="1065" text-anchor="end" class="sans tiny">Paper workflow figure</text>
+</svg>

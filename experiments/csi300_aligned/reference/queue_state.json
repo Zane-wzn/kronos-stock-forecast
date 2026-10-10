@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "dataset": "csi300",
+  "market": "CSI300",
+  "output_root": "D:\\Desktop\\时间序列预测\\股票预测\\train3\\csi300_csi800_aligned_seed100",
+  "test_start": "2025-07-01",
+  "test_end": "2026-06-05",
+  "seed": 100,
+  "updated_at": "2026-08-28T20:49:13.788999+08:00",
+  "stage": "model_runs_complete",
+  "command": "D:\\Desktop\\时间序列预测\\股票预测\\.venv_kronos\\Scripts\\python.exe -u C:\\Users\\WangZ\\retest_csi800_aligned\\run_adapter_continual_csi300_90x10.py --cache-dir D:\\Desktop\\时间序列预测\\股票预测\\train3\\csi300_csi800_aligned_seed100\\hidden_cache --panel-dir D:\\Desktop\\时间序列预测\\股票预测\\train3\\csi300_csi800_aligned_seed100 --initial-checkpoint D:\\Desktop\\时间序列预测\\股票预测\\train3\\csi300_csi800_aligned_seed100\\experiments\\D_ranking_adapter\\model.pt --output-dir D:\\Desktop\\时间序列预测\\股票预测\\train3\\csi300_csi800_aligned_seed100\\experiments\\adapter_continual --device cuda:0 --seed 100 --batch-size 32 --update-epochs 2 --head-lr 3e-4 --adapter-lr 1e-4 --weight-decay 1e-4 --lambda-rank 0.2 --patience 2 --replay-max-rows 120000 --replay-recent-months 24 --replay-recent-fraction 0.70",
+  "log": "D:\\Desktop\\时间序列预测\\股票预测\\train3\\csi300_csi800_aligned_seed100\\logs\\adapter_continual.log",
+  "experiments": [
+    "A_zero_shot",
+    "B_linear_head",
+    "C_prediction_adapter",
+    "D_ranking_adapter",
+    "continual_ABC",
+    "adapter_continual"
+  ]
+}

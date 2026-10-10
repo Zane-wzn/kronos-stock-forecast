@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "dataset": "yahoo_sp500",
+  "market": "S&P500",
+  "stocks_loaded": 503,
+  "calendar_dates": 1666,
+  "calendar_hash": "2057df5f2d9784c01fedd85fe8bdfd38e12c1ad489f99507450fcbb25ff8dbe2",
+  "test_start": "2025-07-01",
+  "test_end": "2026-06-05",
+  "test_dates": 235,
+  "lookback": 90,
+  "pred_len": 10,
+  "min_cross_section": 30,
+  "dates_by_split": {
+    "train": 1158,
+    "val": 112,
+    "test": 235
+  },
+  "rows_by_split": {
+    "train": 569517,
+    "val": 55888,
+    "test": 117464
+  },
+  "current_constituent_backfill": true,
+  "bias_warning": "survivorship bias and current-constituent look-ahead bias are possible"
+}

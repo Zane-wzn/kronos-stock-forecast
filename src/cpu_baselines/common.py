@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
-REFERENCE = ROOT / 'train3/csi300_csi800_aligned_seed100'
+REFERENCE = ROOT / 'experiments/csi300_aligned/reference'
 DATA = ROOT / 'data/csi300_daily/csi300_daily'
 COVARIATES = ['open', 'high', 'low', 'volume']
 VALUES = ['close', *COVARIATES]

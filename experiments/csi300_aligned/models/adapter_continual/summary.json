@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "method": "frozen_hidden_adapter_head_continual",
+  "seed": 100,
+  "test_dates": 226,
+  "test_rows": 66103,
+  "initial_version": 0,
+  "final_version": 4,
+  "updates": 11,
+  "accepted_updates": 4,
+  "initial_validation_rankic": 0.006977114256743128,
+  "final_champion_validation_rankic": 0.018378228992332848,
+  "elapsed_seconds": 354.0943775177002,
+  "device": "cuda:0"
+}

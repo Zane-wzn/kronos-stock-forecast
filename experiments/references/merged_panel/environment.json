@@ -1,0 +1,7 @@
+{
+  "python": "3.12.13",
+  "pandas": "3.0.1",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git_commit": "e2d33b551e2790ab191881c07414ac582dd1848b"
+}

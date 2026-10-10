@@ -1,0 +1,101 @@
+{
+  "cohort": "CSI800-aligned retest",
+  "window": {
+    "train_end": "2024-12-15",
+    "val_start": "2025-01-02",
+    "val_end": "2025-06-14",
+    "test_start": "2025-07-01",
+    "test_end": "2026-06-05",
+    "lookback": 90,
+    "pred_len": 10,
+    "seed": 100
+  },
+  "datasets": {
+    "CSI800": {
+      "stock_count": 800,
+      "test_dates": 226,
+      "calendar": "China native",
+      "panel_summary": {
+        "stocks_loaded": 800,
+        "test_start": "2025-07-01",
+        "test_end": "2026-06-05",
+        "test_dates": 226,
+        "calendar": "China native"
+      },
+      "stock_manifest_rows": 800,
+      "valid_files": 800
+    },
+    "CSI300": {
+      "stock_count": 300,
+      "test_dates": 226,
+      "calendar": "China native",
+      "panel_summary": {
+        "status": "complete",
+        "dataset": "csi300",
+        "market": "CSI300",
+        "stocks_loaded": 300,
+        "calendar_dates": 2582,
+        "calendar_hash": "e0b1df9e2f0b7f777d93934bd76543f0f60bff87d5f044d35c296e863f3ad185",
+        "test_start": "2025-07-01",
+        "test_end": "2026-06-05",
+        "test_dates": 226,
+        "lookback": 90,
+        "pred_len": 10,
+        "min_cross_section": 30,
+        "dates_by_split": {
+          "train": 2086,
+          "val": 106,
+          "test": 226
+        },
+        "rows_by_split": {
+          "train": 525700,
+          "val": 30889,
+          "test": 66103
+        },
+        "current_constituent_backfill": true,
+        "bias_warning": "survivorship bias and current-constituent look-ahead bias are possible"
+      },
+      "stock_manifest_rows": 300,
+      "valid_files": 300
+    },
+    "S&P500": {
+      "stock_count": 503,
+      "test_dates": 235,
+      "calendar": "US native",
+      "panel_summary": {
+        "status": "complete",
+        "dataset": "yahoo_sp500",
+        "market": "S&P500",
+        "stocks_loaded": 503,
+        "calendar_dates": 1666,
+        "calendar_hash": "2057df5f2d9784c01fedd85fe8bdfd38e12c1ad489f99507450fcbb25ff8dbe2",
+        "test_start": "2025-07-01",
+        "test_end": "2026-06-05",
+        "test_dates": 235,
+        "lookback": 90,
+        "pred_len": 10,
+        "min_cross_section": 30,
+        "dates_by_split": {
+          "train": 1158,
+          "val": 112,
+          "test": 235
+        },
+        "rows_by_split": {
+          "train": 569517,
+          "val": 55888,
+          "test": 117464
+        },
+        "current_constituent_backfill": true,
+        "bias_warning": "survivorship bias and current-constituent look-ahead bias are possible"
+      },
+      "stock_manifest_rows": 503,
+      "valid_files": 503
+    }
+  },
+  "source_file": "C:\\Users\\huawei_wzn\\Desktop\\Desktop\\时间序列预测\\股票预测\\train3\\merged_csi800_csi300_sp500_aligned_seed100\\stock_manifest.csv",
+  "notes": [
+    "当前成分股池回溯，可能存在幸存者偏差",
+    "当前成分股前视偏差可能存在",
+    "交易日历按市场独立处理，不强制日期对齐"
+  ]
+}

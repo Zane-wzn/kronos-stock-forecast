@@ -27,14 +27,14 @@ TEST_START='2025-07-01'
 TEST_END='2026-06-05'
 
 EXPS={
- 'A':'experiments/A_zero_shot',
- 'B':'experiments/B_linear_head',
- 'C':'experiments/C_prediction_adapter',
- 'D':'experiments/D_ranking_adapter',
- 'Continual A':'experiments/continual_ABC',
- 'Continual B':'experiments/continual_ABC',
- 'Continual C':'experiments/continual_ABC',
- 'Adapter + Continual':'experiments/adapter_continual',
+ 'A':'experiments/csi300_aligned/models/zero_shot',
+ 'B':'experiments/csi300_aligned/models/linear_head',
+ 'C':'experiments/csi300_aligned/models/prediction_adapter',
+ 'D':'experiments/csi300_aligned/models/ranking_adapter',
+ 'Continual A':'experiments/csi300_aligned/models/continual_abc',
+ 'Continual B':'experiments/csi300_aligned/models/continual_abc',
+ 'Continual C':'experiments/csi300_aligned/models/continual_abc',
+ 'Adapter + Continual':'experiments/csi300_aligned/models/adapter_continual',
 }
 
 def finite(x):
@@ -128,7 +128,13 @@ def enrich_execution(df,stocks_dir):
     df=df.copy(); need=set(zip(df.as_of_date.astype(str),df.stock.astype(str)))
     rows=[]; stocks=sorted(df.stock.astype(str).unique())
     for stock in stocks:
-        candidates=[stocks_dir/f'{stock}.csv',stocks_dir/f'us_{stock}.csv',stocks_dir/f'{stock.replace('/','_')}.csv',stocks_dir/f'us_{stock.replace('/','_')}.csv']
+        safe_stock = stock.replace('/', '_')
+        candidates = [
+            stocks_dir / f'{stock}.csv',
+            stocks_dir / f'us_{stock}.csv',
+            stocks_dir / f'{safe_stock}.csv',
+            stocks_dir / f'us_{safe_stock}.csv',
+        ]
         fp=next((x for x in candidates if x.exists()),None)
         if fp is None:
             # fallback by code column scan is intentionally not silent

@@ -26,8 +26,8 @@ from continual_abcs.portfolio import PortfolioConfig, backtest_long_only
 
 GROUPS = ("A", "B", "C")
 RUN_NAMES = {
-    "rankic_gate": "continual_ABC",
-    "mae_gate_tol001": "continual_ABC_mae_gate_tol001",
+    "rankic_gate": "continual_abc",
+    "mae_gate_tol001": "continual_abc_mae_gate_tol001",
 }
 
 
@@ -148,7 +148,7 @@ def main() -> None:
     output_dir = args.output_dir
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    reference = pd.read_csv(experiment_root / "B_linear_head" / "predictions.csv")
+    reference = pd.read_csv(experiment_root / "linear_head" / "predictions.csv")
     reference["as_of_date"] = pd.to_datetime(reference["as_of_date"], errors="coerce").dt.normalize()
     reference["stock"] = reference["stock"].astype(str)
     reference = reference[["as_of_date", "stock", "actual_return_1"]].rename(

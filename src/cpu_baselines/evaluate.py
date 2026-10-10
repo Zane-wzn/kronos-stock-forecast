@@ -166,7 +166,7 @@ def evaluate_run(home, panel):
     output = home/'results/evaluation'
     own = pd.read_csv(home/'results/predictions.csv')
     summary = metrics(own, home.name, panel, output/home.name)
-    reference_dir = REFERENCE/'experiments/A_zero_shot/predictions/by_date'
+    reference_dir = REFERENCE/'models/zero_shot/predictions/by_date'
     files = sorted(reference_dir.glob('*.csv'))
     if not files: raise ValueError('Kronos baseline predictions unavailable')
     legacy = legacy_evaluator()

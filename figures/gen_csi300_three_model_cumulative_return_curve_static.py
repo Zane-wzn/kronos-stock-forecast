@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import PercentFormatter
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "results" / "cumulative_return_curves" / "csi300_three_model_cumulative_return_data.json"
-OUT_DIR = ROOT / "results" / "cumulative_return_curves"
+DATA = ROOT / "results" / "cumulative_return_curves" / "csi300" / "csi300_three_model_cumulative_return_data.json"
+OUT_DIR = ROOT / "results" / "cumulative_return_curves" / "csi300"
 data = json.loads(DATA.read_text(encoding="utf-8"))
 
 plt.rcParams.update({

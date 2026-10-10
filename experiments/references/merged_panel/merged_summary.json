@@ -1,0 +1,44 @@
+{
+  "status": "completed_with_audit_findings",
+  "markets": {
+    "CSI800": {
+      "stock_count": 800,
+      "test_dates": 226,
+      "calendar": "China native"
+    },
+    "CSI300": {
+      "stock_count": 300,
+      "test_dates": 226,
+      "calendar": "China native"
+    },
+    "S&P500": {
+      "stock_count": 503,
+      "test_dates": 235,
+      "calendar": "US native"
+    }
+  },
+  "experiments": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "Continual A",
+    "Continual B",
+    "Continual C",
+    "Adapter + Continual"
+  ],
+  "audit_findings": {
+    "portfolio_daily_detail_available": false,
+    "portfolio_daily_detail_reason": "现有来源没有可独立复核的逐日组合持仓/收益记录；组合摘要保留但不伪造逐日明细。",
+    "aer_execution_detail_available": false,
+    "aer_execution_detail_reason": "现有来源没有可独立复核的完整 next_open/next_close、持仓和交易映射；AER 仅显示无法验证。",
+    "stock_level_trace_markets": [
+      "CSI800"
+    ],
+    "stock_level_trace_missing_markets": [
+      "CSI300",
+      "S&P500"
+    ],
+    "stock_level_trace_missing_reason": "这两个市场当前仅有摘要 JSON，没有完整可审计的股票级预测轨迹。"
+  }
+}

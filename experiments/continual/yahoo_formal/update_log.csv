@@ -1,0 +1,4 @@
+update_date,model_version_before,model_version_after,validation_metric,champion_validation_rankic_before,candidate_validation_rankic,champion_validation_rankic_after,validation_tolerance,accepted,decision,matured_test_rows_available,new_matured_test_rows,selected_replay_rows,selected_recent_rows,selected_historical_rows,recent_cutoff,next_test_date
+2026-05-29,0,0,mean_daily_spearman_rankic,-0.0018566915636704228,,-0.0018566915636704228,0.0,False,skipped_no_new_matured_labels,0,0,0,0,0,,2026-06-01
+2026-06-30,0,1,mean_daily_spearman_rankic,-0.0018566915636704228,0.005392681334676691,0.005392681334676691,0.0,True,accepted,7014,7014,120000,7014,112986,2024-06-30,2026-07-01
+2026-07-31,1,1,mean_daily_spearman_rankic,0.005392681334676691,-0.00014708738350352325,0.005392681334676691,0.0,False,rejected_validation_rankic_gate,18036,11022,120000,18036,101964,2024-07-31,2026-08-03

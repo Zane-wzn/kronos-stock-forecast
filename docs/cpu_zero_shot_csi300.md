@@ -30,7 +30,7 @@ TimesFM 权重的 LICENSE 保存在 weights/LICENSE；仅按非商业、非生�
 ## 数据口径
 
 - 输入 data/csi300_daily/csi300_daily，300 CSV；SHA256 必须与历史 dataset_manifest 一致。
-- 参考 train3/csi300_csi800_aligned_seed100；读取其交易日历、有效股票日期对、日期窗口及 raw_signal。
+- 参考 `experiments/csi300_aligned/reference`；读取其交易日历、有效股票日期对、日期窗口及 raw_signal。
 - 训练截止 2024-12-15；验证 2025-01-02—2025-06-14；测试信号日 2025-07-01—2026-06-05。
 - 这些是历史区间对齐记录，**不会在训练期或验证期拟合本实验模型**。
 - 90 个真实交易日，预测其后 10 个真实交易日。最后信号日的标签允许在测试信号截止日之后。

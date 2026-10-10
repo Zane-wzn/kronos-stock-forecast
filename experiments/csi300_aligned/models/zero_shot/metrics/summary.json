@@ -1,0 +1,64 @@
+{
+  "completed_dates": 226,
+  "date_end": "2026-06-05",
+  "date_start": "2025-07-01",
+  "endpoint_signal_vs_endpoint_label": {
+    "pearson_ic": {
+      "annualized_ir_sqrt252": -5.716663245372937,
+      "count": 226,
+      "ir_mean_over_std": -0.3601159351514334,
+      "mean": -0.07430247390470764,
+      "median": -0.1210745976295587,
+      "newey_west_lag9_mean_tstat": -2.1671782277019607,
+      "positive_ratio": 0.3230088495575221,
+      "std": 0.2063293141234155
+    },
+    "spearman_rankic": {
+      "annualized_ir_sqrt252": -3.2630681936426362,
+      "count": 226,
+      "ir_mean_over_std": -0.205553975033885,
+      "mean": -0.0368899994056817,
+      "median": -0.06425827196286762,
+      "newey_west_lag9_mean_tstat": -1.3069458789003554,
+      "positive_ratio": 0.3805309734513274,
+      "std": 0.17946624189388938
+    }
+  },
+  "interpretation": "paper-parameter-aligned, current-constituent approximation; not strict Table 10 reproduction",
+  "path_mean_signal_vs_symmetric_label": {
+    "pearson_ic": {
+      "annualized_ir_sqrt252": -4.954485841938968,
+      "count": 226,
+      "ir_mean_over_std": -0.3121032717133566,
+      "mean": -0.06242670047667534,
+      "median": -0.09303383669938117,
+      "newey_west_lag9_mean_tstat": -2.02476375877083,
+      "positive_ratio": 0.35398230088495575,
+      "std": 0.20001937222244043
+    },
+    "spearman_rankic": {
+      "annualized_ir_sqrt252": -3.4821907301189348,
+      "count": 226,
+      "ir_mean_over_std": -0.21935739737116988,
+      "mean": -0.03669685497727167,
+      "median": -0.05577960348069128,
+      "newey_west_lag9_mean_tstat": -1.524999781315974,
+      "positive_ratio": 0.37610619469026546,
+      "std": 0.16729253454433413
+    }
+  },
+  "stocks_per_date": {
+    "annualized_ir_sqrt252": 4806.804485058817,
+    "count": 226,
+    "ir_mean_over_std": 302.8002206756076,
+    "mean": 298.1858407079646,
+    "median": 298.0,
+    "newey_west_lag9_mean_tstat": 1608.1413299644605,
+    "positive_ratio": 1.0,
+    "std": 0.9847609755457001
+  },
+  "top200_current_pool_approximation": {
+    "mean_topn_excess_endpoint_return": -0.0030358806641717,
+    "mean_topn_excess_path_mean_return": -0.0015909721779232605
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "status": "completed_with_audit_findings",
+  "generated_at": "2026-08-31T20:32:06.274978+08:00",
+  "checks": {
+    "three_markets": true,
+    "eight_experiments": true,
+    "path_endpoint_rows": true,
+    "test_window": true,
+    "stock_manifest_1603": true,
+    "csi800_horizons_recomputed": true,
+    "trace_has_horizons": true,
+    "no_silent_na": true,
+    "sources_real_or_summary": true,
+    "original_unchanged": true,
+    "embedded_json_matches_independent": true,
+    "artifact_exists": true,
+    "utf8_decodable": true,
+    "replacement_character_count": 0,
+    "utf8_clean": true,
+    "metric_status_values_normalized": true,
+    "unavailable_reasons_present": true,
+    "portfolio_daily_detail_available": false,
+    "aer_execution_detail_available": false,
+    "stock_level_trace_complete_all_markets": false,
+    "all_passed": false
+  },
+  "artifact_replacement_count": 0,
+  "decode_errors": [],
+  "notes": [
+    "CSI800 metrics were recomputed from formal raw predictions.",
+    "CSI300/S&P500 metrics were imported from the real aligned retest JSON because market metric CSV files are absent.",
+    "Portfolio daily and AER execution details are represented by explicit availability markers where independently auditable execution data is unavailable; no summary values were copied into daily detail.",
+    "predictions_long.csv has complete stock-level trace for CSI800; CSI300/S&P500 stock-level trace is unavailable from the current source artifacts."
+  ],
+  "original_protection": [
+    {
+      "path": "C:\\Users\\huawei_wzn\\Desktop\\Desktop\\时间序列预测\\股票预测\\all_experiments_dashboard.html",
+      "sha256": "12aceaa2727fbb215bcc8cdb9dbcd8af6875f36cf5743c53b5e6b80a8b17a7b3",
+      "mtime_ns": 1787890836162316900
+    },
+    {
+      "path": "C:\\Users\\huawei_wzn\\Desktop\\Desktop\\时间序列预测\\股票预测\\all_experiments_dashboard_data.json",
+      "sha256": "6a5a995bbf5ec9a0111175be6220aee83023b336c12ca444457b2c94726c1350",
+      "mtime_ns": 1787890779031245700
+    }
+  ]
+}

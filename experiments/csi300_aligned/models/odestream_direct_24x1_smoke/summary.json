@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "method": "ODEStream_direct",
+  "rows": 4,
+  "stocks": 2,
+  "dates": 2,
+  "warmup_mse_normalized": [
+    1.2304115891456604
+  ],
+  "validation": {
+    "rows": 4,
+    "mse_normalized": 0.35837458255458426,
+    "mae_normalized": 0.4484030641615391,
+    "direction_accuracy": 0.25
+  },
+  "test_mse_normalized": 1.1615134936230485,
+  "test_mae_normalized": 1.0647257436066866,
+  "test_direction_accuracy": 0.0,
+  "elapsed_seconds": 3.4134039878845215,
+  "output_dir": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\train3\\csi300_csi800_aligned_seed100\\experiments\\odestream_direct_24x1_smoke"
+}

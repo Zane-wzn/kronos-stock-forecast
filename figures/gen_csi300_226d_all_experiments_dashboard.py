@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-RUN = ROOT / "train3" / "csi300_csi800_aligned_seed100" / "experiments"
+RUN = ROOT / "experiments" / "csi300_aligned" / "models"
 OUT = ROOT / "results" / "dashboards"
 OUT_HTML = OUT / "all_experiments_dashboard_226d.html"
 OUT_JSON = OUT / "all_experiments_dashboard_226d_data.json"
@@ -25,24 +25,24 @@ def finite(v):
 
 
 def load_sources():
-    b = pd.read_csv(RUN / "B_linear_head" / "predictions.csv")
+    b = pd.read_csv(RUN / "linear_head" / "predictions.csv")
     keys = b[["as_of_date", "stock"]].drop_duplicates()
     if len(keys) != 66103:
         raise ValueError(f"Expected 66,103 fixed keys, got {len(keys):,}")
 
     raw_a = pd.concat(
         [pd.read_csv(p, usecols=["as_of_date", "stock", "pred_path_mean_return", "actual_path_mean_return"])
-         for p in sorted((RUN / "A_zero_shot" / "predictions" / "by_date").glob("*.csv"))],
+         for p in sorted((RUN / "zero_shot" / "predictions" / "by_date").glob("*.csv"))],
         ignore_index=True,
     )
     a = raw_a.merge(keys, on=["as_of_date", "stock"], how="inner", validate="one_to_one")
     a = a.rename(columns={"pred_path_mean_return": "pred_signal", "actual_path_mean_return": "actual_signal"})
 
     frames = {"A": a, "B": b}
-    for key, folder in [("C", "C_prediction_adapter"), ("D", "D_ranking_adapter")]:
+    for key, folder in [("C", "prediction_adapter"), ("D", "ranking_adapter")]:
         frames[key] = pd.read_csv(RUN / folder / "predictions.csv")
 
-    cont = pd.read_csv(RUN / "continual_ABC" / "predictions.csv")
+    cont = pd.read_csv(RUN / "continual_abc" / "predictions.csv")
     for g in "ABC":
         frames[f"Continual {g}"] = cont.loc[cont["group"].eq(g)].copy()
     frames["Adapter + Continual"] = pd.read_csv(RUN / "adapter_continual" / "predictions.csv")
@@ -133,14 +133,14 @@ def model_metrics(df):
 def build_data():
     frames, raw_a_rows = load_sources()
     source_map = {
-        "A": "train3/csi300_csi800_aligned_seed100/experiments/A_zero_shot/predictions/by_date/*.csv",
-        "B": "train3/csi300_csi800_aligned_seed100/experiments/B_linear_head/predictions.csv",
-        "C": "train3/csi300_csi800_aligned_seed100/experiments/C_prediction_adapter/predictions.csv",
-        "D": "train3/csi300_csi800_aligned_seed100/experiments/D_ranking_adapter/predictions.csv",
-        "Continual A": "train3/csi300_csi800_aligned_seed100/experiments/continual_ABC/predictions.csv[group=A]",
-        "Continual B": "train3/csi300_csi800_aligned_seed100/experiments/continual_ABC/predictions.csv[group=B]",
-        "Continual C": "train3/csi300_csi800_aligned_seed100/experiments/continual_ABC/predictions.csv[group=C]",
-        "Adapter + Continual": "train3/csi300_csi800_aligned_seed100/experiments/adapter_continual/predictions.csv",
+        "A": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/*.csv",
+        "B": "experiments/csi300_aligned/models/linear_head/predictions.csv",
+        "C": "experiments/csi300_aligned/models/prediction_adapter/predictions.csv",
+        "D": "experiments/csi300_aligned/models/ranking_adapter/predictions.csv",
+        "Continual A": "experiments/csi300_aligned/models/continual_abc/predictions.csv[group=A]",
+        "Continual B": "experiments/csi300_aligned/models/continual_abc/predictions.csv[group=B]",
+        "Continual C": "experiments/csi300_aligned/models/continual_abc/predictions.csv[group=C]",
+        "Adapter + Continual": "experiments/csi300_aligned/models/adapter_continual/predictions.csv",
     }
     labels = {
         "A": "Zero-shot 原始信号", "B": "Linear Head", "C": "Prediction Adapter", "D": "Ranking Adapter",
@@ -162,14 +162,14 @@ def build_data():
         "scope": "仅保留具有完整 2025-07-01 至 2026-06-05、226 个交易日预测的 CSI300 正式实验；所有模型显式对齐同一 66,103 个股票—日期键。",
         "common_parameters": {"dataset": "CSI300", "train_end": "2024-12-15", "validation": ["2025-01-02", "2025-06-14"], "test": [START, END], "lookback": 90, "pred_len": 10, "seed": 100, "dates": 226, "rows": 66103, "alignment_key": ["as_of_date", "stock"], "signal": "10日预测路径均值收益", "label": "10日真实路径均值收益"},
         "old_dashboard_audit": {
-            "old_file": r"C:\Users\huawei_wzn\Desktop\Desktop\时间序列预测\股票预测\results\dashboards\all_experiments_dashboard.html",
+            "old_file": str(ROOT / "results" / "dashboards" / "all_experiments_dashboard.html"),
             "recent50_source_window": ["2026-05-27", "2026-08-05"], "recent50_dates": 50, "recent50_rows": 14842,
             "affected_sections": [
                 "CSI300 ABCD A/B/C/D：点预测、方向、IC/RankIC、分位数组合及旧组合指标",
                 "CSI300 Continual A/B/C：方向、IC/RankIC、组合指标",
                 "CSI300 Adapter + Continual：点预测、方向、IC/RankIC、组合指标",
                 "S&P500/Yahoo S&P500 的对应 ABCD、Continual、Adapter + Continual 实际为 49 个有效日期，不属于226日CSI300面板",
-                "历史 recent50/recent10、SWVMD、LSTM、Adapter/RL/LoRA 页面不是统一226日实验",
+                "历史 recent50/recent10、Adapter/LoRA 页面不是统一226日实验",
             ],
             "replacement": "本看板从本地完整预测产物重新计算，不沿用旧看板 recent50 汇总。",
             "raw_zero_shot_rows_before_alignment": raw_a_rows,

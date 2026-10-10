@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "group": "C",
+  "seed": 100,
+  "batch_size": 32,
+  "best_epoch": 5,
+  "train_rows": 525700,
+  "val_rows": 30889,
+  "test_rows": 66103,
+  "test_dates": 226,
+  "rankic_mean": 0.04645839052788829,
+  "ic_mean": 0.05174600590311572,
+  "direction_accuracy": 0.5075261334583907,
+  "q5_q1_mean": 0.006508219253730009,
+  "elapsed_seconds": 276.5268032550812
+}

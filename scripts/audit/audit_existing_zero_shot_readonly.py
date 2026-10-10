@@ -2,14 +2,10 @@ import csv, json, math, os, re
 from pathlib import Path
 from collections import Counter, defaultdict
 
-DESKTOP = Path(__file__).resolve().parents[2]
-script_hits = list(DESKTOP.rglob("run_continual_csi300_abc.ps1"))
-if not script_hits:
-    raise SystemExit("PROJECT_NOT_FOUND")
-project = script_hits[0].parent
-train = project / "train3"
-adapter_dir = train / "kronos_adapter_recent10_train20_ep5_seed20260521_rerun_20260817_182753"
-adapter_csv = adapter_dir / "rolling_predictions_all.csv"
+project = Path(__file__).resolve().parents[2]
+train = project / "experiments"
+adapter_dir = train / "csi300_aligned" / "models" / "adapter_continual"
+adapter_csv = adapter_dir / "predictions.csv"
 
 def norm_stock(x):
     s = str(x or "").strip().lower().replace("_", ".")

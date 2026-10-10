@@ -26,12 +26,13 @@ import pandas as pd
 
 from continual_abcs.portfolio import PortfolioConfig, backtest_long_only
 from src.cpu_baselines.common import Panel, keyset, require_keys
-OUT_DIR = ROOT / "results" / "cumulative_return_curves"
+OUT_DIR = ROOT / "results" / "cumulative_return_curves" / "csi300"
+BENCHMARK_DATA = OUT_DIR / "csi300_pages123_cumulative_return_curve_data.json"
 MODEL_SPECS = {
     "Kronos": {
         "label": "Kronos",
         "color": "#2563eb",
-        "source": ROOT / "train3" / "csi300_csi800_aligned_seed100" / "experiments" / "A_zero_shot" / "predictions" / "by_date",
+        "source": ROOT / "experiments" / "csi300_aligned" / "models" / "zero_shot" / "predictions" / "by_date",
         "source_kind": "directory",
         "point_estimator": "sampled forecast path mean",
     },
@@ -139,6 +140,23 @@ def make_series(result: dict, label: str, color: str, point_estimator: str, sour
     }
 
 
+def load_benchmark_series() -> dict:
+    """Load the existing 000300.SS price-index series for the same test window."""
+    payload = json.loads(BENCHMARK_DATA.read_text(encoding="utf-8"))
+    benchmark = payload["series"]["benchmark_index"]
+    return {
+        **benchmark,
+        "label": "沪深300指数 · 价格指数（000300.SS）",
+        "point_estimator": "Yahoo Finance close price index",
+        "dates": ["2025-06-30"] + benchmark["dates"],
+        "values": [0.0] + benchmark["values"],
+        "n_returns": len(benchmark["values"]),
+        "mean_turnover": None,
+        "total_transaction_cost": None,
+        "trade_count": None,
+    }
+
+
 def render_html(data: dict) -> str:
     payload = json.dumps(data, ensure_ascii=False, separators=(",", ":"), allow_nan=False)
     return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CSI300 三模型累计收益率</title><style>
@@ -181,6 +199,7 @@ def main() -> None:
         summary["point_estimator"] = spec["point_estimator"]
         summaries.append(summary)
         series[model] = make_series(result, spec["label"], spec["color"], spec["point_estimator"], Path(spec["source"]))
+    series["CSI300 index"] = load_benchmark_series()
 
     # Cross-model realized labels must be identical before plotting comparable curves.
     frames = [load_predictions(spec, model, expected)[["as_of_date", "stock", "next_day_return"]].rename(columns={"next_day_return": model}) for model, spec in MODEL_SPECS.items()]
@@ -212,11 +231,13 @@ def main() -> None:
             "最短持有5个交易日；股票若退出当日可观测股票池，则强制退出，不受最短持有期和Drop3限制。",
             "每日组合毛收益使用信号日收盘至下一交易日收盘收益；净收益 = 毛收益 − 单边权重换手率 × 0.15%。",
             "累计收益率按每日净收益复利，初始资金100万元；三模型使用相同66,103个股票—日期键和226个交易日。",
+            "沪深300指数线为000300.SS价格指数收盘价，按同一测试区间首个有效收盘价归一化，不含分红再投资；不涉及组合交易成本。",
         ],
         "notes": [
             "该交易规则与既有 CSI300 HTML 的 Top30/Drop3/最短持有5日/0.15%换手成本口径一致。",
             "当前CSI300成分股被回填到历史区间，存在幸存者偏差和当前成分股前视偏差；曲线属于离线回顾性结果。",
             "预测信号不同：Kronos使用既有采样预测路径，Chronos-2与TimesFM 3使用q0.5预测路径。",
+            "指数基准来源：Yahoo Finance 000300.SS；价格指数与模型组合的复利口径一致，但交易日有效点数为225个。",
         ],
         "series": series,
     }

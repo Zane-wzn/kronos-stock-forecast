@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 BASE = ROOT / 'results/continual_seed100_mae_gate_audit'
 report = json.loads((BASE / 'strict_comparison.json').read_text(encoding='utf-8'))
-template = (ROOT / 'results/cumulative_return_curves/continual_multiseed_cumulative_return_curve.html').read_text(encoding='utf-8')
+template = (ROOT / 'results/cumulative_return_curves/continual/continual_multiseed_cumulative_return_curve.html').read_text(encoding='utf-8')
 names = {'rankic_gate': 'RankIC 门控', 'mae_gate_tol001': 'MAE 容忍度 0.001', 'mae_gate_strict': '严格 MAE'}
 colors = ['#64748b', '#2563eb', '#0891b2', '#a16207', '#db2777', '#15803d', '#dc2626']
 series = {}
@@ -68,7 +68,7 @@ page = page.replace('<div class="card"><h2>交易规则与口径</h2>', analysis
 page = page.replace('</style>', '.card{border-radius:8px}.badge{white-space:normal}*{letter-spacing:0}h1{overflow-wrap:anywhere}@media(max-width:650px){.wrap{padding:12px}.head{display:block}h1{font-size:22px}#chart{height:410px}.card{padding:12px}} </style>')
 page = page.replace("(e.clientX+12)+'px'", "Math.max(4,Math.min(e.clientX+12,innerWidth-tip.offsetWidth-8))+'px'")
 page = page.replace("(e.clientY+12)+'px'", "Math.max(4,Math.min(e.clientY+12,innerHeight-tip.offsetHeight-8))+'px'")
-out = ROOT / 'results/cumulative_return_curves/seed100_gate_comparison.html'
+out = ROOT / 'results/cumulative_return_curves/continual/seed100_gate_comparison.html'
 out.write_text(page, encoding='utf-8')
 print(out)
 print('Verified 7 curves, 226 returns each; daily compounding matches audited portfolio values.')

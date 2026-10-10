@@ -38,16 +38,14 @@ def metrics(frame: pd.DataFrame) -> dict[str, float]:
 
 
 def main() -> None:
-    root = ROOT / "train3" / "csi300_csi800_aligned_seed100" / "experiments"
-    strict = ROOT / "continual_ABC_mae_strict_gate_retry01"
-    reference = pd.read_csv(root / "B_linear_head" / "predictions.csv")
+    root = ROOT / "experiments" / "csi300_aligned" / "models"
+    reference = pd.read_csv(root / "linear_head" / "predictions.csv")
     reference["as_of_date"] = pd.to_datetime(reference["as_of_date"]).dt.normalize()
     reference["stock"] = reference["stock"].astype(str)
     reference = reference[["as_of_date", "stock", "actual_return_1"]].rename(columns={"actual_return_1": "next_day_return"})
     runs = {
-        "rankic_gate": root / "continual_ABC",
-        "mae_gate_tol001": root / "continual_ABC_mae_gate_tol001",
-        "mae_gate_strict": strict,
+        "rankic_gate": root / "continual_abc",
+        "mae_gate_tol001": root / "continual_abc_mae_gate_tol001",
     }
     report = {}
     for name, directory in runs.items():

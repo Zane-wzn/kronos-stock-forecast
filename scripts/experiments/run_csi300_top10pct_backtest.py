@@ -264,19 +264,24 @@ def simulate(df: pd.DataFrame, cfg: dict) -> tuple[pd.DataFrame, pd.DataFrame, d
 
 
 def discover_sources(root: Path, method_key: str) -> tuple[pd.DataFrame, dict]:
-    exp = root / "train3" / "csi300_csi800_aligned_seed100" / "experiments"
+    exp = root / "experiments" / "csi300_aligned" / "models"
     if method_key == "A_zero_shot":
-        files = sorted((exp / "A_zero_shot" / "predictions" / "by_date").glob("*.csv"))
+        files = sorted((exp / "zero_shot" / "predictions" / "by_date").glob("*.csv"))
     elif method_key in {"B_linear_head", "C_prediction_adapter", "D_ranking_adapter"}:
-        files = [exp / method_key / "predictions.csv"]
+        folder = {
+            "B_linear_head": "linear_head",
+            "C_prediction_adapter": "prediction_adapter",
+            "D_ranking_adapter": "ranking_adapter",
+        }[method_key]
+        files = [exp / folder / "predictions.csv"]
     elif method_key == "Kronos_LoRA":
         files = [root / "kronos_lora_csi300_90x10_pilot_partial_seed100" / "predictions.csv"]
     elif method_key == "A_continual":
-        files = [exp / "continual_ABC" / "predictions_A.csv"]
+        files = [exp / "continual_abc" / "predictions_A.csv"]
     elif method_key == "B_continual":
-        files = [exp / "continual_ABC" / "predictions_B.csv"]
+        files = [exp / "continual_abc" / "predictions_B.csv"]
     elif method_key == "C_continual":
-        files = [exp / "continual_ABC" / "predictions_C.csv"]
+        files = [exp / "continual_abc" / "predictions_C.csv"]
     elif method_key == "Adapter_continual":
         files = [exp / "adapter_continual" / "predictions.csv"]
     else:

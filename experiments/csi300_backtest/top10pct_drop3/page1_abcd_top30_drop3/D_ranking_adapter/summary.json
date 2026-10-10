@@ -1,0 +1,30 @@
+{
+  "available": true,
+  "n_periods": 226,
+  "test_start": "2025-07-01",
+  "test_end": "2026-06-05",
+  "n_universe_min": 290,
+  "n_universe_max": 297,
+  "n_holdings_min": 30,
+  "n_holdings_max": 30,
+  "final_wealth": 1.4080922329702306,
+  "final_cumulative_return": 0.40809223297023056,
+  "annualized_return_252": 0.4646378605711896,
+  "max_drawdown": -0.08985041778287506,
+  "mean_daily_gross_return": 0.001741258330281711,
+  "mean_daily_net_return": 0.0015870547904587016,
+  "total_transaction_cost": 0.03485,
+  "mean_turnover": 0.10280235988200592,
+  "total_turnover": 23.233333333333338,
+  "mean_rank_ic": 0.013294825230540397,
+  "benchmark_final_cumulative_return": 0.18856468073712018,
+  "benchmark_annualized_return_252": 0.2124218782223648,
+  "benchmark_max_drawdown": -0.09012137622145588,
+  "method": "D_ranking_adapter",
+  "label": "页面一 D：静态 Adapter+排序头",
+  "page": "页面一：ABCD 静态对照",
+  "source_files": [
+    "D:\\Desktop\\时间序列预测\\股票预测\\train3\\csi300_csi800_aligned_seed100\\experiments\\D_ranking_adapter\\predictions.csv"
+  ],
+  "reconstruction": "daily next-step return from stock-level actual_return_1/actual_signal or actual_close_1/current_close"
+}

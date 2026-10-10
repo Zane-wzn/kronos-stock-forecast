@@ -1,0 +1,23 @@
+{
+  "dataset": "CSI300",
+  "train_end": "2024-12-15",
+  "val_start": "2025-01-02",
+  "val_end": "2025-06-14",
+  "test_start": "2025-07-01",
+  "test_end": "2026-06-05",
+  "lookback": 90,
+  "pred_len": 10,
+  "seed": 100,
+  "top_k": 30,
+  "top_k_fraction": 0.1,
+  "drop_n": 3,
+  "min_hold_days": 5,
+  "cost_rate": 0.0015,
+  "annualization_days": 252,
+  "portfolio_cost_definition": "cost_rate times one-way weight turnover",
+  "constituent_pool": "current CSI300 constituents backfilled over available history",
+  "bias_warning": "survivorship bias and current-constituent look-ahead bias are possible; not point-in-time membership",
+  "method": "C_prediction_adapter",
+  "label": "页面一 C：静态 Adapter/预测头",
+  "page": "页面一：ABCD 静态对照"
+}

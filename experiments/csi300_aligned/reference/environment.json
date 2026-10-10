@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-08-28T05:36:00.703624+00:00",
+  "python": "3.12.13 (main, Aug  7 2026, 02:26:41) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "executable": "C:\\Users\\huawei_wzn\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "cwd": "C:\\Users\\huawei_wzn\\Desktop\\Desktop\\时间序列预测\\股票预测",
+  "git_commit": "e2d33b551e2790ab191881c07414ac582dd1848b",
+  "torch": null,
+  "cuda_available": false,
+  "gpu": [],
+  "torch_error": "ModuleNotFoundError(\"No module named 'torch'\")"
+}    "einops": "0.8.1"
+  }
+}

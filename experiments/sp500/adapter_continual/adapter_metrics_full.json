@@ -1,0 +1,332 @@
+{
+  "source": "D:\\Desktop\\adapter_sp500_eval\\predictions.csv",
+  "status": "complete",
+  "evaluation": "formal_test_predictions_only",
+  "dataset": "Yahoo S&P 500",
+  "method": "kronos_yahoo_sp500_adapter_continual_strict90x10_20260826_seed100",
+  "test_start": "2026-05-27",
+  "test_end": "2026-08-05",
+  "test_dates": 49,
+  "test_rows": 24366,
+  "strict_alignment_key": [
+    "as_of_date",
+    "stock"
+  ],
+  "duplicate_keys": 0,
+  "integrity": {
+    "finite_predictions": true,
+    "finite_actuals": true,
+    "pred_signal_alignment_max_abs": 1.9371509535348608e-08,
+    "actual_signal_alignment_max_abs": 3.5762786843029915e-08,
+    "pred_endpoint_alignment_max_abs": 0.0,
+    "actual_endpoint_alignment_max_abs": 0.0
+  },
+  "point_forecast": {
+    "trajectory_overall": {
+      "available": true,
+      "scale": "10-step cumulative return trajectory pooled across horizons",
+      "mae_return": 0.04468413168879788,
+      "rmse_return": 0.06275687894831954,
+      "mase_vs_zero_return_persistence": 1.1136429099631502,
+      "oos_r2_vs_zero_return": -0.15567287041437372
+    },
+    "trajectory_by_horizon": [
+      {
+        "horizon": 1,
+        "mae_return": 0.024927538701857953,
+        "rmse_return": 0.03354866122393774,
+        "mase_vs_zero_return_persistence": 1.3319953791284511,
+        "oos_r2_vs_zero_return": -0.5275642893918966
+      },
+      {
+        "horizon": 2,
+        "mae_return": 0.0318738061181378,
+        "rmse_return": 0.04366346483711596,
+        "mase_vs_zero_return_persistence": 1.1956698258165492,
+        "oos_r2_vs_zero_return": -0.28031434144661094
+      },
+      {
+        "horizon": 3,
+        "mae_return": 0.037671197284700336,
+        "rmse_return": 0.05164856574260814,
+        "mase_vs_zero_return_persistence": 1.1705357920727728,
+        "oos_r2_vs_zero_return": -0.245362799458837
+      },
+      {
+        "horizon": 4,
+        "mae_return": 0.041504060819800924,
+        "rmse_return": 0.05718912002054331,
+        "mase_vs_zero_return_persistence": 1.1309887206672413,
+        "oos_r2_vs_zero_return": -0.18388734919451521
+      },
+      {
+        "horizon": 5,
+        "mae_return": 0.04519014009391668,
+        "rmse_return": 0.062115975725512265,
+        "mase_vs_zero_return_persistence": 1.118253593035179,
+        "oos_r2_vs_zero_return": -0.1771660271195945
+      },
+      {
+        "horizon": 6,
+        "mae_return": 0.04830252806142963,
+        "rmse_return": 0.06606938256311747,
+        "mase_vs_zero_return_persistence": 1.1113306210769252,
+        "oos_r2_vs_zero_return": -0.17510185610744466
+      },
+      {
+        "horizon": 7,
+        "mae_return": 0.050348404007935915,
+        "rmse_return": 0.06886081519697092,
+        "mase_vs_zero_return_persistence": 1.0882136778299745,
+        "oos_r2_vs_zero_return": -0.1423672065090722
+      },
+      {
+        "horizon": 8,
+        "mae_return": 0.05300858676585533,
+        "rmse_return": 0.07228881024082986,
+        "mase_vs_zero_return_persistence": 1.0751278473214159,
+        "oos_r2_vs_zero_return": -0.12200057079371995
+      },
+      {
+        "horizon": 9,
+        "mae_return": 0.055393679933607935,
+        "rmse_return": 0.0753931707061777,
+        "mase_vs_zero_return_persistence": 1.0604070989110197,
+        "oos_r2_vs_zero_return": -0.09748511024731354
+      },
+      {
+        "horizon": 10,
+        "mae_return": 0.05862137510073621,
+        "rmse_return": 0.08086350247476405,
+        "mase_vs_zero_return_persistence": 1.0599437018469442,
+        "oos_r2_vs_zero_return": -0.09554685856227674
+      }
+    ],
+    "path_signal_overall": {
+      "available": true,
+      "scale": "10-step path-mean cumulative return",
+      "mae_return": 0.038994319470196,
+      "rmse_return": 0.05314402273783155,
+      "mase_vs_zero_return_persistence": 1.1319381377449131,
+      "oos_r2_vs_zero_return": -0.20699266307903375
+    },
+    "endpoint_overall": {
+      "available": true,
+      "scale": "10-step endpoint cumulative return",
+      "mae_return": 0.05862137510073619,
+      "rmse_return": 0.08086350247476404,
+      "mase_vs_zero_return_persistence": 1.0599437018469442,
+      "oos_r2_vs_zero_return": -0.09554685856227652
+    }
+  },
+  "direction_forecast": {
+    "path_mean": {
+      "direction_accuracy": 0.5384141836985964,
+      "balanced_accuracy": 0.5066675528232326,
+      "precision": 0.5794290318867273,
+      "recall": 0.718712072535161,
+      "f1": 0.6415984194257672,
+      "specificity": 0.29462303311130417,
+      "mcc": 0.014573951608862745,
+      "tp": 10067,
+      "tn": 3052,
+      "fp": 7307,
+      "fn": 3940
+    },
+    "endpoint": {
+      "direction_accuracy": 0.5472379545267997,
+      "balanced_accuracy": 0.5062883114207588,
+      "precision": 0.5904820147884583,
+      "recall": 0.7434030937215651,
+      "f1": 0.6581768606308483,
+      "specificity": 0.2691735291199524,
+      "mcc": 0.01408924151171331,
+      "tp": 10621,
+      "tn": 2713,
+      "fp": 7366,
+      "fn": 3666
+    },
+    "cross_section_path_mean": {
+      "ic": {
+        "count": 49,
+        "mean": 0.015026651205608184,
+        "median": 0.01681361191349868,
+        "std": 0.054905237083908216,
+        "positive_ratio": 0.5714285714285714,
+        "ir_mean_over_std": 0.2736833862067456,
+        "annualized_ir_sqrt252": 4.344589067238563,
+        "newey_west_lag9_mean_tstat": 1.6931347367098464,
+        "moving_block_bootstrap_block10_ci95": [
+          0.004029661289858095,
+          0.03564652592268075
+        ]
+      },
+      "rankic": {
+        "count": 49,
+        "mean": 0.0199868260617237,
+        "median": 0.02771562850394828,
+        "std": 0.05948525435753254,
+        "positive_ratio": 0.5918367346938775,
+        "ir_mean_over_std": 0.3359963116505157,
+        "annualized_ir_sqrt252": 5.333776092373312,
+        "newey_west_lag9_mean_tstat": 2.0891730036371503,
+        "moving_block_bootstrap_block10_ci95": [
+          0.00981415503816337,
+          0.04400592316186086
+        ]
+      }
+    },
+    "cross_section_endpoint": {
+      "ic": {
+        "count": 49,
+        "mean": 0.011072898884981454,
+        "median": 0.00813487123807528,
+        "std": 0.055692409067771856,
+        "positive_ratio": 0.5918367346938775,
+        "ir_mean_over_std": 0.19882240812220728,
+        "annualized_ir_sqrt252": 3.156207881750094,
+        "newey_west_lag9_mean_tstat": 0.8114457079428143,
+        "moving_block_bootstrap_block10_ci95": [
+          -0.013795195083503251,
+          0.03976671207909402
+        ]
+      },
+      "rankic": {
+        "count": 49,
+        "mean": 0.017832370638439465,
+        "median": 0.017724455471527067,
+        "std": 0.05737953862195051,
+        "positive_ratio": 0.6122448979591837,
+        "ir_mean_over_std": 0.3107792615052102,
+        "annualized_ir_sqrt252": 4.93346783147457,
+        "newey_west_lag9_mean_tstat": 1.278190978381297,
+        "moving_block_bootstrap_block10_ci95": [
+          -0.006311519559218814,
+          0.04891505057372765
+        ]
+      }
+    }
+  },
+  "portfolio": {
+    "definition": "rank by model pred_score; exact top/bottom 10% using ceil(0.10*n); 10bps times one-way turnover",
+    "dates": 49,
+    "transaction_cost_rate": 0.001,
+    "mean_n": 497.265306122449,
+    "mean_k": 50.48979591836735,
+    "mean_turnover": 0.5628011204481792,
+    "mean_top10_path": 0.007772658014195551,
+    "mean_bottom10_path": 0.004900702542141178,
+    "mean_longshort_path": 0.002871955472054372,
+    "mean_top10_excess_path": 0.000813923119300919,
+    "mean_top10_path_net_10bps": 0.007209856893747372,
+    "mean_longshort_path_net_10bps": 0.0023091543516061933,
+    "sharpe_top10_path_net_10bps": 2.585749759875494,
+    "sharpe_longshort_path_net_10bps": 1.009179681614199,
+    "mdd_top10_path_net_10bps": -0.03928103011160489,
+    "mdd_longshort_path_net_10bps": -0.03682051737595171,
+    "positive_ratio_top10_path": 0.6326530612244898,
+    "positive_ratio_longshort_path": 0.5306122448979592,
+    "top10_path_net_moving_block_bootstrap_block10_ci95": [
+      8.797017921590255e-05,
+      0.01447741742637252
+    ],
+    "longshort_path_moving_block_bootstrap_block10_ci95": [
+      0.0001505185976781794,
+      0.007461787939305868
+    ],
+    "mean_top10_endpoint": 0.015882916494040125,
+    "mean_bottom10_endpoint": 0.0096010918233718,
+    "mean_longshort_endpoint": 0.0062818246706683265,
+    "mean_top10_excess_endpoint": 0.00317984825217086,
+    "mean_top10_endpoint_net_10bps": 0.015320115373591946,
+    "mean_longshort_endpoint_net_10bps": 0.005719023550220146,
+    "sharpe_top10_endpoint_net_10bps": 3.453601444887038,
+    "sharpe_longshort_endpoint_net_10bps": 1.7847028099306987,
+    "mdd_top10_endpoint_net_10bps": -0.05063206840470946,
+    "mdd_longshort_endpoint_net_10bps": -0.0938617176081733,
+    "positive_ratio_top10_endpoint": 0.7755102040816326,
+    "positive_ratio_longshort_endpoint": 0.5918367346938775,
+    "top10_endpoint_net_moving_block_bootstrap_block10_ci95": [
+      0.0030871192892535544,
+      0.02656893892301993
+    ],
+    "longshort_endpoint_moving_block_bootstrap_block10_ci95": [
+      -0.001043677307358261,
+      0.013151871236193975
+    ],
+    "kronos_aer_path_mean": -0.08855558417513405,
+    "kronos_aer_endpoint": -0.05074515165143405,
+    "kronos_aer_config": {
+      "method": "Kronos official-code-style TopkDropout independent reproduction",
+      "top_k": 50,
+      "drop_n": 5,
+      "min_holding_days": 5,
+      "delay_execution": true,
+      "deal_price": "open",
+      "open_cost": 0.001,
+      "close_cost": 0.0015,
+      "min_cost": 5.0,
+      "risk_degree": 0.95,
+      "annualization_days_qlib": 238.0,
+      "aer_definition": "Qlib risk_analysis(report[return]-report[bench]-report[cost], freq=day), arithmetic mean times 238; bench is the explicitly labeled formal test-universe equal-weight proxy.",
+      "benchmark": "formal test-universe equal-weight close-to-close proxy; not official S&P 500 index",
+      "comparability": "not directly comparable with Kronos Table 10 because official index benchmark series was not stored in the formal artifacts"
+    }
+  },
+  "aer_detail": {
+    "path": {
+      "available": 1,
+      "definition": "Kronos official Qlib-style delayed daily backtest: signal at t, execute at t+1 open; TopkDropoutStrategy topk=50,n_drop=5,hold_thresh=5; equal-weight buys; risk_degree=0.95; Qlib risk_analysis(freq=day) arithmetic AER; separate buy/sell costs and min fee.",
+      "signal": "pred_signal",
+      "top_k": 50,
+      "drop_n": 5,
+      "min_holding_days": 5,
+      "delay_execution": 1,
+      "deal_price": "open",
+      "open_cost": 0.001,
+      "close_cost": 0.0015,
+      "min_cost": 5.0,
+      "risk_degree": 0.95,
+      "annualization_days_qlib": 238.0,
+      "benchmark": "formal test-universe equal-weight close-to-close proxy (official index series is not stored in the formal artifacts)",
+      "n_periods": 48,
+      "test_start": "2026-05-28",
+      "test_end": "2026-08-05",
+      "mean_daily_net_return": 0.000978865009628872,
+      "mean_daily_benchmark_return": 0.0013509472960790152,
+      "mean_daily_excess_return": -0.0003720822864501431,
+      "aer": -0.08855558417513405,
+      "aer_pct": -8.855558417513405,
+      "cumulative_excess_sum": -0.01785994974960687,
+      "cumulative_net_compound": 0.046303559106730896,
+      "mean_transaction_cost": 0.00015984572772943675
+    },
+    "endpoint": {
+      "available": 1,
+      "definition": "Kronos official Qlib-style delayed daily backtest: signal at t, execute at t+1 open; TopkDropoutStrategy topk=50,n_drop=5,hold_thresh=5; equal-weight buys; risk_degree=0.95; Qlib risk_analysis(freq=day) arithmetic AER; separate buy/sell costs and min fee.",
+      "signal": "pred_endpoint_return",
+      "top_k": 50,
+      "drop_n": 5,
+      "min_holding_days": 5,
+      "delay_execution": 1,
+      "deal_price": "open",
+      "open_cost": 0.001,
+      "close_cost": 0.0015,
+      "min_cost": 5.0,
+      "risk_degree": 0.95,
+      "annualization_days_qlib": 238.0,
+      "benchmark": "formal test-universe equal-weight close-to-close proxy (official index series is not stored in the formal artifacts)",
+      "n_periods": 48,
+      "test_start": "2026-05-28",
+      "test_end": "2026-08-05",
+      "mean_daily_net_return": 0.00113773237317383,
+      "mean_daily_benchmark_return": 0.0013509472960790152,
+      "mean_daily_excess_return": -0.00021321492290518506,
+      "aer": -0.05074515165143405,
+      "aer_pct": -5.074515165143405,
+      "cumulative_excess_sum": -0.010234316299448883,
+      "cumulative_net_compound": 0.05404852195897347,
+      "mean_transaction_cost": 0.0001688730623464216
+    }
+  }
+}

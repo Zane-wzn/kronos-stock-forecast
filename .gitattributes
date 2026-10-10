@@ -1,0 +1,19 @@
+# Normalize text files across Windows and Linux.
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.ps1 text eol=crlf
+
+# Preserve binary research artifacts and archives with Git LFS.
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.docx filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+
+# Retain full multi-run predictions without inflating normal Git history.
+experiments/**/rolling_predictions_all.csv filter=lfs diff=lfs merge=lfs -text

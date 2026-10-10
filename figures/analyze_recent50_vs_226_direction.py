@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 ROOT=Path(__file__).resolve().parents[1]
-EXP=ROOT/'train3'/'csi300_csi800_aligned_seed100'/'experiments'
+EXP=ROOT/'experiments'/'csi300_aligned'/'models'
 OUT=ROOT/'results'/'dashboards'/'direction_accuracy_recent50_vs_226_analysis.json'
 START226,END226='2025-07-01','2026-06-05'
 START50,END50='2026-05-27','2026-08-05'
@@ -26,11 +26,11 @@ def daily(df):
  return pd.DataFrame(z)
 
 def load_full():
- b=pd.read_csv(EXP/'B_linear_head'/'predictions.csv'); keys=b[['as_of_date','stock']].drop_duplicates()
- a=pd.concat([pd.read_csv(f,usecols=['as_of_date','stock','pred_path_mean_return','actual_path_mean_return']) for f in sorted((EXP/'A_zero_shot'/'predictions'/'by_date').glob('*.csv'))],ignore_index=True).merge(keys,on=['as_of_date','stock'],how='inner')
+ b=pd.read_csv(EXP/'linear_head'/'predictions.csv'); keys=b[['as_of_date','stock']].drop_duplicates()
+ a=pd.concat([pd.read_csv(f,usecols=['as_of_date','stock','pred_path_mean_return','actual_path_mean_return']) for f in sorted((EXP/'zero_shot'/'predictions'/'by_date').glob('*.csv'))],ignore_index=True).merge(keys,on=['as_of_date','stock'],how='inner')
  a=a.rename(columns={'pred_path_mean_return':'pred_signal','actual_path_mean_return':'actual_signal'})
- frames={'A':a,'B':b,'C':pd.read_csv(EXP/'C_prediction_adapter'/'predictions.csv'),'D':pd.read_csv(EXP/'D_ranking_adapter'/'predictions.csv')}
- c=pd.read_csv(EXP/'continual_ABC'/'predictions.csv')
+ frames={'A':a,'B':b,'C':pd.read_csv(EXP/'prediction_adapter'/'predictions.csv'),'D':pd.read_csv(EXP/'ranking_adapter'/'predictions.csv')}
+ c=pd.read_csv(EXP/'continual_abc'/'predictions.csv')
  for g in 'ABC':frames['Continual '+g]=c[c.group.eq(g)].copy()
  frames['Adapter + Continual']=pd.read_csv(EXP/'adapter_continual'/'predictions.csv')
  return frames

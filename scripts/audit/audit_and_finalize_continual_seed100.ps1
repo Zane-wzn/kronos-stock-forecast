@@ -1,8 +1,8 @@
 [Console]::OutputEncoding=[System.Text.Encoding]::UTF8
-$project='D:\Desktop\时间序列预测\股票预测'
-$root=Join-Path $project 'train3\kronos_csi300_continual_abc_20240701_20250605_seed100'
-$run=Join-Path $root 'run'
-$python=Join-Path $project '.venv_kronos\Scripts\python.exe'
+$project = Split-Path -Parent (Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path))
+$root = Join-Path $project 'experiments\csi300_aligned\models\continual_abc'
+$run = $root
+$python = Join-Path $project '.venv\Scripts\python.exe'
 Write-Output '===ARTIFACT_GATE==='
 $summary=Get-Content -LiteralPath (Join-Path $run 'summary.json') -Raw | ConvertFrom-Json
 $stderr=Join-Path $root 'logs\runner_formal_seed100.stderr.log'

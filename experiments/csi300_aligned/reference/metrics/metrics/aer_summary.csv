@@ -1,0 +1,17 @@
+dataset,experiment,path_or_endpoint,metric_status,unavailable_reason
+csi300,A,Path,无法验证,缺少next_open/next_close，无法执行AER
+csi300,A,Endpoint,无法验证,缺少next_open/next_close，无法执行AER
+csi300,B,Path,无法验证,缺少next_open/next_close，无法执行AER
+csi300,B,Endpoint,无法验证,缺少next_open/next_close，无法执行AER
+csi300,C,Path,无法验证,缺少next_open/next_close，无法执行AER
+csi300,C,Endpoint,无法验证,缺少next_open/next_close，无法执行AER
+csi300,D,Path,无法验证,缺少next_open/next_close，无法执行AER
+csi300,D,Endpoint,无法验证,缺少next_open/next_close，无法执行AER
+csi300,Continual A,Path,无法验证,缺少next_open/next_close，无法执行AER
+csi300,Continual A,Endpoint,无法验证,该实验输出没有独立的Endpoint轨迹
+csi300,Continual B,Path,无法验证,缺少next_open/next_close，无法执行AER
+csi300,Continual B,Endpoint,无法验证,该实验输出没有独立的Endpoint轨迹
+csi300,Continual C,Path,无法验证,缺少next_open/next_close，无法执行AER
+csi300,Continual C,Endpoint,无法验证,该实验输出没有独立的Endpoint轨迹
+csi300,Adapter + Continual,Path,无法验证,缺少next_open/next_close，无法执行AER
+csi300,Adapter + Continual,Endpoint,无法验证,缺少next_open/next_close，无法执行AER

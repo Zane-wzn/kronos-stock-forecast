@@ -1,0 +1,79 @@
+{
+  "status": "complete",
+  "experiment_type": "continual_learning_ranking_head",
+  "groups": [
+    "A",
+    "B",
+    "C"
+  ],
+  "test_start": "2026-05-27",
+  "test_end": "2026-08-05",
+  "test_dates": 49,
+  "test_rows": 24366,
+  "common_rows": 24366,
+  "update_dates": 3,
+  "accepted_updates": 1,
+  "final_c_version": 1,
+  "initial_validation_rankic": -0.0018566915636704228,
+  "final_champion_validation_rankic": 0.005392681334676691,
+  "backend": "torch",
+  "seed": 100,
+  "initial_training_history": [
+    {
+      "epoch": 1.0,
+      "loss": 0.13953271861370356
+    },
+    {
+      "epoch": 2.0,
+      "loss": 0.13934334462379655
+    },
+    {
+      "epoch": 3.0,
+      "loss": 0.13928928670016932
+    },
+    {
+      "epoch": 4.0,
+      "loss": 0.1392412284722387
+    },
+    {
+      "epoch": 5.0,
+      "loss": 0.13921008018081427
+    }
+  ],
+  "continual_history": [
+    {
+      "version": 1,
+      "validation_metric": "mean_daily_spearman_rankic",
+      "validation_rankic": 0.005392681334676691,
+      "training_rows": 120000,
+      "replay": {
+        "pool_rows": 452284,
+        "recent_pool_rows": 7014,
+        "historical_pool_rows": 445270,
+        "selected_rows": 120000,
+        "selected_recent_rows": 7014,
+        "selected_historical_rows": 112986,
+        "recent_cutoff": "2024-06-30",
+        "recent_fraction_target": 0.7,
+        "historical_year_counts": {
+          "2020": 25856,
+          "2021": 28800,
+          "2022": 28981,
+          "2023": 28854,
+          "2024": 495
+        }
+      },
+      "history": [
+        {
+          "epoch": 1.0,
+          "loss": 0.138212895223819
+        },
+        {
+          "epoch": 2.0,
+          "loss": 0.13817036721369572
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 1959.7649569511414
+}

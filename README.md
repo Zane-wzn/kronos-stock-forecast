@@ -25,12 +25,9 @@ Kronos 官方源码快照位于 `third_party/Kronos_official_src/`。首次运�
 ├── experiments/          # 所有正式实验记录的统一根目录
 │   ├── csi300_aligned/   # CSI300 对齐任务：参考数据和模型对照
 │   ├── csi300_backtest/  # CSI300 组合回测及分方法结果
-│   ├── baselines/        # Naive、LSTM、滚动窗口和 SW-VMD 基线
-│   ├── continual/        # 持续学习、排序奖励和多种子结果
+│   ├── continual/        # 持续学习和多种子结果
 │   ├── references/       # 跨实验合并面板和指标恢复文件
-│   ├── smoke/            # 小规模连通性、路径和形状检查
 │   ├── sp500/            # S&P500 对照实验
-│   ├── notes/            # 当前实验记录和结果说明
 │   └── README.md         # 实验目录索引和归档约定
 ├── figures/              # 图表和 dashboard 生成脚本
 ├── results/              # 可直接浏览的 HTML 曲线和聚合摘要
@@ -40,19 +37,11 @@ Kronos 官方源码快照位于 `third_party/Kronos_official_src/`。首次运�
 └── third_party/          # 第三方源码及许可证
 ```
 
-`experiments/` 是实验归档的总目录。不同数据集、任务、模型和回测规则使用独立子目录，目录名表达实验含义。详细索引和放置规则见 [`experiments/README.md`](experiments/README.md)。`results/` 只保存适合直接浏览的 HTML 曲线和聚合摘要，不替代实验归档。仓库根目录保留的 Python/PowerShell 文件是通用入口或分析工具，不作为实验结果目录使用。
+`experiments/` 是实验归档的总目录。不同数据集、任务、模型和回测规则使用独立子目录，目录名表达实验含义。详细索引和放置规则见 [`experiments/README.md`](experiments/README.md)。`results/` 只保存适合直接浏览的 HTML 曲线和聚合摘要，不替代实验归档。仓库根目录不再放实验脚本，所有代码入口集中在 `scripts/`、`src/` 和 `continual_abcs/`。
 
-## 根目录脚本
+## 代码入口
 
-当前仓库根目录保留以下通用入口和分析代码：
-
-- `kronos_stock_forecast.py`、`rolling_window_comparison.py`：Kronos 预测和滚动窗口统一评估；
-- `naive_baseline.py`、`lstm_baseline.py`：Naive 与 LSTM 基线；
-- `swvmd_kronos_experiment.py`、`kronos_hidden_fusion_experiment.py`：SW-VMD 和 hidden-state 融合实验；
-- `compare_baselines.py`、`compare_naive_kronos_metrics.py`、`compare_swvmd_gain.py`：基线和增益分析；
-- `analyze_swvmd_snr.py`、`kronos_direction_probabilities.py`、`merge_rolling_chunks.py`：诊断、方向概率和结果合并工具。
-
-正式实验运行器位于 `scripts/experiments/`，数据、评估和审计脚本分别位于 `scripts/data/`、`scripts/evaluation/` 和 `scripts/audit/`。
+主实验口径为 CSI300、2025-07-01 至 2026-06-05 共 226 个交易日、lookback 90 / pred_len 10。正式实验运行器位于 `scripts/experiments/`，数据、评估和审计脚本分别位于 `scripts/data/`、`scripts/evaluation/` 和 `scripts/audit/`。
 
 ## 数据准备
 
@@ -81,7 +70,7 @@ CSI 日线 CSV 至少应包含 `date`、`open`、`high`、`low`、`close` 和 `v
 
 ## 当前实验布局
 
-实验目录的完整清单和各层职责见 [`experiments/README.md`](experiments/README.md)。当前 CSI300 模型对照集中在 `experiments/csi300_aligned/models/`，CSI300 组合对照集中在 `experiments/csi300_backtest/top10pct_drop3/`，通用基线集中在 `experiments/baselines/`，持续学习和多种子排序结果集中在 `experiments/continual/`。小规模检查、参考面板、S&P500 对照和实验说明分别位于对应的独立子目录。
+实验目录的完整清单和各层职责见 [`experiments/README.md`](experiments/README.md)。当前 CSI300 模型对照集中在 `experiments/csi300_aligned/models/`，CSI300 组合对照集中在 `experiments/csi300_backtest/top10pct_drop3/`，持续学习和多种子结果集中在 `experiments/continual/`。参考面板和 S&P500 对照分别位于对应的独立子目录。
 
 每个正式实验目录应至少包含 `run_config.json` 或等价配置、摘要指标和必要的日志。大规模预测明细、checkpoint 和缓存可只保留在本地；实验目录中的说明文件应记录数据集、时间边界、窗口、标签、更新规则、交易成本和文件含义。`odestream_direct_24x1_smoke/` 是实际存在的小规模 ODEStream 连通性结果，正式结果在 `odestream_direct_24x1/`。
 
