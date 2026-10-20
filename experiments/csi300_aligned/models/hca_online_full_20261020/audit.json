@@ -1,0 +1,130 @@
+{
+  "status": "passed",
+  "streams": [
+    {
+      "stream": "Prediction_Static",
+      "rows": 66103,
+      "updates": 0,
+      "supervision": 0,
+      "historical_max_abs_error": 9.996344030316351e-17,
+      "parameter_delta_l2": {
+        "adapter": 0.0,
+        "head": 0.0
+      },
+      "basis_unchanged": null,
+      "future_reads": 0,
+      "duplicate_consumption": 0,
+      "status": "passed"
+    },
+    {
+      "stream": "Prediction_A",
+      "rows": 66103,
+      "updates": 216,
+      "supervision": 69120,
+      "historical_max_abs_error": 9.999054535747565e-17,
+      "parameter_delta_l2": {
+        "adapter": 0.06363770782721036,
+        "head": 0.1286173859635009
+      },
+      "basis_unchanged": null,
+      "future_reads": 0,
+      "duplicate_consumption": 0,
+      "status": "passed"
+    },
+    {
+      "stream": "Prediction_HCA_PCA",
+      "rows": 66103,
+      "updates": 216,
+      "supervision": 69120,
+      "historical_max_abs_error": null,
+      "parameter_delta_l2": {
+        "adapter": 0.06301666672092482,
+        "head": 0.11930311548485868,
+        "coeff": 0.051266025801624
+      },
+      "basis_unchanged": true,
+      "future_reads": 0,
+      "duplicate_consumption": 0,
+      "status": "passed"
+    },
+    {
+      "stream": "Prediction_HCA_Random",
+      "rows": 66103,
+      "updates": 216,
+      "supervision": 69120,
+      "historical_max_abs_error": null,
+      "parameter_delta_l2": {
+        "adapter": 0.06374277650682197,
+        "head": 0.1273010752193781,
+        "coeff": 0.04018645893119673
+      },
+      "basis_unchanged": true,
+      "future_reads": 0,
+      "duplicate_consumption": 0,
+      "status": "passed"
+    },
+    {
+      "stream": "RankIC_Static",
+      "rows": 66103,
+      "updates": 0,
+      "supervision": 0,
+      "historical_max_abs_error": 9.996344030316351e-17,
+      "parameter_delta_l2": {
+        "adapter": 0.0,
+        "head": 0.0
+      },
+      "basis_unchanged": null,
+      "future_reads": 0,
+      "duplicate_consumption": 0,
+      "status": "passed"
+    },
+    {
+      "stream": "RankIC_A",
+      "rows": 66103,
+      "updates": 216,
+      "supervision": 69120,
+      "historical_max_abs_error": 9.996344030316351e-17,
+      "parameter_delta_l2": {
+        "adapter": 0.06337105307279244,
+        "head": 0.15249936392054622
+      },
+      "basis_unchanged": null,
+      "future_reads": 0,
+      "duplicate_consumption": 0,
+      "status": "passed"
+    },
+    {
+      "stream": "RankIC_HCA_PCA",
+      "rows": 66103,
+      "updates": 216,
+      "supervision": 69120,
+      "historical_max_abs_error": null,
+      "parameter_delta_l2": {
+        "adapter": 0.06323256852037913,
+        "head": 0.13834758012213222,
+        "coeff": 0.054694233130876374
+      },
+      "basis_unchanged": true,
+      "future_reads": 0,
+      "duplicate_consumption": 0,
+      "status": "passed"
+    },
+    {
+      "stream": "RankIC_HCA_Random",
+      "rows": 66103,
+      "updates": 216,
+      "supervision": 69120,
+      "historical_max_abs_error": null,
+      "parameter_delta_l2": {
+        "adapter": 0.06384934204001869,
+        "head": 0.1512695037920347,
+        "coeff": 0.036507297769723245
+      },
+      "basis_unchanged": true,
+      "future_reads": 0,
+      "duplicate_consumption": 0,
+      "status": "passed"
+    }
+  ],
+  "matched_events_all_online_streams": true
+}

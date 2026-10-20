@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "original_engine_checks": {
+    "status": "passed",
+    "checks": [
+      "maturity_single_consumption_matched_events_steps_prediction_commit",
+      "A_adapter_gradients_and_updates_D_adapter_frozen",
+      "zero_adapter_lr_A_and_uniform_D_equal_F",
+      "zero_lr_equals_static",
+      "future_poison_no_effect_and_resume_identical_all_online_groups",
+      "same_day_input_order_invariance",
+      "D_weight_bounds_mean_one_and_zero_state_fallback"
+    ],
+    "engine": "actual run_stream",
+    "fixture_horizon": 3
+  },
+  "hca_checks": [
+    "basis_fit_ignores_all_val_test_targets",
+    "zero_basis_exactly_reduces_to_A_parameters_and_predictions",
+    "both_HCA_initial_forecasts_identical_basis_frozen_coeff_learns",
+    "both_HCA_future_poison_predictions_parameters_logs_optimizer_identical",
+    "both_HCA_resume_models_optimizer_consumed_predictions_identical",
+    "both_HCA_matched_events_prediction_commit_and_next_day_effect"
+  ]
+}

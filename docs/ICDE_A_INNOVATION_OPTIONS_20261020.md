@@ -17,6 +17,27 @@ Prediction Adapter 起点上，A 相对静态模型的 Path 净累计收益为 `
 - ADOWIP（arXiv:2606.25068，摘要、§1）已经研究观察到的 decision-loss 优先门控和硬更新预算；简单的“按误差决定是否更新”不能单独作为新颖贡献。
 - SOLID（arXiv:2310.14838，§5.2--§5.3）已经研究相似样本选择、冻结特征提取器和只更新预测层；简单余弦相似度加权也不够新。
 
+## 本轮 HCA 完整验证结果
+
+已按独立的 `run_hca_online_full.py` 入口完成 2025-07-01—2026-06-05 的完整 226 日 CSI300 回顾性实验。实验同时从 Prediction Adapter 和 RankIC Adapter 两个静态 checkpoint 启动，并在每个 checkpoint 上比较 S、A、HCA-PCA 和 HCA-Random。所有在线流使用相同的 216 个更新日、相同的 69,120 个成熟标签标量、相同的单步预算、相同的预测面板和 evaluate 配置；HCA 只增加 1,026 个零初始化的 CoeffHead 参数，basis 在训练 split 上拟合后冻结。
+
+关键结果如下，百分比为累计净收益，IC 为 226 日逐日截面 Pearson 均值：
+
+| checkpoint | 模型 | Path 收益 | Path IC | Endpoint 收益 | Endpoint IC |
+|---|---|---:|---:|---:|---:|
+| Prediction | A | 72.357% | 0.069215 | 80.289% | 0.063614 |
+| Prediction | HCA-PCA | 75.617% | 0.069050 | 85.115% | 0.063580 |
+| Prediction | HCA-Random | 71.577% | 0.069047 | 86.575% | 0.064936 |
+| RankIC | A | 41.333% | 0.038524 | 42.890% | 0.046365 |
+| RankIC | HCA-PCA | 40.500% | 0.036102 | 41.616% | 0.040383 |
+| RankIC | HCA-Random | 40.339% | 0.038424 | 42.476% | 0.044427 |
+
+相对 A，Prediction/HCA-PCA 的 Path 收益提高 3.260 个百分点，但 Path IC 下降 0.000165，Endpoint 收益提高 4.826 个百分点而 Endpoint IC 下降 0.000034；配对 block-10 bootstrap 的收益区间均跨零。RankIC/HCA-PCA 的 Path 收益下降 0.833 个百分点、Path IC 下降 0.002422，Endpoint 收益下降 1.274 个百分点、Endpoint IC 下降 0.005982。HCA-Random 没有形成相对 A 的一致改善。
+
+因此，HCA-PCA 的结论是 `partial_metric_conflict`（仅 Prediction checkpoint 上的收益改善信号），HCA-Random 和两个 RankIC 变体均为 `no_consistent_positive_optimization`。本轮不能把 HCA 宣称为跨 checkpoint 的 ICDE 主创新，也不继续在 HCA 之上叠加 SVA 或 MOG。完整证据、逐日配对差值、bootstrap 区间和审计记录保存在 `experiments/csi300_aligned/models/hca_online_full_20261020/REPORT.md`、`comparison_metrics.csv`、`paired_block10_bootstrap.csv`、`audit.json` 和 `decisions.json`。
+
+HCA 仍可作为论文中的结构化负向证据或 checkpoint-dependent 候选：它说明“训练期 PCA horizon basis + 零初始化残差头”在一个 checkpoint 上可以提高收益，但不能保证 IC，也不能迁移到 RankIC checkpoint。后续若保留该方向，必须在未查看的时间窗口、第二市场或多个 seed 上预注册验证，不能根据本轮结果重新选择 rank、basis 或更新规则。
+
 ## 首选候选：Matured Outcome Graph（MOG）
 
 ### 问题
@@ -100,4 +121,4 @@ Prediction Adapter 是主起点，RankIC 是必要的负向稳健性诊断；不
 - [CoRe, arXiv:2609.34638](https://arxiv.org/abs/2609.34638)：跨变量校正空间交互已有相近工作，不宜直接新增行业共享校正并声称原创。
 - [DPAL, arXiv:2610.14376](https://arxiv.org/abs/2610.14376)：金融 TTA 的方向/价格轨迹联合损失已有相近工作，不宜只加方向损失作为主创新。
 
-上述候选是基于原文和本项目结果的研究假设，不是已验证的 ICDE 贡献；MOG/HCA/SVA 在本仓库中尚未实现或跑完整实验。
+MOG 和 SVA 仍是待验证的研究假设，不是已验证的 ICDE 贡献。HCA 已实现并完成本轮完整 226 日实验，但结果属于已经查看的固定 CSI300 面板上的回顾性机制验证：HCA-PCA 只在 Prediction checkpoint 上出现收益改善与 IC 冲突，在 RankIC checkpoint 上为负向，HCA-Random 没有一致增益。因此当前可稳妥写入论文的结论是 A 的因果在线适配协议和 HCA 的失败/部分改善消融，而不是 HCA 已经成立的普遍方法。
