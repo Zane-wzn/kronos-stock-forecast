@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "model": "timesfm3",
+  "rows": 66103,
+  "dates": 226,
+  "fingerprint": "0200dca30f5fda0deb99412c29be32eab49aa00c5637e664cd81c54db02dc678",
+  "peak_rss_bytes": 1989574656,
+  "minimum_available_bytes": 4267253760,
+  "elapsed_session_seconds": 5603.008469099994,
+  "prediction_seconds_total": 5585.291804499226,
+  "note": "Current checkpoint retrospective evaluation; current constituent survivorship bias.",
+  "evaluation_completed_at": "2026-09-17T15:42:16+0800"
+}

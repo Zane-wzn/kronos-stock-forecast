@@ -1,0 +1,20 @@
+{
+  "source": {
+    "path": "experiments/csi300_aligned/models/odestream_direct_24x1/predictions.csv",
+    "bytes": 6737544,
+    "sha256": "dfbb7b09058fe74ba448bafb1eb7e934f9713cf33e854863f3fb76e0687dc5c1"
+  },
+  "raw_rows": 67006,
+  "raw_target_dates": 226,
+  "target_start": "2025-07-01",
+  "target_end": "2026-06-05",
+  "stocks": 297,
+  "same_day_later_predictions": 66780,
+  "fraction": 0.9966271677163239,
+  "ordering": "One shared model/optimizer; sorted target date then stock; predict_one then update_one for every row",
+  "code": "scripts/experiments/run_odestream_csi300_24x1.py build_split, main streaming loop",
+  "interpretation": "For previous-close cross-sectional publication, later stocks can use the current target-day labels of earlier stocks. Historical diagnostic only; not a causally matched baseline. No rerun performed.",
+  "old_summary_rows": 66709,
+  "recovered_raw_rows": 67006,
+  "note_on_old_rows": "66709 equals 67006 minus the 297 targets on 2025-07-01 after backdating to prior close outside comparison start; not a missing file discrepancy"
+}

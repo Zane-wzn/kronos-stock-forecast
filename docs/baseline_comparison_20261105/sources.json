@@ -1,0 +1,1169 @@
+{
+  "Chronos2": [
+    {
+      "path": "chronos2/results/predictions.csv",
+      "bytes": 182180670,
+      "sha256": "db9be30ab990e94a13c633e40f29eea6a74d72cdb586744866b76faf7dbbd493"
+    }
+  ],
+  "TimesFM3": [
+    {
+      "path": "timesfm3/results/predictions.csv",
+      "bytes": 182169393,
+      "sha256": "2041093526fca64e2b36f3be87ba22d2fa95054f766d3d4f842aac8b49e748de"
+    }
+  ],
+  "Prediction_static": [
+    {
+      "path": "experiments/csi300_aligned/models/prediction_adapter/predictions.csv",
+      "bytes": 21302912,
+      "sha256": "73bc29ba1b037df35fea6cd00a3f0a9944a39522c8da206ac656071b946158b6"
+    }
+  ],
+  "Prediction_online": [
+    {
+      "path": "experiments/csi300_aligned/models/hca_online_full_20261020/streams/Prediction_A/predictions.csv",
+      "bytes": 32803119,
+      "sha256": "b12f16e23108271a8b651e6c62cd9a5d12f04f050ea8b769974861131d3c95bf"
+    }
+  ],
+  "HCA_PCA": [
+    {
+      "path": "experiments/csi300_aligned/models/hca_online_full_20261020/streams/Prediction_HCA_PCA/predictions.csv",
+      "bytes": 33199507,
+      "sha256": "a39786f4392c3b5227f438462b840902bd8c955eb76ef60fbb169971d0cc32b9"
+    }
+  ],
+  "Kronos_zero_shot": [
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-01.csv",
+      "bytes": 167258,
+      "sha256": "8869081483313e6f2e639a6bb6d74efd4e0ce16895aa4413b20105747dbf056b"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-02.csv",
+      "bytes": 167320,
+      "sha256": "621d79f6cf26413b1b8f8d9957827932af31d9b3932d928c588d1d20008278df"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-03.csv",
+      "bytes": 167287,
+      "sha256": "316820ff938792b0ba3c89552fde4b950c3569e483141d5d983f3d6197840c89"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-04.csv",
+      "bytes": 167379,
+      "sha256": "641fbf7d24dcc7e7cb1a8864cf13fbf7479a88d6aa3c05c5d6e71f36e1f63cfa"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-07.csv",
+      "bytes": 167232,
+      "sha256": "e637a0ab96cbce6201d1ff38f6871b19f8b35d384ab4037b00ea15f386ba6b60"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-08.csv",
+      "bytes": 167434,
+      "sha256": "abfd4412eb874f5d1938247c39b16e24d0d5a26ed5f617ad8d87daa2abb2230a"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-09.csv",
+      "bytes": 167238,
+      "sha256": "1e1d7a9e4558aab836ddf98288b8dcae65576a67d818a35c9ab209eaf1040571"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-10.csv",
+      "bytes": 167046,
+      "sha256": "d9e3fd7772ca9d3294c471280ae405d06c7ff201a0b800ffaec30c9cd2f85661"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-11.csv",
+      "bytes": 167188,
+      "sha256": "16c7614b4cb2c49d4a865f0685ace3b2da82fb30d0df846ca15223a31ea6f73a"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-14.csv",
+      "bytes": 167104,
+      "sha256": "ae7f6f1b490542b22cb878ad037303c49c7b6eed04493f2060be6b0d1d06f1c9"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-15.csv",
+      "bytes": 167003,
+      "sha256": "fc76ed723c1309b42c49c5bad3502b9359b742066a1e264c1856778f7a64eddd"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-16.csv",
+      "bytes": 167051,
+      "sha256": "913de87d7ffa116d36fdeee623fdc2b9eb755b9ef24f492f239d09559f8388d1"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-17.csv",
+      "bytes": 167237,
+      "sha256": "023e784a0085c1f7cfedc9d51908f4f6c174009494bbadaf78e3b1ba9d122c96"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-18.csv",
+      "bytes": 167162,
+      "sha256": "aa65a02fb1b4ca3577d1914995216e310a0adabcb167286db758da7daa39573b"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-21.csv",
+      "bytes": 167421,
+      "sha256": "43c3b93a9202ce9abcabe35c3615b5de1dffef6eec069f67fbad0b6e068ef336"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-22.csv",
+      "bytes": 167452,
+      "sha256": "623f5ab309c0a984ae683f5e0728650a603a6167cc6bf89d34cf84f1b87abf81"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-23.csv",
+      "bytes": 167375,
+      "sha256": "3acd2c969c2621db7a08318c8b87c6b82c9fdf483b3801d167e4369e9503d13f"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-24.csv",
+      "bytes": 167480,
+      "sha256": "9542c358d00b97acea2e51d40b9b9ffe88bc4f155b75160125e610e7114e76f4"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-25.csv",
+      "bytes": 167434,
+      "sha256": "74c38127ed2dc281869c02025f4559cdd4cf2c8b3a56d79f5126b8b15aca0802"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-28.csv",
+      "bytes": 167373,
+      "sha256": "4b15ef08feda3161235ba3ccf789ac686e2c45454ee9ebdb9ab06ddc235a696f"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-29.csv",
+      "bytes": 167424,
+      "sha256": "94912d82361c0e0c42d437616111142b4bc4e3c9a9e31a5c2427ca981f7810ae"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-30.csv",
+      "bytes": 167454,
+      "sha256": "fe285ec3793f0b2f6697bff11389077b3eab5fb0172b7c8e33c0f69365dd8870"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-07-31.csv",
+      "bytes": 167252,
+      "sha256": "776b72729e80a1cacbd53019284245b84ed7bca59485842bb6d8c93c3708c152"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-01.csv",
+      "bytes": 167231,
+      "sha256": "c802d9242811f8fc5c095cf5a4dc4ad899c0f0e2d7e70976b04cea9b2028feb4"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-04.csv",
+      "bytes": 166724,
+      "sha256": "f5abf9dff5b565a61787299af94994d2f6047532449e9473e632784163fa5c9e"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-05.csv",
+      "bytes": 166760,
+      "sha256": "9bf21c9cae7a054457c7c5afc77cb96656197c2cfe7c6b623e5a0c772dedd6af"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-06.csv",
+      "bytes": 166731,
+      "sha256": "8a0c62e745b9e3f2bd63494ebf9c186a9c748c60ff9816763180b5093e03a60f"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-07.csv",
+      "bytes": 166662,
+      "sha256": "67eae22dce8532f17a1d8bcbba899ef5e0cf424773f2d9794c4b438bc2b1028a"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-08.csv",
+      "bytes": 166635,
+      "sha256": "1bb7b05203113cbac81380ee952119232793dd1c37e6afb654204f5c663e53c9"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-11.csv",
+      "bytes": 166623,
+      "sha256": "4ca2bbf80eed6be0f8b1a8bdc3f4f2c832b0cbe4771878304273fa3c69c60945"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-12.csv",
+      "bytes": 166592,
+      "sha256": "3613f7845cba31876284b872881664722b4d7e283cda9e60c1680d7ae54b67ac"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-13.csv",
+      "bytes": 166003,
+      "sha256": "bc068ac338aa3a672e0f1a752495ef47ae95355e1ed105ae12223e5d87b395a9"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-14.csv",
+      "bytes": 165933,
+      "sha256": "029097be6dc2328582d1c5a1516c53677cbcafe827606d3a588252cbaf684143"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-15.csv",
+      "bytes": 165981,
+      "sha256": "a6a1183784b814edd1171592d15e765bab6c00b9b24bc96e28ddfb3b22d2bfe2"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-18.csv",
+      "bytes": 166569,
+      "sha256": "65355915300489ba48c5386d218b4dbfd9fb93b1ea2c30334861a84f5030565d"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-19.csv",
+      "bytes": 167087,
+      "sha256": "e2101b7587681645ef45ec21ca21fa09094372e928d003a7d9aed6f6947d1d3a"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-20.csv",
+      "bytes": 167144,
+      "sha256": "66e53ff9728b36645a0e23173fe1607d25fbd63b8dbcc5dfa56d4e0c689588b3"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-21.csv",
+      "bytes": 167384,
+      "sha256": "8aa338f76379301b8ff398e16afdd83d2e435f08719aafc323189822c62d9f7f"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-22.csv",
+      "bytes": 167230,
+      "sha256": "01075d65e4eb77adbfc3f68f57b937a173eaff09dafbe07c5428ec13b36a8be0"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-25.csv",
+      "bytes": 167147,
+      "sha256": "9dde5f1d8aeb24a4ff342a6a0975f9ea662e4b117748c0a4bf91463fe04de9f6"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-26.csv",
+      "bytes": 167305,
+      "sha256": "48fca3e927ae4433723f8e95752ad9ce104416f9011bf1e4884c459704d4a028"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-27.csv",
+      "bytes": 167217,
+      "sha256": "12123036861fd357225d4b6e8925b1291936adfa30c1f37df9c7fd97531d2962"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-28.csv",
+      "bytes": 167234,
+      "sha256": "23940f0b6bf6ff5c593dc05ef75595662caaea26034e5281e51e1f4439d14815"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-08-29.csv",
+      "bytes": 166744,
+      "sha256": "ceddcd99e5adb1492d0de6791071fa078bba012a101ce5211b34e8c7784f9547"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-01.csv",
+      "bytes": 166163,
+      "sha256": "50932d0750f8a45dd762b70c7c35fcb49605cdc1938c02ea89038a228313b375"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-02.csv",
+      "bytes": 166301,
+      "sha256": "6ea0f808b4376ba682024e47f6db8dc13e5c6335df1b5d64a814034d1531effa"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-03.csv",
+      "bytes": 166110,
+      "sha256": "27f275ac94dc1bc40353a783a5aca8953f5933b8088d8e09cf9d86d70ab269c3"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-04.csv",
+      "bytes": 166124,
+      "sha256": "7a65e5a6d1477615e3d2de732594c0898e55a802006bbb3a4cb4dd74829075e5"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-05.csv",
+      "bytes": 166218,
+      "sha256": "faf6688e88c0265c83b19abefcf3bee5a6b6c6426eee2e1bdc61e682be1664de"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-08.csv",
+      "bytes": 166400,
+      "sha256": "3ac3a23daccbd9bbb0926eb27a45dac1e0515e0979caffed65e97132af6d545f"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-09.csv",
+      "bytes": 166898,
+      "sha256": "592d611cd693ead6ee53de60e2ae8b484d3a6cb9f1dcc038daf7ab049a26c3d1"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-10.csv",
+      "bytes": 166879,
+      "sha256": "3946249ebb9d5f5aaeb659b5decd8b7f53acf5ee299fdb3e812d6aa248081c0c"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-11.csv",
+      "bytes": 166885,
+      "sha256": "742a641130a7d0a8d2e7a7daabe846c908ea4de246f6c056191652c3230b66d4"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-12.csv",
+      "bytes": 167432,
+      "sha256": "d972370f8cdefc1d6035d14782af12acb870bb838417e05c0cda970a3614ab06"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-15.csv",
+      "bytes": 167432,
+      "sha256": "f79ebad0929db71b2ce11c524abc988a483f0c784fe138cd93762fc176e7a467"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-16.csv",
+      "bytes": 167418,
+      "sha256": "26f2885bd75481899336249331981a725e081d37941865f67f29183ce4c3a394"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-17.csv",
+      "bytes": 167344,
+      "sha256": "3fd7700b00d692891d55ce65159fdce0e7bffb7f72f535c02a3d1f829955fa7c"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-18.csv",
+      "bytes": 167351,
+      "sha256": "82e12d8e4abc0b73f278cbdf06e3d148724cbdabf7fe28070b7483078d426ac9"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-19.csv",
+      "bytes": 167281,
+      "sha256": "cbb8ce8a525e99f4e93a59ee15fbeb7e328c0a0c9518a708ecd91a3b160c5838"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-22.csv",
+      "bytes": 167301,
+      "sha256": "56af6b14dc837fde24fa544478e4ee1e23815a7d9729686e6129953a4f067ccc"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-23.csv",
+      "bytes": 167218,
+      "sha256": "50df6f8e99a06418deb5f5b204b1445d9eba54dd4d470f9a4ff0e6e3c521b5cc"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-24.csv",
+      "bytes": 167279,
+      "sha256": "f76c62f259d8c48a2a75fa6f911b851c3df142f4c0bd461d3efb7fed1907d9b0"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-25.csv",
+      "bytes": 167206,
+      "sha256": "56c723b33c5d61657e88823ee48ac65396b523557dbdd06b501fc131dc5d7c90"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-26.csv",
+      "bytes": 167141,
+      "sha256": "e82a36dc7e026ba408aa1f9f7806a695d69e0f785ce8c2c760728587c3ef2ade"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-29.csv",
+      "bytes": 167274,
+      "sha256": "fd204b499dc92c4d7c89cf9258dd31f2600388deb420920ab2fcf313fd65690a"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-09-30.csv",
+      "bytes": 167214,
+      "sha256": "b9f1e8fe949202f40e3f5eb4caea6faff1b0391126dc18e9cf7b9b6116c9f097"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-10-09.csv",
+      "bytes": 167359,
+      "sha256": "34a8836dcce5e1c0c5e0c6c93019c8a6a85441374b1db8d33da1248aecdf6557"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-10-10.csv",
+      "bytes": 167430,
+      "sha256": "08b3b19ff2babffbe52e9caf00b8d73d31e25bc1c8d13a1a4d3e549e6d0609f6"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-10-13.csv",
+      "bytes": 167388,
+      "sha256": "767619c5bf6ec80dadb2ef288d6f05edc9ef902564cc9f71f72c5c69d4513698"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-10-14.csv",
+      "bytes": 167461,
+      "sha256": "91ad87ca7eed1d2c0b2c9a8c6cf651992b1f5d1c9fdcb5b1f2962e6df25326b7"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-10-15.csv",
+      "bytes": 167524,
+      "sha256": "93a4b1a48468b038f4b090c483cebdfda3d429cd572be739a0caef7813986d9e"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-10-16.csv",
+      "bytes": 167482,
+      "sha256": "0310a4bfd6ea5adffb5dc561bc76214f88f73a8dcfaf94cf0d6684041221660a"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-10-17.csv",
+      "bytes": 167375,
+      "sha256": "5eb2eae5f1a4e1d41f5d1c17dcf98a60d1e1698567838e84896a7d36eee18aaf"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-10-20.csv",
+      "bytes": 167258,
+      "sha256": "d8d8e2bf15096f95928fe5d115af9faa5e65d93d287e6f88ff3eb031ccd43d39"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-10-21.csv",
+      "bytes": 167540,
+      "sha256": "978c74a61e6840e4d20da45d2d5a2aac7d7aa7d3c432661c986817eb71ab8aa2"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-10-22.csv",
+      "bytes": 167261,
+      "sha256": "1d8679b4d10612bcb9da0494baedea68e64f73511b011e28ef1714908f0aec08"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-10-23.csv",
+      "bytes": 167416,
+      "sha256": "b78ff359f2f0247482a7293eab62f658dbeeab8ba4e78ce14ecc0cc8199a8184"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-10-24.csv",
+      "bytes": 167331,
+      "sha256": "1d5257c3a792631d7e70355b5cf43e1f53b912d5de13c02e6ac340b9f0c4d3f2"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-10-27.csv",
+      "bytes": 167452,
+      "sha256": "1ea715744ca6ddd240923b57c48925dfde16a6d3a4ce5b9eeae252da64a6e257"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-10-28.csv",
+      "bytes": 167412,
+      "sha256": "3d433dcb6d65a9341db99348e41264465596ef5bce961c8e6d755cc2349b2aad"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-10-29.csv",
+      "bytes": 167361,
+      "sha256": "9ceb3f6e6af8e34d171a9ef189692e72b8b716d1e7de5035f94e57604f974db5"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-10-30.csv",
+      "bytes": 167457,
+      "sha256": "ee52b2145cb7dbac2ca52389f25e38dffb92d068ae03c29762ee48572a02ccb3"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-10-31.csv",
+      "bytes": 167172,
+      "sha256": "53ff73fb0f6f8aeb66f661b07ded93a2a1052db56641754181c9a1775c8727b0"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-03.csv",
+      "bytes": 167289,
+      "sha256": "7d7b9d8d75bdb60b4a7277b20d24863f3e7853ed8840fb9a68258d472df38ae7"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-04.csv",
+      "bytes": 167255,
+      "sha256": "3779e101918fef67983692dde5aeda5939c8c0c06c9dd17b5ab988c42d9cb67b"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-05.csv",
+      "bytes": 167345,
+      "sha256": "37cb82e06555ae0d8db1d3df5c866bb6897ee4b227478a3d06374bae7a777ed1"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-06.csv",
+      "bytes": 167442,
+      "sha256": "52918826680715281b040004c5ce3e86b847fe71bf554f1c78ebe5222b221a56"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-07.csv",
+      "bytes": 167401,
+      "sha256": "1af2e4351c4336ea4219ba0bbbc11371a652cd95a249eefe95150b6cf82bf6a3"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-10.csv",
+      "bytes": 167465,
+      "sha256": "f2e89c879d6afed4c805c1c410f18b67fa9a2810c57b69ac8972959945a3d676"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-11.csv",
+      "bytes": 166906,
+      "sha256": "6ab4f878b22db639ba1b93017da086b86190f6b5e2aec292a9c5c2ffdb33c722"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-12.csv",
+      "bytes": 167431,
+      "sha256": "a2aeb9a7c47ae20c86893b5fe132ce5bbec619853106901dfaafa726b5e42fea"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-13.csv",
+      "bytes": 167447,
+      "sha256": "0321f4d7c2e5f26aaf53f0728d42eae0476b7e8256104743bdbf64c504f3dc3f"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-14.csv",
+      "bytes": 167531,
+      "sha256": "ef452279976769f26ca51fccb401c84748a319f8ff71a7970db193df3bf2512f"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-17.csv",
+      "bytes": 167428,
+      "sha256": "274ebaf161d209951995d75d708f615898c0a665ebdb38e2bba9d0cbec208150"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-18.csv",
+      "bytes": 167380,
+      "sha256": "c235090645187e215d205a422bfe65f52aaab22b2fe5393bb4bb0c4b562a59ee"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-19.csv",
+      "bytes": 167405,
+      "sha256": "adf20b3c880d74f2b0319af99607d99f4bb12f73a36f4ec70403a904bf719861"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-20.csv",
+      "bytes": 166412,
+      "sha256": "ea9a711c96a6858afb5af80c863f285fe7060c1d70ecd2da4d8c36416d4ccbff"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-21.csv",
+      "bytes": 166097,
+      "sha256": "87dcbc85463c304823a7c87401533e5000077bb06b5104363eeefd7fc704202b"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-24.csv",
+      "bytes": 166122,
+      "sha256": "3ac70b28560d5bfb0d2cb9c578462109b9101bcfc038d9cf85ac87dbcce429e4"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-25.csv",
+      "bytes": 166186,
+      "sha256": "eee257662075bf228f48ac0444952f3bcbfb1b09a1131d9820b14fc4b6d8322b"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-26.csv",
+      "bytes": 166774,
+      "sha256": "f97ceced1b8d66eea44f08013d5e4b240a613b97ddd542f508a824356c7e8fee"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-27.csv",
+      "bytes": 166657,
+      "sha256": "7a7b1c0b46880caa5d7906a84963754c9448923a0013f93880f1978a236d789a"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-11-28.csv",
+      "bytes": 166710,
+      "sha256": "ff42e94aec898b24ebbf14a26937131d9a32765c51e80c7b061d31a46d41b1df"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-01.csv",
+      "bytes": 166870,
+      "sha256": "58c3daa31e7c60f2e889a074b8915eb29efb2a47cfe85ebaa06043f195aade33"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-02.csv",
+      "bytes": 166738,
+      "sha256": "0d2b6fc460fa9407ed28cbc32487e58c5b6eb2606c5dd3cdc7ce4ea582d590e4"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-03.csv",
+      "bytes": 166827,
+      "sha256": "7e7e4153fc75cb581110052147724410362bf29975bd8c4f4ff17ad93bf887fc"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-04.csv",
+      "bytes": 166855,
+      "sha256": "9be3f5cb907631284b962f74cf25b64465b170a576a598fb7378bb6244005554"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-05.csv",
+      "bytes": 166846,
+      "sha256": "08ec0379dcc7ef658baa0e398af00da535577312a0291bfcfb8e38d46e1bed4e"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-08.csv",
+      "bytes": 166870,
+      "sha256": "32712f0e9e465f765035c6a057754e4ebd340ad4904be33999b9808d381b1843"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-09.csv",
+      "bytes": 166763,
+      "sha256": "105828f52f40c6ed6af0a2c37926d662a721c0f4d887e07e37d09ee7ac4d12af"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-10.csv",
+      "bytes": 167010,
+      "sha256": "c58e6502ec5a235fb6ac98d63edd7b56cac3e422a2d9ae2599c9da495cb9a770"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-11.csv",
+      "bytes": 166774,
+      "sha256": "e4fb161f5a008039a4dbffaf067be0662f9c0cea74d3846399a0cce32f7b4201"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-12.csv",
+      "bytes": 166963,
+      "sha256": "d7708ca0c750cc6986ded56caca0aa4518720221853809d4bde1d7927172658b"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-15.csv",
+      "bytes": 166928,
+      "sha256": "e2684c2a7959538a23736c43eec869ff574fc959e8bfb6965eeed8e41215571f"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-16.csv",
+      "bytes": 166761,
+      "sha256": "1f0c4f81036793c73746140735829f297c8fafb1291508531f3361c5dbbb7a24"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-17.csv",
+      "bytes": 166959,
+      "sha256": "4c7dcd42ab666485aacf18f8bafa9282ac83bf319f3e3c8a320d755d6d144357"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-18.csv",
+      "bytes": 168060,
+      "sha256": "8fe30e133114e66bf3c97eac56733ac5be276f24a24c32eff9ca38c4ba313d75"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-19.csv",
+      "bytes": 167477,
+      "sha256": "718d726f1fbcef491f76dce2318d1d0567a8a48f7a8a569aef562b7eccfc0724"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-22.csv",
+      "bytes": 167459,
+      "sha256": "9c9fc3e34606ab29ac8e54019f81beeedeaf98f19d27ad952930451f9b2718f5"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-23.csv",
+      "bytes": 167405,
+      "sha256": "b4d47c488d4c9a24d59c4c384e9cba4753208d440ccde1907703adf2101f87f7"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-24.csv",
+      "bytes": 167341,
+      "sha256": "d7ecf5b3b3e6048d28998cc720f7dd8df516fb7394610c0be35532af70bfb19c"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-25.csv",
+      "bytes": 167355,
+      "sha256": "dfb5051baf348d3da1cf55d51c89c8eed0fd5886cfe5c8557b36704c291e3edc"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-26.csv",
+      "bytes": 167303,
+      "sha256": "d925d5373b6104cd7f381d27c360fe83285f84b8aed56bd761af1a83209d75dd"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-29.csv",
+      "bytes": 167292,
+      "sha256": "6e9a4ebd8fb0e697fa4c9f81c3629f7d093e88cd29b29c633d8f0202171a3db5"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-30.csv",
+      "bytes": 166762,
+      "sha256": "5afdf4114e239fbba5c3d85d7b327d7d8d75ddffa5f36d5f2f13cee49bd6026d"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2025-12-31.csv",
+      "bytes": 166730,
+      "sha256": "6bf3831d1c3581c3e87d558cabdac0c0ab98cf3cd04b27852c6e3f66d2f5524a"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-05.csv",
+      "bytes": 167418,
+      "sha256": "520ea326de1e6554f940be1d3a82d90c4fe7921be133b0493df8d51a95730545"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-06.csv",
+      "bytes": 167517,
+      "sha256": "381755a2b4dc36cc5bc4e5142c2f678b1a53d8bb34b01accc7a32266b2aa7af8"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-07.csv",
+      "bytes": 167283,
+      "sha256": "8823fbe1821d089e657419a656ecff74900c9eeae9ab7bb3ebfcadbd2f51fe42"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-08.csv",
+      "bytes": 167657,
+      "sha256": "9572c30f5c6913874fa760ea9ee31b1ab877bd20000dff1e3a7a975b22f23373"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-09.csv",
+      "bytes": 167492,
+      "sha256": "97e0d8f3e918723bf3048527f91f9f63fee24f7a4613a43c2f630d17450aea26"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-12.csv",
+      "bytes": 167467,
+      "sha256": "c005cd1ef12a9187bd142dbb414cbbd7cb5592ae275e1ad2f721dcfd8d2a3a38"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-13.csv",
+      "bytes": 167538,
+      "sha256": "d163405ea2d870adb563f33296a91876d96fbeb991167f41ce6387e5a96cdc8e"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-14.csv",
+      "bytes": 167469,
+      "sha256": "73fa095efe1c72edcd3a9e6130827e7e2a3a40c49f7da8313ce096a750470e1a"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-15.csv",
+      "bytes": 167998,
+      "sha256": "da8e277656a616e33f36bedbcc09dfeb427710badde80058e964e701d2a73162"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-16.csv",
+      "bytes": 167899,
+      "sha256": "cd40713eba75ec6244ecf3a61ed4acfd4ffa5017a126cf1ebc35a2e1de014399"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-19.csv",
+      "bytes": 167997,
+      "sha256": "d203eacf01dd779b777305f20cde4be514bf26d83d8e013512d9cf9ccb497cb6"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-20.csv",
+      "bytes": 168007,
+      "sha256": "a09490867a8f6cdb4b37f6e29517d4b6f89d29319b671a7fcad0de628917feb7"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-21.csv",
+      "bytes": 167812,
+      "sha256": "15301bc2a0dfc01319fca041813d69a02a755e2cae9af293927291e01f57c6a8"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-22.csv",
+      "bytes": 167818,
+      "sha256": "6b9ae1d5a5c39ee5e06a16cfcaecc35a53af086624e9eee34aab3f120f6c4e2d"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-23.csv",
+      "bytes": 167733,
+      "sha256": "bfadaec95c6d894fbe02ba1fee3cafb89a05253a37960da4fe25ca21c2e1e5e9"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-26.csv",
+      "bytes": 167822,
+      "sha256": "322a5350a3b3377d04589c3731f42f62eda71a310f2d8f84aba60297729af429"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-27.csv",
+      "bytes": 167664,
+      "sha256": "6b87b52e0d3c4f474cdae5ba57fad90c0904d841e5b714b9b7733cdf5e335cac"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-28.csv",
+      "bytes": 167697,
+      "sha256": "21d47d237f8ad34989e8265e896b2a8f27e26ca0b68ced4b8f420cdc78007fc4"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-29.csv",
+      "bytes": 167711,
+      "sha256": "58630b873205606c9690b8fd1269bbb01df0f767c7a2949292accdb52f8e363a"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-01-30.csv",
+      "bytes": 167736,
+      "sha256": "f5af6fd30ce9ba7e5f3ecfb7e432b8ee37af9d2329b7cb9618aa4cc99b281820"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-02-02.csv",
+      "bytes": 167667,
+      "sha256": "12ebda1c30a608f29b78b4a72ea321649e46770435a406155ebfa86d052e4142"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-02-03.csv",
+      "bytes": 167658,
+      "sha256": "05da249ff22bd4733cef263e609b6e11ce7b9256cfa6f5360c07b63a5d23ad82"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-02-04.csv",
+      "bytes": 167913,
+      "sha256": "c46071d1be08c4c5f6548a470d4e6bdb39bd74cb115ce8a1fb452bc89c7c5661"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-02-05.csv",
+      "bytes": 167899,
+      "sha256": "63db03a3dbb585d16b5e624969979582a77521a72613d545f6ce30d1dcaa56a4"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-02-06.csv",
+      "bytes": 167271,
+      "sha256": "8fce2e0e469ac80a81d601f3787606185e4a7bf446fb72250a69ec9e20b0477e"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-02-09.csv",
+      "bytes": 167392,
+      "sha256": "55b291810a0fb5db0e2bc844ee9964be076375c89d446be4697cd7e363953554"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-02-10.csv",
+      "bytes": 167529,
+      "sha256": "79e8772a047f64c4ebe69765fdbf3799833b642008618461fcd369c63c59b40f"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-02-11.csv",
+      "bytes": 167408,
+      "sha256": "c69bd32c7dce54b3ec81c9d7af85b00c2f4d6214c04769e25052be7392b21232"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-02-12.csv",
+      "bytes": 167468,
+      "sha256": "0f82dd46643e7c2bd21a87c34c38f4ccaed00a4288b56917fd67cc12f4577e52"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-02-13.csv",
+      "bytes": 167126,
+      "sha256": "cfefb8a3bc9bf2794565f71dd3ac26481ff4e2f1b7a47ecfaac4e027d6692c0a"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-02-24.csv",
+      "bytes": 167872,
+      "sha256": "dd14112628573f4e79e7f9e7accfe9e8d9a13646b9174cf6dffc302773257087"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-02-25.csv",
+      "bytes": 167234,
+      "sha256": "38fcafa06d9a1231d350f4015d41b9bffef313cb1f7c3f7ae8c4c344e3db6fc5"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-02-26.csv",
+      "bytes": 167197,
+      "sha256": "fc6ac21c105b6aec0b3a4fcf0853c30597a448fd99e8e6a2b61e98d062eda759"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-02-27.csv",
+      "bytes": 167172,
+      "sha256": "fed137447588c0b82077251595d8137a16d04f78df0d3ba5182103409700de8c"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-02.csv",
+      "bytes": 167242,
+      "sha256": "69d549551af89770804e7c01374c11380b08fc970549ddf2d658ca675bebf251"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-03.csv",
+      "bytes": 167137,
+      "sha256": "6a5779c5afe5cf225177ad6c918f63684753fb44468ab9bf47bf310ceb642450"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-04.csv",
+      "bytes": 167080,
+      "sha256": "23468c32f8b2c20c8776f1fa321f91872e36ff8abe62722cc444aff7ffefb824"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-05.csv",
+      "bytes": 167241,
+      "sha256": "2819e9da78548cff1f8ad4c4065ba97c4a359c0eb13ad309e7e8794160e7b827"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-06.csv",
+      "bytes": 167305,
+      "sha256": "645726d45f9337fe6b36a7c670ef4b36aa96acd67d73dc6b9a1ffb52f5f3d74e"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-09.csv",
+      "bytes": 167238,
+      "sha256": "748e39c736b7d60241372bdbd1b9bc1db576f04f20e95cd57bee3f11eb251f25"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-10.csv",
+      "bytes": 167218,
+      "sha256": "2509da14ebbff2d60965e6ed9876c93a0dc814627a4df224442c51f3cca576aa"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-11.csv",
+      "bytes": 168037,
+      "sha256": "abaeafe7674b87324e6a96028afadbeb670663e9e23c24adb34c981e02a002d3"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-12.csv",
+      "bytes": 167903,
+      "sha256": "59d9d64dd41f99883440e909deb2925938779d1f9ad4ca7f7c9caabee2c9fb6a"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-13.csv",
+      "bytes": 167944,
+      "sha256": "08eddc2dda7fff41d713c8c215929e4bde3898898f2ca91cba421b2f3ae90789"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-16.csv",
+      "bytes": 167929,
+      "sha256": "5d592b5ab28fde4df09da746590e5041c5584a961c19d9e03580bc42407a9b2a"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-17.csv",
+      "bytes": 167825,
+      "sha256": "e067a0b501aaca447e1ab7949eec391b40167a7840f6d58449d8910760672d51"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-18.csv",
+      "bytes": 167783,
+      "sha256": "45fe86b3b55eefb9be6d4f01d8f8cbaf02290f8376413332017f48b8fb564517"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-19.csv",
+      "bytes": 167628,
+      "sha256": "1db5d0c9cde7f24ebf8d2a307a921d7c741eaab6bb7141c6cde947d413242e30"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-20.csv",
+      "bytes": 167708,
+      "sha256": "120e81b6afbdc773539e417920fa6802b81f645271dc1170a7c362f2ed49f334"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-23.csv",
+      "bytes": 167405,
+      "sha256": "fbc1e9f34f57b2e996841efc119f52ab5c2f89459e263e2ef8422a2a1cdf3be3"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-24.csv",
+      "bytes": 167484,
+      "sha256": "d37b0269e0cf6cd9bed8b5dee4f38862def5d7c37cfb373920f87226f84f793d"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-25.csv",
+      "bytes": 167747,
+      "sha256": "0dc50247b48d88dcdd13a983ff7556f078fc6149c68d64655ed7c6a1b965b6e2"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-26.csv",
+      "bytes": 167489,
+      "sha256": "948adeca7985be83249bb3cf5aba6e852d467f3e5612eeff8fb66e41fbe1c198"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-27.csv",
+      "bytes": 167648,
+      "sha256": "97fa6ebf1de516e917855fb9e3a381dc8b3e1db7558bae563d62018b5c5b711f"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-30.csv",
+      "bytes": 167386,
+      "sha256": "49f0d900347865e02866384edcec50fba7cc0af86b315c8d30945c7ff32e1ff6"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-03-31.csv",
+      "bytes": 167503,
+      "sha256": "71f203f0b5498799a355c8510e4147994988e1016c625dfb6d7e347c03f4af86"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-01.csv",
+      "bytes": 167510,
+      "sha256": "63324d213514d38ed0b1465a139c0851d31606b44dd9fadea913ea65fdb91dbd"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-02.csv",
+      "bytes": 167660,
+      "sha256": "188f70db4815a5945930cbc4a20c0e342786fd6394c6bc8e0628d6547d9daa52"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-03.csv",
+      "bytes": 167407,
+      "sha256": "002d5295a730ebf46a2517431892b7bda286e1784ae82062310aae00dd1c9f6c"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-07.csv",
+      "bytes": 167323,
+      "sha256": "f9af96d88c4cbf8bf8eb2e03418b141b3ddaf7f4f8054467f9342a789c4e20c5"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-08.csv",
+      "bytes": 167809,
+      "sha256": "7e7c4d987aad86a838001d23f121753c0ce0c8730bc38610a35583427221b3d8"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-09.csv",
+      "bytes": 167701,
+      "sha256": "7a7e58713734192e61038e452d8b63a040c50c8219266d73d8281255258333ee"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-10.csv",
+      "bytes": 167791,
+      "sha256": "cc367fd109804d857869b361b7b71b9b6461b96dc6f2813f88cf28088c75738d"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-13.csv",
+      "bytes": 167857,
+      "sha256": "3001e506180e26f8abfca760cd96a7b51d13a72e2888d56acac4f09e50e41e30"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-14.csv",
+      "bytes": 167963,
+      "sha256": "1219181344321e352cf33d449a2713ff14917b70bb01e99bb8623685fbc5b23a"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-15.csv",
+      "bytes": 167858,
+      "sha256": "8a64e67de9c9e8df76ca1e2d9f0c4718ec707cb92ee7778de2128267eb9173a7"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-16.csv",
+      "bytes": 167781,
+      "sha256": "607f4172425e121d92d6dfe25c9a643dc2b0a6e5fce204d2f2f910358d36bbe8"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-17.csv",
+      "bytes": 167759,
+      "sha256": "ec75ca4198b617d984a534aeb122bcb14edf0d35de7de977dde46212fe7709f3"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-20.csv",
+      "bytes": 167829,
+      "sha256": "66b78ee797fbe3e7c743ab6a1030d51bc2d0c2199f3ac119ed1953e04dbd6fde"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-21.csv",
+      "bytes": 167836,
+      "sha256": "edb9c34531d746cd38cb7ff711c5d44eb7a89dd67a23995c77c45ef5e5d2c351"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-22.csv",
+      "bytes": 167797,
+      "sha256": "a10bc4c82f8d1f77e32b93f4d38d7da6d436cca214f9adec887490ec530ce0a0"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-23.csv",
+      "bytes": 167793,
+      "sha256": "1829387f6fa22545b5fc5c33f9a7007c445f60d9aecb21aa0f0daf91144eb833"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-24.csv",
+      "bytes": 167573,
+      "sha256": "9642592b69460c58307e6fbd43f96fdcc6a6fb9ddca3da04cb3b509fa91657ef"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-27.csv",
+      "bytes": 167693,
+      "sha256": "2ef5a721abaf6172c0ac33b0048942562876b918407e712ebf3e97c870ffb193"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-28.csv",
+      "bytes": 167694,
+      "sha256": "6cca5a245aaf303c0b089f5786bc5b4eabcd45dbfdd32d942f943fd63f048ad2"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-29.csv",
+      "bytes": 167823,
+      "sha256": "89d81f956fdda27c094a1d69e5ab88416093165f442a205192d45d01145e4f44"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-04-30.csv",
+      "bytes": 167824,
+      "sha256": "dced61e7dfc5a694ebcda2288e76bf362b296129fa145dbd9abf52efa1ec9a02"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-06.csv",
+      "bytes": 167935,
+      "sha256": "63f2431cf14b2c4492b954d32641557b6a2d138193a2fd39e69d220b93e8ac56"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-07.csv",
+      "bytes": 168387,
+      "sha256": "172ca4d5f58a36d994f516c1728d0cb704ab8b8bc3d617600e848fa69b3db904"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-08.csv",
+      "bytes": 168412,
+      "sha256": "77ad0c1188b8ec087a479ada0fab2bd0603b410d1a613214a42ebf0a10442f8d"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-11.csv",
+      "bytes": 168481,
+      "sha256": "438456910f006153f1492ee096ded70100e862210a8f272d572a5082a71dd0e1"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-12.csv",
+      "bytes": 168384,
+      "sha256": "04031783a5f417fa26d0bc6db8d7b25cb352546cf257c04a7da4e85590b58354"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-13.csv",
+      "bytes": 168458,
+      "sha256": "e2a025175d0ac583af2897e9ecbb36936c1ee948b09995c9c4978041097b71e1"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-14.csv",
+      "bytes": 168439,
+      "sha256": "afe66a90f25968d1cdcc9e6d9cfac4310575101620588a613313e544a1242196"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-15.csv",
+      "bytes": 168375,
+      "sha256": "6cbf64e46178ae529d3fac0ad38564ef36a5d166368f9986eb1ea2c05bf96203"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-18.csv",
+      "bytes": 168168,
+      "sha256": "dc1a86673ef8ff190dafd2ed05ff453b861144e81cf8eec568b50734d75e79bd"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-19.csv",
+      "bytes": 168273,
+      "sha256": "056a17493f201c1a979ff2bdab2d69728bb62516dd43e0d0742a8493b2174c0e"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-20.csv",
+      "bytes": 168250,
+      "sha256": "57d197bb4821f0466fc420dc354128427b5747fde8f1499955d5631150328b16"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-21.csv",
+      "bytes": 168112,
+      "sha256": "bcb72e4cf9b4726ef78df0df4c69674569c02dddfd791b5a6542164c52d33092"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-22.csv",
+      "bytes": 168238,
+      "sha256": "95836fb0894435d736ea02b043bf426b97448278368eb4666432238cde2d0e0a"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-25.csv",
+      "bytes": 168128,
+      "sha256": "13c4c93c2482b78cb1c53c0bd6225efd408d56d2f6c1ff84960926efc735d5d4"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-26.csv",
+      "bytes": 168111,
+      "sha256": "55f26c246ecdaa561870551ca7870cf78974bb37ed3fe8d4c3347d41f979c8b8"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-27.csv",
+      "bytes": 167941,
+      "sha256": "71a9d19b9c868a3a48c941ba58dfdcac951195fe0d456a294571e9342b5b4a4f"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-28.csv",
+      "bytes": 168107,
+      "sha256": "98e4a7b59b5e1d9d68a4934de92b0d87fa67dc01f1b9cc5d81c098f292e3662b"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-05-29.csv",
+      "bytes": 168021,
+      "sha256": "8af3b0afde62b363cd66bcb57bec936a1ab25b723b3283554db4e54d1cd07075"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-06-01.csv",
+      "bytes": 168082,
+      "sha256": "f782257ce4ff5bcc8079904651c8e0100eef97804d7aa76a9c419933bd60d5dd"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-06-02.csv",
+      "bytes": 168071,
+      "sha256": "9065f2b84f3a5145c7aec331dc636310e1c94678cd9ebbfaf6a8a989f4fbfb55"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-06-03.csv",
+      "bytes": 168049,
+      "sha256": "d7001afce2c8b3e40765fa6122ca48b9e93a2e5aad138cea305b15fd73facd16"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-06-04.csv",
+      "bytes": 167941,
+      "sha256": "898e7d1e214df363e682ba3a64152a3be2125da502505eef836938c1f1341178"
+    },
+    {
+      "path": "experiments/csi300_aligned/models/zero_shot/predictions/by_date/2026-06-05.csv",
+      "bytes": 167918,
+      "sha256": "d65d36fc9a4671d292bbbd3d0b4701bb9a16fb8f2757df423d05b80b3be4748e"
+    }
+  ]
+}

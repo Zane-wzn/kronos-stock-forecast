@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "model": "chronos2",
+  "rows": 66103,
+  "dates": 226,
+  "fingerprint": "028d8903ad7f582103417f3c2cbe966bdf0b901af1d5e9656bcb1ecaa078d375",
+  "peak_rss_bytes": 1327165440,
+  "minimum_available_bytes": 5968650240,
+  "elapsed_session_seconds": 1509.4296668000752,
+  "prediction_seconds_total": 2310.542010098812,
+  "note": "Current checkpoint retrospective evaluation; current constituent survivorship bias.",
+  "evaluation_completed_at": "2026-09-17T14:06:07+0800"
+}

@@ -1,0 +1,82 @@
+{
+  "val_end": "2025-06-14",
+  "device": "cpu",
+  "train_end": "2024-12-15",
+  "expected_rows": 66103,
+  "benchmark": {
+    "rtol": 0.0001,
+    "atol": 1E-05,
+    "batches": [
+      4,
+      8,
+      16
+    ],
+    "fallback_batches": [
+      2,
+      1
+    ],
+    "stocks_per_day": 32,
+    "validation_days": 5,
+    "threads": [
+      4,
+      8
+    ]
+  },
+  "dataset": "CSI300",
+  "target": "close",
+  "past_covariates": [
+    "open",
+    "high",
+    "low",
+    "volume"
+  ],
+  "test_start": "2025-07-01",
+  "point_estimator": "q0.5",
+  "sample_count": null,
+  "aer": {
+    "open_cost": 0.001,
+    "top_k": 50,
+    "drop_n": 5,
+    "annualization_days": 238,
+    "close_cost": 0.0015,
+    "min_hold_days": 5,
+    "minimum_fee": 5
+  },
+  "test_end": "2026-06-05",
+  "cross_learning": false,
+  "top_p": null,
+  "future_covariates": [],
+  "quantiles": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "training": false,
+  "ordinary_portfolio": {
+    "top_k": 50,
+    "min_hold_days": 5,
+    "drop_n": 5,
+    "cost_rate": 0.0015
+  },
+  "lookback": 90,
+  "timesfm_options": {
+    "make_positive": false,
+    "use_symmetric_averaging": false,
+    "padding_mode": "none",
+    "use_znorm": false,
+    "sort_quantiles": false
+  },
+  "val_start": "2025-01-02",
+  "dtype": "float32",
+  "pred_len": 10,
+  "temperature": null,
+  "model": "chronos2",
+  "expected_dates": 226,
+  "seed": 100
+}

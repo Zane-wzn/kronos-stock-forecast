@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "full_rows": 66103,
+  "full_dates": 226,
+  "full_models": [
+    {
+      "model": "Chronos2",
+      "source_rows": 66103,
+      "aligned_rows": 66103,
+      "extra_rows": 0,
+      "target_max_abs_difference_before_canonicalization": 2.0675990630714125e-07
+    },
+    {
+      "model": "TimesFM3",
+      "source_rows": 66103,
+      "aligned_rows": 66103,
+      "extra_rows": 0,
+      "target_max_abs_difference_before_canonicalization": 2.0675990630714125e-07
+    },
+    {
+      "model": "Prediction_static",
+      "source_rows": 66103,
+      "aligned_rows": 66103,
+      "extra_rows": 0,
+      "target_max_abs_difference_before_canonicalization": 0.0
+    },
+    {
+      "model": "Prediction_online",
+      "source_rows": 66103,
+      "aligned_rows": 66103,
+      "extra_rows": 0,
+      "target_max_abs_difference_before_canonicalization": 0.0
+    },
+    {
+      "model": "HCA_PCA",
+      "source_rows": 66103,
+      "aligned_rows": 66103,
+      "extra_rows": 0,
+      "target_max_abs_difference_before_canonicalization": 0.0
+    },
+    {
+      "model": "Kronos_zero_shot",
+      "source_rows": 67390,
+      "aligned_rows": 66103,
+      "extra_rows": 1287,
+      "target_max_abs_difference_before_canonicalization": 2.0675990630714125e-07
+    }
+  ],
+  "odestream_common_rows": 65425,
+  "odestream_common_dates": 225,
+  "odestream_actual_return_1_max_error_before_canonicalization": 1.6108936946868102e-07,
+  "odestream_common_start": "2025-07-01",
+  "odestream_common_end": "2026-06-04",
+  "all_forecasts_finite": true,
+  "common_target_source": {
+    "path": "experiments/csi300_aligned/models/prediction_adapter/predictions.csv",
+    "bytes": 21302912,
+    "sha256": "73bc29ba1b037df35fea6cd00a3f0a9944a39522c8da206ac656071b946158b6"
+  },
+  "ode_note": "Backdated target date to previous observed stock trading day. ODE same-target-day sequential supervision prevents a causally matched comparison."
+}

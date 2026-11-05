@@ -9,6 +9,8 @@
 *.safetensors -text
 # Evidence copies retain source bytes so their archived SHA256 stays valid.
 docs/hca_archive_20261105/evidence/** -text whitespace=-blank-at-eol,-blank-at-eof
+docs/baseline_comparison_20261105/normalized_points/*.csv.gz filter=lfs diff=lfs merge=lfs -text
+docs/baseline_comparison_20261105/run_metadata/** -text whitespace=-blank-at-eol,-blank-at-eof
 
 # Preserve binary research artifacts and archives with Git LFS.
 *.zip filter=lfs diff=lfs merge=lfs -text

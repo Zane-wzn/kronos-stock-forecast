@@ -2,6 +2,8 @@
 
 整理日期：2026-11-05。依据本地已保存配置、预测重评结果与实验报告整理，未重新训练。原始紧凑证据副本在 [evidence/](evidence/)，逐文件来源与 SHA256 在 [evidence_manifest.json](evidence_manifest.json)。权重及恢复入口见 [模型迁移包](../../models/hca_best/README.md)。
 
+后续补充：[Chronos-2、TimesFM 3.0、ODEStream完整预测恢复与统一重评](../baseline_comparison_20261105/REPORT.md)。Chronos/TimesFM完成结果已找回并按HCA的Top30规则重算；ODEStream查明共享模型同目标日逐股读取标签更新，原结果仅作历史诊断，不能作为时序公平的确认性基线。
+
 ## 当前保留版本与“最优”的口径
 
 保留 **Prediction 起点的 HCA-PCA** 为主配置：冻结 Kronos，512→64→512 残差 Adapter，基础512→10收益头，附加512→2系数头和固定10×2 PCA基；在线联合更新 Adapter、原头、系数头。PCA仅用525,700条训练标签，rank2解释90.63%的训练目标方差；这不是测试误差解释率。初始系数为零，接入时预测不变。
