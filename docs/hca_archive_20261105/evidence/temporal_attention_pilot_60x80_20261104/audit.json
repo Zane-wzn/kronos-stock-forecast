@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "identical_feedback_events_per_stream": 22400,
+  "streams": 9,
+  "mature_only": true,
+  "single_consumption": true,
+  "issued_forecast_hash_verified": true,
+  "next_day_versions_verified": true,
+  "test_keys_verified": true
+}

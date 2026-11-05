@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "seconds": 689.0259751999984,
+  "epochs": 8,
+  "rows": 11738,
+  "test_rows": 4787,
+  "test_dates": 80,
+  "checkpoint_sha256": "111f72975e77e165211b441a731b4da17dca4e26629b848839ce13aaffcd94eb",
+  "meta_sha256": "1aecece5cf3bf6f0ee325fda28083f43db15f4543ce9a2558e7856e2d2bb20ab"
+}

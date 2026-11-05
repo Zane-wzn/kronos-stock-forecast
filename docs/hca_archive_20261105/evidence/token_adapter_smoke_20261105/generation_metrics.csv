@@ -1,0 +1,4 @@
+method,trajectory_mae,trajectory_rmse,nonpositive_predicted_close_count
+official_zero_shot,0.051305133287584216,0.08032314503470189,0
+identity,0.0517050607099885,0.08159506133721253,0
+return_checkpoint,0.06822747224683483,0.09056291531035769,0

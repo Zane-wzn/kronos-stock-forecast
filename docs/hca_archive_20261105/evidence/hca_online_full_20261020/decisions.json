@@ -1,0 +1,52 @@
+{
+  "Prediction_HCA_PCA": {
+    "decision": "partial_metric_conflict",
+    "checks": {
+      "path_return_improves": true,
+      "path_ic_not_lower": false,
+      "endpoint_return_and_ic_not_lower": false,
+      "drawdown_within_5pp": true,
+      "both108_halves_return_or_ic_improves": true,
+      "pca_return_and_ic_at_least_random_one_strict": true
+    },
+    "path_return_delta": 0.03259642611523961,
+    "path_ic_delta": -0.00016543991347414688
+  },
+  "Prediction_HCA_Random": {
+    "decision": "no_consistent_positive_optimization",
+    "checks": {
+      "path_return_improves": false,
+      "path_ic_not_lower": false,
+      "endpoint_return_and_ic_not_lower": true,
+      "drawdown_within_5pp": true,
+      "both108_halves_return_or_ic_improves": false
+    },
+    "path_return_delta": -0.007802575768291797,
+    "path_ic_delta": -0.00016762558671902517
+  },
+  "RankIC_HCA_PCA": {
+    "decision": "no_consistent_positive_optimization",
+    "checks": {
+      "path_return_improves": false,
+      "path_ic_not_lower": false,
+      "endpoint_return_and_ic_not_lower": false,
+      "drawdown_within_5pp": true,
+      "both108_halves_return_or_ic_improves": false,
+      "pca_return_and_ic_at_least_random_one_strict": false
+    },
+    "path_return_delta": -0.008330671039895154,
+    "path_ic_delta": -0.0024215012798372085
+  },
+  "RankIC_HCA_Random": {
+    "decision": "no_consistent_positive_optimization",
+    "checks": {
+      "path_return_improves": false,
+      "path_ic_not_lower": false,
+      "endpoint_return_and_ic_not_lower": false,
+      "drawdown_within_5pp": true,
+      "both108_halves_return_or_ic_improves": false
+    },
+    "path_return_delta": -0.009940565302205995,
+    "path_ic_delta": -9.92095909245691e-05
+  }
+}

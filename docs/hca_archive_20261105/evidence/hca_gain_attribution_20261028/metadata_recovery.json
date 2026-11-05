@@ -1,0 +1,9 @@
+{
+  "status": "recovered_from_hash_verified_original_pairs",
+  "rows": 622692,
+  "test_rows": 66103,
+  "pairs_sha256": "f5172f5135b7fd1fedf44ba254ba4a48f3f324c7bb0aadc24309fc4cfdbd6c5c",
+  "meta_sha256": "1aecece5cf3bf6f0ee325fda28083f43db15f4543ce9a2558e7856e2d2bb20ab",
+  "test_labels_max_error": 4.586181634458342e-08,
+  "procedure": "exact metadata read/usecols/order and row_id assignment from src/doubleadapt/data.py build_cache"
+}

@@ -1,0 +1,10 @@
+{
+  "split_maturity_and_next_day_activation": true,
+  "all_methods_identical_86_query_dates_and_10_horizons": true,
+  "row_level_recomputed_metrics": true,
+  "all_selected_steps_minimize_selection_mse_only": true,
+  "continuous_supervision_unique_causal_and_same_between_checkpoints": true,
+  "archived_label_max_abs_difference_between_checkpoints": 4.586181634458342e-08,
+  "evaluation_stock_origin_rows_per_method": 25210,
+  "evaluation_daily_metric_weight": "equal dates, equal horizons; within date equal available stocks"
+}

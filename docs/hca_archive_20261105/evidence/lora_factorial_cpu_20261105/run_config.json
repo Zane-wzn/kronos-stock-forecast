@@ -1,0 +1,44 @@
+{
+  "output_dir": "experiments\\csi300_aligned\\models\\lora_factorial_cpu_20261105",
+  "epochs": 3,
+  "arms": {
+    "A0": [
+      false,
+      0.0
+    ],
+    "A1": [
+      true,
+      0.0
+    ],
+    "B0": [
+      false,
+      0.1
+    ],
+    "B1": [
+      true,
+      0.1
+    ]
+  },
+  "lora": {
+    "layers": [
+      6,
+      7
+    ],
+    "targets": [
+      "q_proj",
+      "v_proj"
+    ],
+    "rank": 4,
+    "alpha": 8
+  },
+  "seeds": [
+    100,
+    200,
+    300
+  ],
+  "batch": "one origin date, max32 stocks",
+  "selection": "validation Path RankIC subject to <=1% relative MAE/RMSE deterioration vs original checkpoint; fallback epoch0",
+  "online": false,
+  "test_blocks": "first80 and second80 observed test dates, fixed before label access",
+  "retrospective": true
+}

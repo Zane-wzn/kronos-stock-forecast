@@ -1,0 +1,29 @@
+{
+  "frozen_hashes": {
+    "backbone": "d6e2a135b292ab7f34ef657b93b7497e4d43b00af1303e442cf51185808e439f",
+    "tokenizer": "1be4934094ce51535069fd8c3ea63f905fbd67ed339a1f5346d5997231ed820b"
+  },
+  "unchanged": true,
+  "identity_official_rollout_max_error": 0.0,
+  "tokenizer_causal_perturbation": true,
+  "adapter_gradient_norms_step2": {
+    "identity": {
+      "ln.weight": 8.326893293997273e-05,
+      "ln.bias": 8.129530033329502e-05,
+      "down.weight": 0.0025045224465429783,
+      "down.bias": 0.0001398422900820151,
+      "up.weight": 0.6538417935371399,
+      "up.bias": 0.3354223072528839
+    },
+    "return_checkpoint": {
+      "ln.weight": 0.30799052119255066,
+      "ln.bias": 0.39806514978408813,
+      "down.weight": 7.985975742340088,
+      "down.bias": 0.4859485924243927,
+      "up.weight": 2.77997088432312,
+      "up.bias": 0.9075579643249512
+    }
+  },
+  "input_normalization": "history90 only; no future statistics",
+  "checkpoint_sha256": "111f72975e77e165211b441a731b4da17dca4e26629b848839ce13aaffcd94eb"
+}

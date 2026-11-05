@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "stages": 3,
+  "rows_per_stage": 66103,
+  "dates": 226,
+  "same_supervision": true,
+  "historical_A_PCA_reproduced": true,
+  "metric_rows": 6
+}

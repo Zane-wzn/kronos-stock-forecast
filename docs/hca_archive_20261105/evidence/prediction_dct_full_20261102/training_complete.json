@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "seconds": 94.01476359998924,
+  "audits": [
+    {
+      "name": "Prediction_Live_A",
+      "status": "passed",
+      "rows": 66103,
+      "updates": 216,
+      "labels": 69120,
+      "historical_max_abs_error": 0.0,
+      "parameter_delta_l2": {
+        "adapter": 0.06363770782721036,
+        "head": 0.1286173859635009
+      },
+      "future_reads": 0,
+      "duplicate_labels": 0
+    },
+    {
+      "name": "Prediction_Live_PCA",
+      "status": "passed",
+      "rows": 66103,
+      "updates": 216,
+      "labels": 69120,
+      "historical_max_abs_error": 0.0,
+      "parameter_delta_l2": {
+        "adapter": 0.06301666672092482,
+        "head": 0.11930311548485868,
+        "coeff": 0.051266025801624
+      },
+      "future_reads": 0,
+      "duplicate_labels": 0
+    },
+    {
+      "name": "Prediction_Live_DCT",
+      "status": "passed",
+      "rows": 66103,
+      "updates": 216,
+      "labels": 69120,
+      "historical_max_abs_error": null,
+      "parameter_delta_l2": {
+        "adapter": 0.06313512180943036,
+        "head": 0.1197812876995701,
+        "coeff": 0.05587068488908918
+      },
+      "future_reads": 0,
+      "duplicate_labels": 0
+    }
+  ]
+}

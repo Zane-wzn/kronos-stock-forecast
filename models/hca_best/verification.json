@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "exported_models": 6,
+  "roundtrip": "All exported state tensors bitwise equal original checkpoint tensors",
+  "last_day_prequential_rows": 297,
+  "last_day_prequential_max_abs_error": 9.996344030316351e-17,
+  "prediction_version": 215,
+  "final_state_version": 216,
+  "feature_archive_sha256": "20e91f77ac595f119885a99f7a3c7f96672403879e9a85213bd5b9d55f349310",
+  "checked_feature_sha_matches_historical": true
+}

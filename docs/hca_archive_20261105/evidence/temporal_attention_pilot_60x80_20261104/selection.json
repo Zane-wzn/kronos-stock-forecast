@@ -1,0 +1,38 @@
+{
+  "adapter_100": {
+    "epoch": 1,
+    "validation_mse": 0.002089509041979909
+  },
+  "temporal_mean_100": {
+    "epoch": 1,
+    "validation_mse": 0.002089837798848748
+  },
+  "temporal_attention_100": {
+    "epoch": 1,
+    "validation_mse": 0.002089746994897723
+  },
+  "adapter_200": {
+    "epoch": 1,
+    "validation_mse": 0.0020937712397426367
+  },
+  "temporal_mean_200": {
+    "epoch": 1,
+    "validation_mse": 0.002096053445711732
+  },
+  "temporal_attention_200": {
+    "epoch": 1,
+    "validation_mse": 0.002095634350553155
+  },
+  "adapter_300": {
+    "epoch": 1,
+    "validation_mse": 0.0020888999570161104
+  },
+  "temporal_mean_300": {
+    "epoch": 1,
+    "validation_mse": 0.0020884426776319742
+  },
+  "temporal_attention_300": {
+    "epoch": 1,
+    "validation_mse": 0.0020884310360997915
+  }
+}

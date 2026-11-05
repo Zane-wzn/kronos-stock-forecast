@@ -1,0 +1,70 @@
+{
+  "status": "complete",
+  "seconds": 66.46287629997823,
+  "smoke_only": true,
+  "token_metrics": [
+    {
+      "mode": "identity",
+      "stage": "initial_validation",
+      "ce": 3.167376220226288,
+      "coarse_ce": 3.6684443950653076,
+      "fine_ce_sampled_coarse": 2.666308045387268,
+      "coarse_accuracy": 0.18124999850988388,
+      "fine_accuracy_sampled_coarse": 0.2875000014901161
+    },
+    {
+      "mode": "identity",
+      "stage": "selected_test_token",
+      "selected_step": 20,
+      "initial_val_ce": 3.167376220226288,
+      "selected_val_ce": 3.166623532772064,
+      "ce": 4.170139312744141,
+      "coarse_ce": 4.936696290969849,
+      "fine_ce_sampled_coarse": 3.4035823345184326,
+      "coarse_accuracy": 0.0687499986961484,
+      "fine_accuracy_sampled_coarse": 0.35625000298023224
+    },
+    {
+      "mode": "return_checkpoint",
+      "stage": "initial_validation",
+      "ce": 4.204183876514435,
+      "coarse_ce": 4.764779090881348,
+      "fine_ce_sampled_coarse": 3.643588662147522,
+      "coarse_accuracy": 0.08125000074505806,
+      "fine_accuracy_sampled_coarse": 0.18125000596046448
+    },
+    {
+      "mode": "return_checkpoint",
+      "stage": "selected_test_token",
+      "selected_step": 20,
+      "initial_val_ce": 4.204183876514435,
+      "selected_val_ce": 4.157878339290619,
+      "ce": 4.977515995502472,
+      "coarse_ce": 5.561940908432007,
+      "fine_ce_sampled_coarse": 4.393091082572937,
+      "coarse_accuracy": 0.05625000037252903,
+      "fine_accuracy_sampled_coarse": 0.13125000149011612
+    }
+  ],
+  "generation_metrics": [
+    {
+      "method": "official_zero_shot",
+      "trajectory_mae": 0.051305133287584216,
+      "trajectory_rmse": 0.08032314503470189,
+      "nonpositive_predicted_close_count": 0
+    },
+    {
+      "method": "identity",
+      "trajectory_mae": 0.0517050607099885,
+      "trajectory_rmse": 0.08159506133721253,
+      "nonpositive_predicted_close_count": 0
+    },
+    {
+      "method": "return_checkpoint",
+      "trajectory_mae": 0.06822747224683483,
+      "trajectory_rmse": 0.09056291531035769,
+      "nonpositive_predicted_close_count": 0
+    }
+  ],
+  "limitation": "16 test paths / 4 dates / one seed; connectivity and numerical checks, no reliable effectiveness conclusion"
+}

@@ -1,0 +1,24 @@
+{
+  "checkpoint": "Prediction",
+  "variants": [
+    "A",
+    "PCA",
+    "DCT"
+  ],
+  "seed": 100,
+  "rank": 2,
+  "adapter_lr": 1e-05,
+  "head_and_coeff_lr": 0.0001,
+  "optimizer": "AdamW wd0",
+  "loss": "SmoothL1 beta1",
+  "clip_norm": 1,
+  "dropout": false,
+  "updates": 216,
+  "labels": 69120,
+  "dates": 226,
+  "rows": 66103,
+  "dct": "orthonormal DCT-II, frequencies k=0,1 over the 10 horizon positions; fixed, zero coefficient initialization",
+  "tuning": "none; inherited historical hyperparameters; no selection by evaluation",
+  "evaluation": "Top30 Drop3 minhold5 cost15bps annual252; close-to-close proxy; identical labels/keys",
+  "limitations": "Previously inspected single-market/seed fixed panel; retrospective, possible survivor/constituent bias; no independent confirmation"
+}

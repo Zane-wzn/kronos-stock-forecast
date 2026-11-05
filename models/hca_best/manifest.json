@@ -1,0 +1,115 @@
+{
+  "archive_date": "2026-11-05",
+  "primary": "hca_pca_final.safetensors",
+  "selection": "Retained HCA-PCA main configuration; retrospective record, not a validation-selected global optimum",
+  "input": {
+    "shape": [
+      null,
+      512
+    ],
+    "lookback": 90,
+    "dtype": "float32",
+    "feature": "Frozen Kronos decode_s1 context[:, -1, :] before the trainable Adapter",
+    "backbone": "NeoQuasar/Kronos-small",
+    "tokenizer": "NeoQuasar/Kronos-Tokenizer-base",
+    "locally_available_model_snapshot": "901c26c1332695a2a8f243eb2f37243a37bea320",
+    "locally_available_tokenizer_snapshot": "0e0117387f39004a9016484a186a908917e22426",
+    "historical_feature_extraction_revision": "not recorded; local snapshots alone do not establish historical revision",
+    "historical_hidden_sha256": "20e91f77ac595f119885a99f7a3c7f96672403879e9a85213bd5b9d55f349310"
+  },
+  "output": {
+    "shape": [
+      null,
+      10
+    ],
+    "target": "close[o+k]/close[o]-1, k=1..10 trading days",
+    "path_signal": "mean over 10 horizons",
+    "endpoint_signal": "horizon 10"
+  },
+  "online_state_after": "2026-06-05 after prediction and mature-label update; next prediction uses version216",
+  "historical_evaluation": "2025-07-01/2026-06-05; 226 dates; 66103 keys; prequential, not a fixed final-checkpoint backtest",
+  "training_state": {
+    "file": "hca_pca_training_state.pt",
+    "sha256": "d31b67370940370b1bb7a8b7ea7a5ad51f2250013885606aae0dc7e0adf2dfc0",
+    "contains": "model, optimizer, consumed labels, RNG, next_pos, version",
+    "resume_limit": "Historical runner also requires matching journals and prediction shards; not a standalone full replay archive"
+  },
+  "original_offline_checkpoints": [
+    {
+      "file": "prediction_static_original.pt",
+      "sha256": "111f72975e77e165211b441a731b4da17dca4e26629b848839ce13aaffcd94eb"
+    },
+    {
+      "file": "rankic_original.pt",
+      "sha256": "fe1426d1ab0e627622860fd86eb81c8f05b74fbd54df29439556050a1d813961"
+    }
+  ],
+  "assets": [
+    {
+      "name": "prediction_static",
+      "source": "experiments/csi300_aligned/models/prediction_adapter/model.pt",
+      "source_sha256": "111f72975e77e165211b441a731b4da17dca4e26629b848839ce13aaffcd94eb",
+      "file": "prediction_static.safetensors",
+      "sha256": "e4787c67bf0b93d5b3c867486a378d7d77f9c7fa05e93761377438592d5dc9b2",
+      "bytes": 289704,
+      "tensor_values": 72266,
+      "version": null,
+      "state_roundtrip": "bitwise_equal"
+    },
+    {
+      "name": "prediction_online_final",
+      "source": "experiments/csi300_aligned/models/hca_online_full_20261020/streams/Prediction_A/checkpoints/A/2026-06-05.pt",
+      "source_sha256": "e5fb4757e01863570c69dba301ffeb77fd1d1aac74b0be2c283f5c9132bf31d1",
+      "file": "prediction_online_final.safetensors",
+      "sha256": "ad287a45c2ce4db48e0249b6c0e66d92596949fea0f213b45c05355752d5015b",
+      "bytes": 289704,
+      "tensor_values": 72266,
+      "version": 216,
+      "state_roundtrip": "bitwise_equal"
+    },
+    {
+      "name": "hca_pca_final",
+      "source": "experiments/csi300_aligned/models/hca_online_full_20261020/streams/Prediction_HCA_PCA/checkpoints/A/2026-06-05.pt",
+      "source_sha256": "d31b67370940370b1bb7a8b7ea7a5ad51f2250013885606aae0dc7e0adf2dfc0",
+      "file": "hca_pca_final.safetensors",
+      "sha256": "b968c03d408e3698fce8442840b55eecc08b46ffc728cfc0eca90ae614b30056",
+      "bytes": 294136,
+      "tensor_values": 73312,
+      "version": 216,
+      "state_roundtrip": "bitwise_equal"
+    },
+    {
+      "name": "hca_random_final",
+      "source": "experiments/csi300_aligned/models/hca_online_full_20261020/streams/Prediction_HCA_Random/checkpoints/A/2026-06-05.pt",
+      "source_sha256": "2ed4c2f83849713685f812b6e19a47108f9203f07e285f6928c1d2fee059a7cc",
+      "file": "hca_random_final.safetensors",
+      "sha256": "bed65eb95c29e18d4a730e7f333c57b0910e90f04f97831e8c49c1557bd0e84c",
+      "bytes": 294136,
+      "tensor_values": 73312,
+      "version": 216,
+      "state_roundtrip": "bitwise_equal"
+    },
+    {
+      "name": "hca_frozen_head_final",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/Prediction_Live_HCA_FrozenHead/checkpoints/A/2026-06-05.pt",
+      "source_sha256": "038491a94af9df9c2de5f0cda6973d632c3722d77d1ffbe8a71e64ca81de21f9",
+      "file": "hca_frozen_head_final.safetensors",
+      "sha256": "b20503c6a122deee9ddd53e88e3e3a29d41c97c6e0313f7bd1967bcb129831ab",
+      "bytes": 294136,
+      "tensor_values": 73312,
+      "version": 216,
+      "state_roundtrip": "bitwise_equal"
+    },
+    {
+      "name": "hca_dct_final",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/Prediction_Live_DCT/checkpoints/A/2026-06-05.pt",
+      "source_sha256": "874c203b692bbbc417a8b546caeb34af364fc5a7721e78a9de904d03cf1690ae",
+      "file": "hca_dct_final.safetensors",
+      "sha256": "9af6111d098fb93ed70a4a240d2d766f78fd2be349c74080c00e5b9206a60458",
+      "bytes": 294136,
+      "tensor_values": 73312,
+      "version": 216,
+      "state_roundtrip": "bitwise_equal"
+    }
+  ]
+}

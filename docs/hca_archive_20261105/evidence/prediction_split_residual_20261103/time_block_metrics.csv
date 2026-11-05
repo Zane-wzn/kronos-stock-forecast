@@ -1,0 +1,17 @@
+left,right,part,mse_delta,relative_improvement,mae_delta
+Dual,A,first43,0.0,0.0,0.0
+Dual,A,last43,0.0,0.0,0.0
+Common,A,first43,0.0,0.0,0.0
+Common,A,last43,0.0,0.0,0.0
+Individual,A,first43,0.0,0.0,0.0
+Individual,A,last43,0.0,0.0,0.0
+Dual,Common,first43,0.0,0.0,0.0
+Dual,Common,last43,0.0,0.0,0.0
+Dual,Unsplit,first43,0.0,0.0,0.0
+Dual,Unsplit,last43,0.0,0.0,0.0
+Unsplit,A,first43,0.0,0.0,0.0
+Unsplit,A,last43,0.0,0.0,0.0
+PCA,A,first43,1.2239268874958008e-05,-0.003111672596108006,-1.2923854486234148e-05
+PCA,A,last43,1.4072495801983162e-05,-0.002896362881297021,5.447196168664817e-05
+DCT,A,first43,1.4985847871145116e-05,-0.0038099540606946203,7.02437398560897e-06
+DCT,A,last43,1.7231993844147514e-05,-0.0035466421907828227,7.141759366622485e-05

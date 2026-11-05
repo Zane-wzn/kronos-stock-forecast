@@ -1,0 +1,17 @@
+{
+  "description": "independent mean-zero unit-variance additive increments; cumulative covariance min(i,j); explanatory reference, not market model or significance test",
+  "low2_pct": 88.57429917684608,
+  "low4_pct": 95.53974279108188,
+  "frequency_energy_share": [
+    0.7,
+    0.18574299176846082,
+    0.04760061797727082,
+    0.022053818165087197,
+    0.013156487231817796,
+    0.009090909090909092,
+    0.0069448365681837295,
+    0.005725528107647727,
+    0.005025330950000383,
+    0.004659480140622347
+  ]
+}

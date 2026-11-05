@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-22",
+  "scope": "Formula checks with saved PCA basis and synthetic features; no new model training.",
+  "seed": 20261022,
+  "numeric_feature_dimension": 7,
+  "finite_difference_max_gradient_error": 5.17312581660434e-12,
+  "cross_input_SGD_residual_update_max_error": 1.8323016715005025e-17,
+  "affine_head_merge_max_error": 6.938893903907228e-17,
+  "saved_basis_orthogonality_max_error": 7.347796510126514e-09,
+  "limitations": "SGD residual-only identity is explanatory; actual implementation uses joint AdamW updates and gradient clipping."
+}

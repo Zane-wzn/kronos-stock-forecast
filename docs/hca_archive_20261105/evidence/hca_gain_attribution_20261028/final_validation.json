@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "streams": 20,
+  "metric_rows": 40,
+  "bootstrap_rows": 1064,
+  "updates": 4320,
+  "label_accesses": 1382400,
+  "historical_prediction_max_error": 0.0,
+  "html_table_dimensions": [
+    [
+      9,
+      11
+    ],
+    [
+      21,
+      6
+    ],
+    [
+      49,
+      5
+    ]
+  ],
+  "matched_max_norm_error": 1.862645149230957e-09,
+  "all_stream_event_schedules_identical": true,
+  "input_checkpoints_unchanged": true
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "seed": 100,
+    "branch": "frozen",
+    "path": "experiments\\csi300_aligned\\models\\kronos_page1c_mars_cl_20261016_remote\\retrainedC_mars\\seed100\\frozen\\predictions.csv",
+    "sha256": "c48bf39f6baa1ba0190a88a06007af5e087805346f69c3ae7e64d0721c313521"
+  },
+  {
+    "seed": 100,
+    "branch": "mars_cl",
+    "path": "experiments\\csi300_aligned\\models\\kronos_page1c_mars_cl_20261016_remote\\retrainedC_mars\\seed100\\mars_cl\\predictions.csv",
+    "sha256": "c570ad3ad80014f61d4ce79fc3ec466db186a3b3675dd8fe2e9aac67cd9c127e"
+  },
+  {
+    "seed": 102,
+    "branch": "frozen",
+    "path": "experiments\\csi300_aligned\\models\\kronos_page1c_mars_cl_20261016_remote\\retrainedC_mars\\seed102\\frozen\\predictions.csv",
+    "sha256": "ecb5afe978fd1c9a04b21b7f2fbf392a8645b10d536e4b1d9f9574a148978ac2"
+  },
+  {
+    "seed": 102,
+    "branch": "mars_cl",
+    "path": "experiments\\csi300_aligned\\models\\kronos_page1c_mars_cl_20261016_remote\\retrainedC_mars\\seed102\\mars_cl\\predictions.csv",
+    "sha256": "f488a68004930415107840b4450d0a11f5f0598dda7e0212ebac114266a8afb8"
+  }
+]

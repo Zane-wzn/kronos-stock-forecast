@@ -1,0 +1,39 @@
+{
+  "status": "locked_before_efficacy",
+  "checkpoint": "Prediction",
+  "exploratory": true,
+  "grid": [
+    0.0,
+    0.01,
+    0.03,
+    0.1,
+    0.3,
+    1.0
+  ],
+  "rank": 2,
+  "basis": "existing training-only PCA; unchanged",
+  "base": "replay immutable historical A checkpoints; no new base training",
+  "common": "EMA of PCA-projected current-base residual support means",
+  "individual": "fixed non-affine LN(eps=1e-5) frozen h; centered support x/residual; bias-free 512x2",
+  "unsplit": "same LN h, bias, full residual, independent SGD 513x2",
+  "loss": "half squared error, equal horizons, exact per-horizon original 32-stock feedback",
+  "scaling": "individual: mean ||x-mean_support(x)||^2; unsplit: mean ||[x,1]||^2",
+  "norm_timing": "causal prefix input-only mean before day80; frozen from all first80 support inputs at day80",
+  "normalization_note": "early prefix norms vary causally to avoid future-input use; selection/evaluation norms fixed",
+  "selection": "date indices80:140 whose full labels end strictly before date140; independent component MSE",
+  "evaluation": "indices140:226; no retuning; state continuous through embargo",
+  "update_order": "save every candidate -> read mature feedback -> compute residual with PRE-update A -> update calibrators -> load historical POST-update A",
+  "feedback": "216 days x 32 stocks x 10 horizons = 69120 unique scalars, shared among candidates",
+  "base_label_reuse": "same authorized mature labels can supervise A and calibration; no new unique supervision",
+  "bootstrap": {
+    "block": 10,
+    "repetitions": 5000,
+    "seed": 20261013
+  },
+  "limitations": [
+    "previously inspected window; no independent confirmation",
+    "single market and fixed panel",
+    "support common mean may be a noisy/biased estimate of full-panel mean",
+    "calibration state may become stale as base A updates; no lifecycle mechanism in this test"
+  ]
+}

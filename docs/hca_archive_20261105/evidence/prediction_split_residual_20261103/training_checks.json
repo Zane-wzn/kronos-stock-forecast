@@ -1,0 +1,17 @@
+{
+  "numpy_matches_torch_autograd": true,
+  "per_horizon_supports_tested": true,
+  "zero_lr_identity": true,
+  "resume_file_load_update_exact": true,
+  "base_forecast_max_abs_error": 9.999054535747565e-17,
+  "individual_max_abs_mean": 8.091415665343874e-18,
+  "immutable_A": true,
+  "source_checkpoint_hashes_unchanged": true,
+  "same_feedback_keys": true,
+  "labels": 69120,
+  "updates": 216,
+  "zero_candidates_exact": true,
+  "prediction_written_before_labels": true,
+  "full_state_replay_exact": true,
+  "resumed_suffix_exact": true
+}

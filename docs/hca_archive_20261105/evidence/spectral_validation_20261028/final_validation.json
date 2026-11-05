@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "metric_rows": 16,
+  "evaluation_horizon_rows": 13760,
+  "evaluation_days": 86,
+  "unique_update_opportunities": 146,
+  "label_accesses_per_stream": 46720,
+  "zero_step_has_no_effective_update": true,
+  "chronological_embargo": true,
+  "metric_recomputation": true,
+  "frequency_aggregation": true,
+  "support_maturity_verified_against_calendar": true,
+  "historical_reproduction": "passed"
+}

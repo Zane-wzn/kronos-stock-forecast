@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "hidden_sha256": "20e91f77ac595f119885a99f7a3c7f96672403879e9a85213bd5b9d55f349310",
+  "checkpoints": {
+    "Prediction": {
+      "checkpoint": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\experiments\\csi300_aligned\\models\\prediction_adapter\\model.pt",
+      "checkpoint_sha256": "111f72975e77e165211b441a731b4da17dca4e26629b848839ce13aaffcd94eb",
+      "reference_sha256": "73bc29ba1b037df35fea6cd00a3f0a9944a39522c8da206ac656071b946158b6",
+      "frozen_prediction_max_abs_error": 6.499744414911746e-08,
+      "feature_mean_squared_norm": 10.827299267773238,
+      "rows": 66103,
+      "feature_alignment": "sort date,stock and verify all 66103x10 frozen outputs against archive",
+      "labels": "archived actual_return_1..10 aligned by date,stock; original missing meta.csv not fabricated",
+      "continuous_updates": 146,
+      "continuous_unique_support_rows": 4672,
+      "continuous_supervised_scalars": 46720,
+      "future_support_reads": 0,
+      "duplicate_supervision_keys": 0,
+      "correctness": {
+        "real_support_autograd_max_error": 2.710505431213761e-20,
+        "basis_rotation_max_error": 2.0328790734103208e-20,
+        "utility_trace_error": 1.3867517533328998e-19,
+        "future_query_label_poison_leaves_support_update_identical": true,
+        "fit_last_label_before_selection": true,
+        "selection_last_label_before_evaluation": true
+      }
+    },
+    "RankIC": {
+      "checkpoint": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\.runtime\\D_model_rankic_pilot_original.pt",
+      "checkpoint_sha256": "fe1426d1ab0e627622860fd86eb81c8f05b74fbd54df29439556050a1d813961",
+      "reference_sha256": "2a11a5e48ee7c3d2c441f3a9d759e5b1a271d1d15d0b6b9035c1961b34f13fe4",
+      "frozen_prediction_max_abs_error": 5.960464469906279e-08,
+      "feature_mean_squared_norm": 14.191243263426625,
+      "rows": 66103,
+      "feature_alignment": "sort date,stock and verify all 66103x10 frozen outputs against archive",
+      "labels": "archived actual_return_1..10 aligned by date,stock; original missing meta.csv not fabricated",
+      "continuous_updates": 146,
+      "continuous_unique_support_rows": 4672,
+      "continuous_supervised_scalars": 46720,
+      "future_support_reads": 0,
+      "duplicate_supervision_keys": 0,
+      "correctness": {
+        "real_support_autograd_max_error": 1.0842021724855044e-19,
+        "basis_rotation_max_error": 8.809142651444724e-20,
+        "utility_trace_error": 6.268043809681823e-20,
+        "future_query_label_poison_leaves_support_update_identical": true,
+        "fit_last_label_before_selection": true,
+        "selection_last_label_before_evaluation": true
+      }
+    }
+  },
+  "elapsed_seconds": 10.218551599886268
+}

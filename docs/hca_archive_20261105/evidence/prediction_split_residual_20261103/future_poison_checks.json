@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "prefixes": [
+    {
+      "cutoff": "2025-10-28",
+      "days": 80,
+      "state_and_access_trajectory_exact": true,
+      "changed_future_value_demonstrated": true,
+      "future_guard_rejected": true
+    },
+    {
+      "cutoff": "2026-01-22",
+      "days": 140,
+      "state_and_access_trajectory_exact": true,
+      "changed_future_value_demonstrated": true,
+      "future_guard_rejected": true
+    },
+    {
+      "cutoff": "2026-04-13",
+      "days": 190,
+      "state_and_access_trajectory_exact": true,
+      "changed_future_value_demonstrated": true,
+      "future_guard_rejected": true
+    },
+    {
+      "cutoff": "2026-06-05",
+      "days": 226,
+      "state_and_access_trajectory_exact": true,
+      "changed_future_value_demonstrated": false,
+      "future_guard_rejected": false
+    }
+  ],
+  "note": "Real guarded label reads rerun; future paths shifted +1e6. Matches full state trajectory and access keys. Base A remains the saved external input."
+}

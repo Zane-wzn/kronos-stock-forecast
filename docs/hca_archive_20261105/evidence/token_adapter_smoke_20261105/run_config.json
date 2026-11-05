@@ -1,0 +1,30 @@
+{
+  "history_length": 90,
+  "future_length": 10,
+  "init_modes": [
+    "identity",
+    "return_checkpoint"
+  ],
+  "trainable": "Adapter only",
+  "trainable_parameters": 67136,
+  "loss": "mean CE(coarse, fine conditioned on sampled predicted coarse); future positions only",
+  "coarse_teacher_forcing": false,
+  "temporal_teacher_forcing": "historical prefixes including earlier future target tokens during training; free-running rollout at evaluation",
+  "fine_dependency": "native decode_s2 on each prefix; identical single-query RoPE semantics",
+  "sampling": {
+    "T": 0.6,
+    "top_p": 0.9,
+    "top_k": 0,
+    "sample_count": 2
+  },
+  "steps": 20,
+  "learning_rate": 1e-05,
+  "batch_size": 8,
+  "train_rows": 32,
+  "validation_rows": 16,
+  "test_rows": 16,
+  "checkpoint_selection": "fixed validation sampled-coarse CE; include step0; evaluate every5steps",
+  "smoke_only": true,
+  "model_snapshot": "901c26c1332695a2a8f243eb2f37243a37bea320",
+  "tokenizer_snapshot": "0e0117387f39004a9016484a186a908917e22426"
+}

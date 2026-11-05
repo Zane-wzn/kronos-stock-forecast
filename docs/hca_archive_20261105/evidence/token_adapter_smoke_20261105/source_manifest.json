@@ -1,0 +1,6 @@
+{
+  "scripts\\experiments\\run_token_adapter_smoke.py": "8367c3ce69358b44221263c7d8143be07f9002ff26c8d024d05ca5d7d97c5167",
+  "src\\kronos_continual\\token_adapter.py": "06aa0e80da030c1a6998aa08321482d94e4fcdc931f094deb2a2dae55c0cb41d",
+  "third_party\\Kronos_official_src\\Kronos-master\\model\\kronos.py": "0a5f90282e2039c2de0771473419715c845def154896dbd0f5747837e6241032",
+  "third_party\\Kronos_official_src\\Kronos-master\\model\\module.py": "a07edbadc0e96804c8158c021bbc6063bb7cc43b34d7fc470d5c8ff2005a409f"
+}

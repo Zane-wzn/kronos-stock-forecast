@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "common_ranking_portfolio_invariants": {
+    "evaluation_86_path": true,
+    "evaluation_86_endpoint": true,
+    "full_226_path": true,
+    "full_226_endpoint": true
+  },
+  "error_decomposition_exact": true,
+  "dual_addition_exact": true,
+  "methods": 7,
+  "evaluation_days": 86,
+  "future_label_poison": "passed real guarded-label prefix replays; see future_poison_checks.json",
+  "primary_no_multiplicity_adjustment": "one prespecified comparison; others descriptive",
+  "all_common_candidates_path_endpoint_rank_checks": 2712,
+  "nonzero_candidate_rank_invariance_passed": true
+}

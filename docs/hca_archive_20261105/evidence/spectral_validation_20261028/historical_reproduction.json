@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "checkpoint": "Prediction",
+      "method": "Frozen",
+      "mse_error": 5.898059818321144e-17
+    },
+    {
+      "checkpoint": "Prediction",
+      "method": "TargetPCA2",
+      "mse_error": 5.898059818321144e-17
+    },
+    {
+      "checkpoint": "Prediction",
+      "method": "DCT2",
+      "mse_error": 5.898059818321144e-17
+    },
+    {
+      "checkpoint": "Prediction",
+      "method": "Full",
+      "mse_error": 5.898059818321144e-17
+    },
+    {
+      "checkpoint": "Prediction",
+      "method": "Random2",
+      "mse_error": 6.158268339717665e-17
+    },
+    {
+      "checkpoint": "RankIC",
+      "method": "Frozen",
+      "mse_error": 4.2500725161431774e-17
+    },
+    {
+      "checkpoint": "RankIC",
+      "method": "TargetPCA2",
+      "mse_error": 9.627715291671279e-17
+    },
+    {
+      "checkpoint": "RankIC",
+      "method": "DCT2",
+      "mse_error": 8.673617379884035e-19
+    },
+    {
+      "checkpoint": "RankIC",
+      "method": "Full",
+      "mse_error": 6.071532165918825e-17
+    },
+    {
+      "checkpoint": "RankIC",
+      "method": "Random2",
+      "mse_error": 8.673617379884035e-17
+    }
+  ]
+}

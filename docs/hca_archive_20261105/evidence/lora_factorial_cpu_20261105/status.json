@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "seconds": 1635.149826500041,
+  "rows": {
+    "test": 9460,
+    "train": 4583,
+    "val": 2368
+  },
+  "epochs": 3,
+  "test_dates": 160,
+  "seeds": [
+    100,
+    200,
+    300
+  ]
+}

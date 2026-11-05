@@ -1,0 +1,14 @@
+{
+  "indices": {
+    "common": 0,
+    "individual": 0,
+    "unsplit": 0
+  },
+  "alphas": {
+    "common": 0.0,
+    "individual": 0.0,
+    "unsplit": 0.0
+  },
+  "rule": "independent per-component loss; no dual/output/portfolio tuning",
+  "dates": 50
+}

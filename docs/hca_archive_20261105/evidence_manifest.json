@@ -1,0 +1,1121 @@
+{
+  "files": [
+    {
+      "file": "evidence/hca_online_full_20261020/audit.json",
+      "source": "experiments/csi300_aligned/models/hca_online_full_20261020/audit.json",
+      "bytes": 3341,
+      "sha256": "85ca72941a271c782a5eb8f53d59ecda5addc9b17863f7705cbd20f10ba856fd"
+    },
+    {
+      "file": "evidence/hca_online_full_20261020/basis_manifest.json",
+      "source": "experiments/csi300_aligned/models/hca_online_full_20261020/basis_manifest.json",
+      "bytes": 2923,
+      "sha256": "38537d7c7016bcff4505cfc94c8f2f41b80a092c2adbd0c1b12bb69d99ff021f"
+    },
+    {
+      "file": "evidence/hca_online_full_20261020/comparison_metrics.csv",
+      "source": "experiments/csi300_aligned/models/hca_online_full_20261020/comparison_metrics.csv",
+      "bytes": 6525,
+      "sha256": "79322ec650ea35440821476e56d0970f49c20aff85634014824e7db49c73d3dd"
+    },
+    {
+      "file": "evidence/hca_online_full_20261020/correctness_report.json",
+      "source": "experiments/csi300_aligned/models/hca_online_full_20261020/correctness_report.json",
+      "bytes": 972,
+      "sha256": "02031ef9a09fdf6e360282fe16d05dd051400fa48946356ac68c79cf36c91e70"
+    },
+    {
+      "file": "evidence/hca_online_full_20261020/decisions.json",
+      "source": "experiments/csi300_aligned/models/hca_online_full_20261020/decisions.json",
+      "bytes": 1737,
+      "sha256": "9c2f325c83e7c883c5b895db1f715be9d8c7c719e0bf1956d5bfa996a3de63c1"
+    },
+    {
+      "file": "evidence/hca_online_full_20261020/evaluation_summary.json",
+      "source": "experiments/csi300_aligned/models/hca_online_full_20261020/evaluation_summary.json",
+      "bytes": 16707,
+      "sha256": "de089379d9f6329e00486da5040bb5c0e088c15c2770ba8958d4e5f41669a14e"
+    },
+    {
+      "file": "evidence/hca_online_full_20261020/half_metrics.csv",
+      "source": "experiments/csi300_aligned/models/hca_online_full_20261020/half_metrics.csv",
+      "bytes": 5138,
+      "sha256": "a8a9cf237370e952206f8db4d4308fcd2ae4cf8e5a253af089386ef1c430d239"
+    },
+    {
+      "file": "evidence/hca_online_full_20261020/paired_block10_bootstrap.csv",
+      "source": "experiments/csi300_aligned/models/hca_online_full_20261020/paired_block10_bootstrap.csv",
+      "bytes": 36551,
+      "sha256": "50473908253e01fe326a377517717e3af474b30cfdd1377a7fd13693053639c2"
+    },
+    {
+      "file": "evidence/hca_online_full_20261020/REPORT.md",
+      "source": "experiments/csi300_aligned/models/hca_online_full_20261020/REPORT.md",
+      "bytes": 6084,
+      "sha256": "0469bfe0a22df24a531604f2376644260d2d49851880a2167ed487b2996ce2c9"
+    },
+    {
+      "file": "evidence/hca_online_full_20261020/run_config.json",
+      "source": "experiments/csi300_aligned/models/hca_online_full_20261020/run_config.json",
+      "bytes": 5916,
+      "sha256": "19fd4b7168b33a827210fb79323599a57b8befba322a26681efd87851bcd1693"
+    },
+    {
+      "file": "evidence/hca_online_full_20261020/training_summary.csv",
+      "source": "experiments/csi300_aligned/models/hca_online_full_20261020/training_summary.csv",
+      "bytes": 829,
+      "sha256": "0146df05a7480807b8c01e17d0c6108e4e6f9619419e1fe96457fc47c1002575"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/artifact_manifest.json",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/artifact_manifest.json",
+      "bytes": 16387,
+      "sha256": "0a00c857588f9545e579e65a2d6a6bfc96f456c2b0f179a2406a130936a5a8c8"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/attribution_bootstrap.csv",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/attribution_bootstrap.csv",
+      "bytes": 154530,
+      "sha256": "794566233627841da35243b1ebb039b1c8585cced2e560f54b9fe318a2cfee7c"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/attribution_by_horizon.csv",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/attribution_by_horizon.csv",
+      "bytes": 25690,
+      "sha256": "ca25ac897d92a11518a157927f2c1bb947a9c2d02d6ed0ea0212397a5798ecda"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/attribution_metrics.csv",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/attribution_metrics.csv",
+      "bytes": 7808,
+      "sha256": "e7007ec0538cb18014294fdde73d5a860f4f8c0bbe772857dbad05ebda8e6bbb"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/attribution_training_summary.csv",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/attribution_training_summary.csv",
+      "bytes": 8865,
+      "sha256": "9553569a9d3db72317d8e667db44e56d2bb91a17061d8359b1c11826937c355d"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/attribution_wide.csv",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/attribution_wide.csv",
+      "bytes": 4699,
+      "sha256": "f5da50b6093161bd0f1c7c679e3ed76022c669f6bcb9f42060aa541b36d92d5b"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/attribution_window_metrics.csv",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/attribution_window_metrics.csv",
+      "bytes": 12017,
+      "sha256": "cf6727c35b586c97a1afe081cd329fc3beccf2c385e4302b87c245deb7a0f539"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/correctness_report.json",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/correctness_report.json",
+      "bytes": 1355,
+      "sha256": "c81189969f9744920a0a548285eb58807bbc67e3c3af99962b83135f05025aa6"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/final_validation.json",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/final_validation.json",
+      "bytes": 467,
+      "sha256": "bd8b91b496ee624ce10aa93953fb889660e863bb592aea950640e3e57c75e978"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/hca_gain_attribution.html",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/hca_gain_attribution.html",
+      "bytes": 17848,
+      "sha256": "390b1068bf717ccb1647e522fab3d21bb57050365d32adc382719cbadf9079bc"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/historical_reproduction_gate.json",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/historical_reproduction_gate.json",
+      "bytes": 1563,
+      "sha256": "b0d02f60dc5659761e162b97d75ffc48a6d49867359ad45373e5954a173b0a62"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/input_manifest.json",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/input_manifest.json",
+      "bytes": 3347,
+      "sha256": "c99bda5ddd1163043b51891496bfda1a03a42b990d9da3017469fc7a57d5f5b4"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/mechanism_prediction_diagnostics.csv",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/mechanism_prediction_diagnostics.csv",
+      "bytes": 2593,
+      "sha256": "e1b1475c1948f0abb65287122c02c9ad2330ce8e8ee362db65eccbc35fc3a094"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/metadata_recovery.json",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/metadata_recovery.json",
+      "bytes": 445,
+      "sha256": "86eec41879de496eb62d56838b0f7fc30e460f59bed66449f3b32ab623831534"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/REPORT.md",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/REPORT.md",
+      "bytes": 11221,
+      "sha256": "05c5de66a18735d6a38369bc2226af55bb32427c857f66f2344d656417246a14"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/report_summary.json",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/report_summary.json",
+      "bytes": 3767,
+      "sha256": "bec5dec07c393b81cec139749a8e564554d107085b56ca231fab83a2b54c83d7"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/status.json",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/status.json",
+      "bytes": 105,
+      "sha256": "4cca33eda854a6d1eaa8881949e231385a48f02be7dccda075dd6bd07f855b31"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/stream_audits.json",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/stream_audits.json",
+      "bytes": 6897,
+      "sha256": "c05e2c4b257a0e3da449f92ff76cbc0aa75620e86e9de7abb10d42d736493b0b"
+    },
+    {
+      "file": "evidence/hca_gain_attribution_20261028/training_complete.json",
+      "source": "experiments/csi300_aligned/models/hca_gain_attribution_20261028/training_complete.json",
+      "bytes": 33099,
+      "sha256": "d6af2355c2576f90c74ee2887aead1e26a26714e59a7b95b6e6b08cf624baf36"
+    },
+    {
+      "file": "evidence/cfus_round1_20261022/artifact_hashes.json",
+      "source": "experiments/csi300_aligned/models/cfus_round1_20261022/artifact_hashes.json",
+      "bytes": 4918,
+      "sha256": "8eef85f342afbe11365bd5cba8d9788a647f8721ec2544d82b276c38eca02f6d"
+    },
+    {
+      "file": "evidence/cfus_round1_20261022/audit.json",
+      "source": "experiments/csi300_aligned/models/cfus_round1_20261022/audit.json",
+      "bytes": 2773,
+      "sha256": "365d0109505528b0c5f058da37aa427d3c2a84f06b7829786e57d8a7254bc7f0"
+    },
+    {
+      "file": "evidence/cfus_round1_20261022/decisions.json",
+      "source": "experiments/csi300_aligned/models/cfus_round1_20261022/decisions.json",
+      "bytes": 3278,
+      "sha256": "6ea9e97654a32b6b842431a639adafc1e5857e59ce94e27da3ea144a1122ca5c"
+    },
+    {
+      "file": "evidence/cfus_round1_20261022/evaluation_daily.csv",
+      "source": "experiments/csi300_aligned/models/cfus_round1_20261022/evaluation_daily.csv",
+      "bytes": 199342,
+      "sha256": "212899044d058770c79d6ddfcb020b41e0d3070316342de71e5a5e9e710e2061"
+    },
+    {
+      "file": "evidence/cfus_round1_20261022/half_metrics.csv",
+      "source": "experiments/csi300_aligned/models/cfus_round1_20261022/half_metrics.csv",
+      "bytes": 4284,
+      "sha256": "4148bb369c10018a1d6f53986dabff4eb868be579f3626a9cd108ddc8278317c"
+    },
+    {
+      "file": "evidence/cfus_round1_20261022/independent_recalculation.json",
+      "source": "experiments/csi300_aligned/models/cfus_round1_20261022/independent_recalculation.json",
+      "bytes": 539,
+      "sha256": "3da051229a1ad56c8d8ca9e4af517b91a8eabce19ffab48d82cae6052dc43017"
+    },
+    {
+      "file": "evidence/cfus_round1_20261022/locked_config.json",
+      "source": "experiments/csi300_aligned/models/cfus_round1_20261022/locked_config.json",
+      "bytes": 8416,
+      "sha256": "9afbcf68e4af97bc62c76b76ce985e69b22095206c57d7c48d589a7d2738473b"
+    },
+    {
+      "file": "evidence/cfus_round1_20261022/metrics.csv",
+      "source": "experiments/csi300_aligned/models/cfus_round1_20261022/metrics.csv",
+      "bytes": 2459,
+      "sha256": "52b24fd446eb460a711c55a42917e590bfbc6db488678d6be6eacebe804d00c9"
+    },
+    {
+      "file": "evidence/cfus_round1_20261022/paired_block10_comparisons.csv",
+      "source": "experiments/csi300_aligned/models/cfus_round1_20261022/paired_block10_comparisons.csv",
+      "bytes": 3191,
+      "sha256": "f7af9209d3d3dd4e61b5f09d4b1ce3629f65f0db15bfc10025d88e0d44df81b8"
+    },
+    {
+      "file": "evidence/cfus_round1_20261022/per_horizon.csv",
+      "source": "experiments/csi300_aligned/models/cfus_round1_20261022/per_horizon.csv",
+      "bytes": 19835,
+      "sha256": "a00b1162147e7c32352279e59fa2ffdf2ca540ff28233189b3b10c5b0cb8975b"
+    },
+    {
+      "file": "evidence/cfus_round1_20261022/Prediction_spectra.json",
+      "source": "experiments/csi300_aligned/models/cfus_round1_20261022/Prediction_spectra.json",
+      "bytes": 9696,
+      "sha256": "47c16e332e5c763c5a36d784c4c0a7b84f02b958869030197cd9f539d1d05ab7"
+    },
+    {
+      "file": "evidence/cfus_round1_20261022/Prediction_support_events.csv",
+      "source": "experiments/csi300_aligned/models/cfus_round1_20261022/Prediction_support_events.csv",
+      "bytes": 285065,
+      "sha256": "1581f6a0c09ceaac4edb25a685029829b353216113dd2d84abe47ba25eb5f1f6"
+    },
+    {
+      "file": "evidence/cfus_round1_20261022/RankIC_spectra.json",
+      "source": "experiments/csi300_aligned/models/cfus_round1_20261022/RankIC_spectra.json",
+      "bytes": 9659,
+      "sha256": "4b99f770278b173151ac8e54c6b07f510073ed2fc107c084fd55acc64cc3b159"
+    },
+    {
+      "file": "evidence/cfus_round1_20261022/RankIC_support_events.csv",
+      "source": "experiments/csi300_aligned/models/cfus_round1_20261022/RankIC_support_events.csv",
+      "bytes": 285065,
+      "sha256": "1581f6a0c09ceaac4edb25a685029829b353216113dd2d84abe47ba25eb5f1f6"
+    },
+    {
+      "file": "evidence/cfus_round1_20261022/REPORT.md",
+      "source": "experiments/csi300_aligned/models/cfus_round1_20261022/REPORT.md",
+      "bytes": 8808,
+      "sha256": "b286b5bc2f4286004471c23a0eeddb675bf2783d73cae47831212a87a37b6bde"
+    },
+    {
+      "file": "evidence/cfus_round1_20261022/selected_steps.csv",
+      "source": "experiments/csi300_aligned/models/cfus_round1_20261022/selected_steps.csv",
+      "bytes": 2017,
+      "sha256": "2c7635dd6bef6bdb19cb22d02822fac725e985cb143a206dd077db4ffbbf1335"
+    },
+    {
+      "file": "evidence/cfus_round1_20261022/split_episodes.csv",
+      "source": "experiments/csi300_aligned/models/cfus_round1_20261022/split_episodes.csv",
+      "bytes": 13394,
+      "sha256": "442cbc615ea55d0fb223a3f28f3c68981e136ff2acd1d714092c3d89aa020349"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/artifact_manifest.json",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/artifact_manifest.json",
+      "bytes": 4205,
+      "sha256": "e946abd61967c29f6f1246a8f965e8a1511be9c8197c833463e50b46dd2f67b4"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/audit.json",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/audit.json",
+      "bytes": 1394,
+      "sha256": "8619d694d123e0e72eb7fee2758f79b6609048dbf3ea27f3836b096872866b0b"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/cumulative_noise_reference.json",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/cumulative_noise_reference.json",
+      "bytes": 532,
+      "sha256": "3a15afac0676d7bd0d00dc5415746cec46b20526c1139100d79f80fd822a87c5"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/drift_summary.json",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/drift_summary.json",
+      "bytes": 292,
+      "sha256": "22a86e649af118f2fd36ac2685db76c0153af5a3191858f2a410d12a4aea10fc"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/evaluation_daily.csv",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/evaluation_daily.csv",
+      "bytes": 101482,
+      "sha256": "c8d16d88576c1ef8e3999b190cfd49b63384537920fc7195c494fd5faa702f39"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/final_validation.json",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/final_validation.json",
+      "bytes": 433,
+      "sha256": "b56908ddbb30b853d02d06a61c90e423695acdde6a99fdcb36a50e7a321ba382"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/frequency_summary.csv",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/frequency_summary.csv",
+      "bytes": 2393,
+      "sha256": "b26badab9cf82b9357b0a0687e5a5ed10ecb610b82afae257613502a8bc36112"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/historical_reproduction.json",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/historical_reproduction.json",
+      "bytes": 1219,
+      "sha256": "c4127bb7c5324c36a589c07263379405ee83156ee9450d19b5deee931976b8c2"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/locked_config.json",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/locked_config.json",
+      "bytes": 9592,
+      "sha256": "d653fe61cd2072e4b9be8b8e60bc5a3d4b5a5915ff4ff9a357b0be709a6fc12b"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/metrics.csv",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/metrics.csv",
+      "bytes": 1562,
+      "sha256": "e9cdd6ea41548f2ce88d06f72fe989af0872c663bf3d41f46e279630b18cb67b"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/paired_comparisons.csv",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/paired_comparisons.csv",
+      "bytes": 5395,
+      "sha256": "93ae2ebcd00b1b19891795d97f8ad8cc7ee42e4341e6170eec427c35564df42f"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/Prediction_basis_drift.csv",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/Prediction_basis_drift.csv",
+      "bytes": 4191,
+      "sha256": "9a6a58bec9e469407d7b26382a3bb91d277b20b5ff5f146daa69b35a02b4617f"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/RankIC_basis_drift.csv",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/RankIC_basis_drift.csv",
+      "bytes": 4058,
+      "sha256": "0c1c5f408539948a3cacb71bbffd49d587e291221693d102cb390d06d46a9210"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/RankIC_frequency_daily.csv",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/RankIC_frequency_daily.csv",
+      "bytes": 481717,
+      "sha256": "7cc39b83ce86a45516ab194134febd0f0ebb73c3eb25a9844b93c74c276cbb50"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/REPORT.md",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/REPORT.md",
+      "bytes": 5178,
+      "sha256": "7f6ec2a3d8ff30b0f235fbfbef0adf5b60ed3ab649f8ef697061ecc6dcc1e2a0"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/selected_steps.csv",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/selected_steps.csv",
+      "bytes": 956,
+      "sha256": "a53d2a8ff2c1d037c7fc2974c178bb8ff28e65ae8441d824c35978ab3beea2b4"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/selection_grid.csv",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/selection_grid.csv",
+      "bytes": 5116,
+      "sha256": "07a0d22ba182c46ba00a09d034afe77b206c9b04a1436681e936407c98dbefe4"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/source_manifest.json",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/source_manifest.json",
+      "bytes": 478,
+      "sha256": "6af0e0a0634340dfa7680258f004c9cbd036b691cc7286e59a59f2b4e0849e0a"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/spectral_validation.html",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/spectral_validation.html",
+      "bytes": 134364,
+      "sha256": "501564c04a47866d6f0c7f59a60977ab8e71ffaec358e4673d1aff7c13a7bdee"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/update_utility_daily.csv",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/update_utility_daily.csv",
+      "bytes": 88936,
+      "sha256": "1d0ac7c2fb925d707a8076a9ed7c7aeb74619717d133b24c2f2ba1ab11c46389"
+    },
+    {
+      "file": "evidence/spectral_validation_20261028/update_utility_summary.csv",
+      "source": "experiments/csi300_aligned/models/spectral_validation_20261028/update_utility_summary.csv",
+      "bytes": 758,
+      "sha256": "3b65945b385f226b2f65f0ad885a9ff460b6d3f27f763fe11a85d5577d265b38"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/A_endpoint_daily.csv",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/A_endpoint_daily.csv",
+      "bytes": 59912,
+      "sha256": "cbcd8fac63ea605baa473167c71b103e93ce24fae89fd1f893c48a088b9749c6"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/A_evaluation.json",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/A_evaluation.json",
+      "bytes": 388991,
+      "sha256": "6b5eafd98ed0b96546f20fd55f9d3eae617590e5949cb49f1dd007b9104b6fc2"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/A_path_daily.csv",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/A_path_daily.csv",
+      "bytes": 60120,
+      "sha256": "d6d26274df028d929d7ea336639a0693a8ca126b91bb8c8772ac9bdcdcb85f26"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/comparison.html",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/comparison.html",
+      "bytes": 10536,
+      "sha256": "840883350efaa92f35e9acd83cd031f2d5423d9297d8642ba47dc25c36cf2db5"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/DCT_endpoint_daily.csv",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/DCT_endpoint_daily.csv",
+      "bytes": 59908,
+      "sha256": "b6d69978ea7974bcde6030a50bf7f753b8ceab69893a0287a9847ed92ae7cbfb"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/DCT_evaluation.json",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/DCT_evaluation.json",
+      "bytes": 389131,
+      "sha256": "09c3aeaf0dc1ce091ff6dd1a4cec989b48f5c7cb9f959cce3be3ecb3af7ae722"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/DCT_path_daily.csv",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/DCT_path_daily.csv",
+      "bytes": 60256,
+      "sha256": "23f447d4526f270df12d11b3c2e679c44894ea865c0f11bc444df60708ec84a6"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/final_validation.json",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/final_validation.json",
+      "bytes": 179,
+      "sha256": "1665d77cab705b56d04984e7fbe84b208812b273748c7f36cd4ae741c8a63b7a"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/inputs.json",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/inputs.json",
+      "bytes": 1360,
+      "sha256": "6ff0b85f1c3b71c3cc7a9eb8c2ee725dd026510005ffd613698bb414127659a9"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/locked_config.json",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/locked_config.json",
+      "bytes": 817,
+      "sha256": "ccf5198c927a980c7804df8aec5593bdfb8400bfe19d86710da92717e5311a61"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/metrics.csv",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/metrics.csv",
+      "bytes": 1865,
+      "sha256": "39d7798cd683c8c2906f8342d1e2b682c3b152c26f74bac7ca08e67786f7d8e6"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/paired_intervals.csv",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/paired_intervals.csv",
+      "bytes": 2407,
+      "sha256": "eff7cb8577fa0af0019f5276b9c4a47aab7fa203e470f6ad93290d47b109b8e6"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/PCA_endpoint_daily.csv",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/PCA_endpoint_daily.csv",
+      "bytes": 59699,
+      "sha256": "c035b9c89091132e9932e4fc5c8f9c124b792b10805f17c89282324ea62f53ea"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/PCA_evaluation.json",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/PCA_evaluation.json",
+      "bytes": 388840,
+      "sha256": "a76523bc50d1b837aa09831c1e4ac2a80eaf1b8e6d2112acba6b7369e2947190"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/PCA_path_daily.csv",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/PCA_path_daily.csv",
+      "bytes": 60173,
+      "sha256": "0eea027878e81cab3daf3e041c65824219d5418a35d9cacae63e034546c8763a"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/progression_metrics.csv",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/progression_metrics.csv",
+      "bytes": 2908,
+      "sha256": "74c91f9350fdf11d00b0e4d5816e423b1bb74758ad6f0dac6bd3ab6f32c14406"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/REPORT.md",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/REPORT.md",
+      "bytes": 1827,
+      "sha256": "90513f0dabcfd21fb9a7488de7795af24cfc8b2d3c972bdc4110d517033a0a63"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/training_audits.json",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/training_audits.json",
+      "bytes": 1079,
+      "sha256": "0799c07221d9fed757ffe8b1a47679f1341954ad70943f6e4af96fc10820ce40"
+    },
+    {
+      "file": "evidence/prediction_dct_full_20261102/training_complete.json",
+      "source": "experiments/csi300_aligned/models/prediction_dct_full_20261102/training_complete.json",
+      "bytes": 1243,
+      "sha256": "98412b309e04ce2cd80cba5fa16e4c0611490a5bb426357b40055f2ce75da4e3"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/all_candidate_metrics.csv",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/all_candidate_metrics.csv",
+      "bytes": 7164,
+      "sha256": "ab681c02de782b72a0db2526ffd0eac9bfc1c19ad8459293f42b672ce06e9c9c"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/by_horizon.csv",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/by_horizon.csv",
+      "bytes": 14191,
+      "sha256": "aca9819f4099e073eceeb5b5ad564243a29ed3d139d529ed6b90ef9fc6a82087"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/comparison.html",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/comparison.html",
+      "bytes": 41139,
+      "sha256": "8035a261516b67b8c279c4c89a6b8c099a50b31e1ab4d7e2349252cab1131b42"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/daily_prediction_metrics.csv",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/daily_prediction_metrics.csv",
+      "bytes": 229018,
+      "sha256": "72cf9ee184b27e4e2d6961bc03acaf1bbaef7a47a5704b570cef876f0cd1c2f1"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/final_validation.json",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/final_validation.json",
+      "bytes": 624,
+      "sha256": "1e0bd7ea1432c1c84192cb91ad7513c5e1c1ddb04b45b84e606564dc97264fe4"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/future_poison_checks.json",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/future_poison_checks.json",
+      "bytes": 1022,
+      "sha256": "a3a8bd3e53a2f7491e4a201118e4b0c81a5cb60c90a778a8cd34d4f255bf73c2"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/inputs.json",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/inputs.json",
+      "bytes": 1690,
+      "sha256": "ee756c63cdd99a7f8923166fbc42d3920ba10a751de00300292a70a001a29e2d"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/locked_config.json",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/locked_config.json",
+      "bytes": 1948,
+      "sha256": "170d274aa606ed5d9cc9ecd3092f875bc2e8804f93d5b1e1190396bc0493cf6e"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/metrics.csv",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/metrics.csv",
+      "bytes": 7952,
+      "sha256": "3b7883c589a162f36c682d09b782183258c6385b05a3c57c7056bc3bdb64040d"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/paired_intervals.csv",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/paired_intervals.csv",
+      "bytes": 2598,
+      "sha256": "86cd281924369b317a0348233bb45cdb32312eee86ab860ff19afda697feaee4"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/prediction_loss_comparison.svg",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/prediction_loss_comparison.svg",
+      "bytes": 95968,
+      "sha256": "74667516fde75980e06ce46d72a6dc7cc69d1eae38e72dd040017ce204010df0"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/REPORT.md",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/REPORT.md",
+      "bytes": 2758,
+      "sha256": "807c343b67b997b25448f1968326604d9113be5024f1f3f35968f47345d187c0"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/selection.json",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/selection.json",
+      "bytes": 262,
+      "sha256": "27ebfa161bc5c023ae033b95ed60aa4441ab1128b16ee8580d344a0c23fd5ea1"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/selection_scores.csv",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/selection_scores.csv",
+      "bytes": 787,
+      "sha256": "80cdabb62bb62cc2f78ade1c2647da640ba644bc89627bc0477fd83fa5f0eb10"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/source_checkpoint_hashes.json",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/source_checkpoint_hashes.json",
+      "bytes": 19011,
+      "sha256": "7df5ad42b2204bc33fe67f26ab1207edc801ad288f00a856b213ecabfe3c8806"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/splits.json",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/splits.json",
+      "bytes": 5854,
+      "sha256": "20cc9e7f6b281e7d23d8fc20e2274dd857b6e6c5e2f858b1626a8610948e10c6"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/support_feature_norms.csv",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/support_feature_norms.csv",
+      "bytes": 10445,
+      "sha256": "37813d83531af647a162867008edbae0012a92ba1ea185782e426d33ed3dd4e7"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/time_block_metrics.csv",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/time_block_metrics.csv",
+      "bytes": 761,
+      "sha256": "0be5fd168267539a8ae76629d196536b6b033d0035dfbceaec050a1e0ab18406"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/training_checks.json",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/training_checks.json",
+      "bytes": 554,
+      "sha256": "fe4a7d6b2b0ccca91155c5c868dbef75bec274e4d8d5f533c08886de53efdf40"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/training_complete.json",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/training_complete.json",
+      "bytes": 59,
+      "sha256": "ccc8270fc028c6c07974fbbe9c1ab1f13fc048f54f6efce607416b0bc349fb48"
+    },
+    {
+      "file": "evidence/prediction_split_residual_20261103/verdict.json",
+      "source": "experiments/csi300_aligned/models/prediction_split_residual_20261103/verdict.json",
+      "bytes": 453,
+      "sha256": "2c68ccd72db23de675553a3f0dc00b95790f823c1c8edfde800c1f455a016d48"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/attention_weights.json",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/attention_weights.json",
+      "bytes": 16498,
+      "sha256": "a44c8b30a1e968108b17ab9ba8ccf01ac86d0b45aa3ed6a25fb16d424b6de93a"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/audit.json",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/audit.json",
+      "bytes": 260,
+      "sha256": "1b18f0c25c750c2a817b1e1604e602973de57d49ea78387a67ee9b1fe11d20a7"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/comparison.svg",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/comparison.svg",
+      "bytes": 104179,
+      "sha256": "61111a574bd66720015bbd60ddfa42107d8f4f2aaef3d1c1c55a27063a6cf5d6"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/comparison_metrics.csv",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/comparison_metrics.csv",
+      "bytes": 12253,
+      "sha256": "9bea2046b50e2747486aee37cb20d45f0fee177246bcd655d0cf8194bda08a21"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/gradient_diagnostics.json",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/gradient_diagnostics.json",
+      "bytes": 1381,
+      "sha256": "3fdb3494ebe1fe7a3d4d8654a367703c8a92053250808d1a8f0f3141307e6991"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/horizon_metrics_extended.csv",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/horizon_metrics_extended.csv",
+      "bytes": 19261,
+      "sha256": "0d87489be5fbfdd5e74855c7572d1e95a0cb214cdff0b3af2c6140a99ac45b70"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/learned_attention_diagnostics.json",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/learned_attention_diagnostics.json",
+      "bytes": 17174,
+      "sha256": "8c85cb4decdb59b53ddc5ff83dad4c5b1716b096f640df4b40788c2af98db70f"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/metrics_by_horizon.csv",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/metrics_by_horizon.csv",
+      "bytes": 23550,
+      "sha256": "1f1f611ce3a531f8cd1b3319f7e74db199f6b2e789b229dc5ab9e74a15401e40"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/online_timings.csv",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/online_timings.csv",
+      "bytes": 49169,
+      "sha256": "9a7ca2f9c159b5c8ded47b4f5668708851ca6ed45cfc516d337f7a6ec723ff75"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/online_update_log.csv",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/online_update_log.csv",
+      "bytes": 36788,
+      "sha256": "68025ba1af730dbc9717440a0c53ac0439ac0a9112c5be432eab5d802df9d006"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/original_checkpoint_evaluation.json",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/original_checkpoint_evaluation.json",
+      "bytes": 143667,
+      "sha256": "dbe66bcb83ef3a041ea834eee10c69e6218a973b871fe42dd210df1636753097"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/paired_date_bootstrap.csv",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/paired_date_bootstrap.csv",
+      "bytes": 14000,
+      "sha256": "81dbb51b51203fb402604e6c243d55102dc077316f78d2e10c74b8fb3a8b74c0"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/progress.json",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/progress.json",
+      "bytes": 71,
+      "sha256": "2330da5aa8dc434c72588f6d6a40016302d417dc987519c948fda878995a5873"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/REPORT.md",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/REPORT.md",
+      "bytes": 6530,
+      "sha256": "726d288911d9b22b19dd6a62a8ee47a624458ce15c0546c6ec6df09aad7ef242"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/run_config.json",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/run_config.json",
+      "bytes": 1942,
+      "sha256": "48aa80b83c37bfb97f02dc36e46b638616b29200bbfed129415a1782d210397b"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/seed_summary.csv",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/seed_summary.csv",
+      "bytes": 8688,
+      "sha256": "d111915a0804e32204b29f48f33440f0ef6d613783bcaecfb5a43dc59e6f60c8"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/selection.json",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/selection.json",
+      "bytes": 841,
+      "sha256": "f20908c534b2e555b86855cf4b2d68313dee80a9d41d1059c4a271bfb341de08"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/sequence_cache_manifest.json",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/sequence_cache_manifest.json",
+      "bytes": 5808,
+      "sha256": "e48a0e6b5377f5bb8c9d6e25b98d498fbbe86906042078f2803100beb466f92a"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/source_manifest.json",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/source_manifest.json",
+      "bytes": 467,
+      "sha256": "f4826c084b9997df28d3aef6a19875411b795ea77efe3b96a6f25eb4c226eaf3"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/status.json",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/status.json",
+      "bytes": 316,
+      "sha256": "e445fbcfbcd757c0678014c1b23a7b92aaf9742cafdc478fdbf56c2e61679ec0"
+    },
+    {
+      "file": "evidence/temporal_attention_pilot_60x80_20261104/training_history.csv",
+      "source": "experiments/csi300_aligned/models/temporal_attention_pilot_60x80_20261104/training_history.csv",
+      "bytes": 8375,
+      "sha256": "b1881bf3c90141ae5a326f51a033fb22c7d89af483430fe486e10cd20b6f0955"
+    },
+    {
+      "file": "evidence/token_adapter_smoke_20261105/audit.json",
+      "source": "experiments/csi300_aligned/models/token_adapter_smoke_20261105/audit.json",
+      "bytes": 1060,
+      "sha256": "8900643afc81166c9222397a03d37359e01bda0635ffdbfe14e923029bf63d02"
+    },
+    {
+      "file": "evidence/token_adapter_smoke_20261105/generation_metrics.csv",
+      "source": "experiments/csi300_aligned/models/token_adapter_smoke_20261105/generation_metrics.csv",
+      "bytes": 248,
+      "sha256": "199c4c49c9a5ad7c4877ef5e0507cebb9c99cfd705bb62efb07681a4357f5769"
+    },
+    {
+      "file": "evidence/token_adapter_smoke_20261105/predictions.csv",
+      "source": "experiments/csi300_aligned/models/token_adapter_smoke_20261105/predictions.csv",
+      "bytes": 31498,
+      "sha256": "8f820b3ca02f0fe4e9bec5a8925a9ced0a14aca20a476b6f7605e908e3304598"
+    },
+    {
+      "file": "evidence/token_adapter_smoke_20261105/REPORT.md",
+      "source": "experiments/csi300_aligned/models/token_adapter_smoke_20261105/REPORT.md",
+      "bytes": 4117,
+      "sha256": "dcb4de071b42f2699d810baedf83701f51a9ea8b45031a38868d4d29eae0c5ea"
+    },
+    {
+      "file": "evidence/token_adapter_smoke_20261105/run_config.json",
+      "source": "experiments/csi300_aligned/models/token_adapter_smoke_20261105/run_config.json",
+      "bytes": 1047,
+      "sha256": "534c3e246e4aed8fefe9538eb33ad9a82a0701787ea225d1925c118544d7016d"
+    },
+    {
+      "file": "evidence/token_adapter_smoke_20261105/selected_samples.csv",
+      "source": "experiments/csi300_aligned/models/token_adapter_smoke_20261105/selected_samples.csv",
+      "bytes": 5103,
+      "sha256": "83739066a19c8032f340629f4eb6a6d7ccc5856e16df3f4e8cb2def544586afa"
+    },
+    {
+      "file": "evidence/token_adapter_smoke_20261105/source_manifest.json",
+      "source": "experiments/csi300_aligned/models/token_adapter_smoke_20261105/source_manifest.json",
+      "bytes": 520,
+      "sha256": "63b68a493e542ffa991a555ad8309b5a8c15fae58df305b8b300805f57df32b7"
+    },
+    {
+      "file": "evidence/token_adapter_smoke_20261105/status.json",
+      "source": "experiments/csi300_aligned/models/token_adapter_smoke_20261105/status.json",
+      "bytes": 2329,
+      "sha256": "97edf10b24400982423f53a1035ed25f4afbe7e390ca62d11b286c3445f01d0e"
+    },
+    {
+      "file": "evidence/token_adapter_smoke_20261105/token_metrics.csv",
+      "source": "experiments/csi300_aligned/models/token_adapter_smoke_20261105/token_metrics.csv",
+      "bytes": 738,
+      "sha256": "e83180c543c35b3d9e345a44a25916fe8ff334d0d38c33606215342fd3121048"
+    },
+    {
+      "file": "evidence/token_adapter_smoke_20261105/training_history.csv",
+      "source": "experiments/csi300_aligned/models/token_adapter_smoke_20261105/training_history.csv",
+      "bytes": 1465,
+      "sha256": "41f7421fb340133dd4e7d9ec02de7f927d8d40dac139ff5eba9e49e81145e0d6"
+    },
+    {
+      "file": "evidence/lora_factorial_cpu_20261105/audit.json",
+      "source": "experiments/csi300_aligned/models/lora_factorial_cpu_20261105/audit.json",
+      "bytes": 5716,
+      "sha256": "87233e64408a840e31a0efb5bace62c453a23f8c000f50db283f406da9fc23b1"
+    },
+    {
+      "file": "evidence/lora_factorial_cpu_20261105/cache_manifest.json",
+      "source": "experiments/csi300_aligned/models/lora_factorial_cpu_20261105/cache_manifest.json",
+      "bytes": 5934,
+      "sha256": "42ddda428f8c7a64e339c8e0060358347604d901e9b6b09243d1af897f86cd8a"
+    },
+    {
+      "file": "evidence/lora_factorial_cpu_20261105/loss_scales.json",
+      "source": "experiments/csi300_aligned/models/lora_factorial_cpu_20261105/loss_scales.json",
+      "bytes": 343,
+      "sha256": "96f12f90d03727eee71b4d056e449e887ee967a486dad4bdd520bc0d47230879"
+    },
+    {
+      "file": "evidence/lora_factorial_cpu_20261105/metrics.csv",
+      "source": "experiments/csi300_aligned/models/lora_factorial_cpu_20261105/metrics.csv",
+      "bytes": 10790,
+      "sha256": "91f1e4ff186c0e668fe95e60beed8ddc8ef0f61116b8b0d4c644aa31238f62f7"
+    },
+    {
+      "file": "evidence/lora_factorial_cpu_20261105/progress.json",
+      "source": "experiments/csi300_aligned/models/lora_factorial_cpu_20261105/progress.json",
+      "bytes": 99,
+      "sha256": "bf17299cf848ee39ea7b7a99b5d16f3d029ac5f741775562af6ef7477b3c9480"
+    },
+    {
+      "file": "evidence/lora_factorial_cpu_20261105/REPORT.md",
+      "source": "experiments/csi300_aligned/models/lora_factorial_cpu_20261105/REPORT.md",
+      "bytes": 6114,
+      "sha256": "5230b5aaab104fba006af43acb2ae5382e1a2cd84cf9d7a07eb0d04857c81b9f"
+    },
+    {
+      "file": "evidence/lora_factorial_cpu_20261105/run_config.json",
+      "source": "experiments/csi300_aligned/models/lora_factorial_cpu_20261105/run_config.json",
+      "bytes": 817,
+      "sha256": "c97db7e3bc26f3effd3e47d56e6375eca7fe7142cec1292a026b11442c745d8f"
+    },
+    {
+      "file": "evidence/lora_factorial_cpu_20261105/selection.csv",
+      "source": "experiments/csi300_aligned/models/lora_factorial_cpu_20261105/selection.csv",
+      "bytes": 784,
+      "sha256": "2c3aa445c7ecf8fbe69874f00aee3ef82780bdd57414d6cee1ca864df7d0584d"
+    },
+    {
+      "file": "evidence/lora_factorial_cpu_20261105/source_manifest.json",
+      "source": "experiments/csi300_aligned/models/lora_factorial_cpu_20261105/source_manifest.json",
+      "bytes": 334,
+      "sha256": "a3148d10956ba6e681b6d465d2053096b9564dc871379f00b4bc1c46799cb611"
+    },
+    {
+      "file": "evidence/lora_factorial_cpu_20261105/status.json",
+      "source": "experiments/csi300_aligned/models/lora_factorial_cpu_20261105/status.json",
+      "bytes": 223,
+      "sha256": "f4d1cd0a4c832ea9f3210a7381c01d6399acc203fb05b25b8d8be997625f3874"
+    },
+    {
+      "file": "evidence/lora_factorial_cpu_20261105/training_history.csv",
+      "source": "experiments/csi300_aligned/models/lora_factorial_cpu_20261105/training_history.csv",
+      "bytes": 6382,
+      "sha256": "ffa35ebdf9f86a5d531dd1746dda42049e285cc571701474973b6f97fa1d184f"
+    },
+    {
+      "file": "evidence/lora_factorial_cpu_20261105/validation_reference.json",
+      "source": "experiments/csi300_aligned/models/lora_factorial_cpu_20261105/validation_reference.json",
+      "bytes": 135,
+      "sha256": "779535e2a01b1f4934657f7b4f10947bd19606320449f0156cc9a1586c29529d"
+    },
+    {
+      "file": "evidence/mars_cl_result_check_20261028/metrics.csv",
+      "source": "experiments/csi300_aligned/evaluations/mars_cl_result_check_20261028/metrics.csv",
+      "bytes": 1525,
+      "sha256": "8bdb44afa1529962d5ad7657e51a607eefeed4db9a9a9f9b3f1cd8a8a0473ebe"
+    },
+    {
+      "file": "evidence/mars_cl_result_check_20261028/paired_bootstrap.csv",
+      "source": "experiments/csi300_aligned/evaluations/mars_cl_result_check_20261028/paired_bootstrap.csv",
+      "bytes": 1783,
+      "sha256": "6d7c87f1ae1e302851d9890ead3976d4a3f89e7faeab07926725ab1527fa802a"
+    },
+    {
+      "file": "evidence/mars_cl_result_check_20261028/RESULT_CHECK.md",
+      "source": "experiments/csi300_aligned/evaluations/mars_cl_result_check_20261028/RESULT_CHECK.md",
+      "bytes": 1744,
+      "sha256": "35fe2c15ca3f3eb56c399c57969c99c2375e1a0afd9f6bba5749305d6ef9d9d1"
+    },
+    {
+      "file": "evidence/mars_cl_result_check_20261028/seed100_frozen_endpoint_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/mars_cl_result_check_20261028/seed100_frozen_endpoint_daily.csv",
+      "bytes": 22172,
+      "sha256": "44eb716ce5070574cf227b40a084ad8d5d851a90b7e2870e9029d31a7071ec04"
+    },
+    {
+      "file": "evidence/mars_cl_result_check_20261028/seed100_frozen_evaluation.json",
+      "source": "experiments/csi300_aligned/evaluations/mars_cl_result_check_20261028/seed100_frozen_evaluation.json",
+      "bytes": 390859,
+      "sha256": "3e769f64de31038568ab9eed090aa29fde7f701c66c36ff4786ca81c865049ad"
+    },
+    {
+      "file": "evidence/mars_cl_result_check_20261028/seed100_frozen_path_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/mars_cl_result_check_20261028/seed100_frozen_path_daily.csv",
+      "bytes": 22146,
+      "sha256": "f2d830f08571114e028fd5bec70cffd9fa55e3eecd3073f36c3cd6f9f4f1ccb2"
+    },
+    {
+      "file": "evidence/mars_cl_result_check_20261028/seed100_mars_cl_endpoint_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/mars_cl_result_check_20261028/seed100_mars_cl_endpoint_daily.csv",
+      "bytes": 22191,
+      "sha256": "ed72f8bcb11ed617e0b66e2f3ac0889ed00a78d991a52adedff00c04d202c373"
+    },
+    {
+      "file": "evidence/mars_cl_result_check_20261028/seed100_mars_cl_evaluation.json",
+      "source": "experiments/csi300_aligned/evaluations/mars_cl_result_check_20261028/seed100_mars_cl_evaluation.json",
+      "bytes": 390917,
+      "sha256": "cbd5fe066c29f78a54f3e6508d5ef70c677d31206b7c3dc1d8317372c2b76ea7"
+    },
+    {
+      "file": "evidence/mars_cl_result_check_20261028/seed100_mars_cl_path_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/mars_cl_result_check_20261028/seed100_mars_cl_path_daily.csv",
+      "bytes": 22171,
+      "sha256": "39e400b30257964e0cb30dc194ebf3dcce1febba412ef6c8fbc6a9f747c50036"
+    },
+    {
+      "file": "evidence/mars_cl_result_check_20261028/seed102_frozen_endpoint_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/mars_cl_result_check_20261028/seed102_frozen_endpoint_daily.csv",
+      "bytes": 22206,
+      "sha256": "566083e34c7d61f9082be5db9e475e61319ff9548a7a3885e4f3efc2135b18ab"
+    },
+    {
+      "file": "evidence/mars_cl_result_check_20261028/seed102_frozen_evaluation.json",
+      "source": "experiments/csi300_aligned/evaluations/mars_cl_result_check_20261028/seed102_frozen_evaluation.json",
+      "bytes": 390894,
+      "sha256": "73737dae5861aebd80b7c7469d700b3406e5f09db95e7f6fba7c2571681c8b51"
+    },
+    {
+      "file": "evidence/mars_cl_result_check_20261028/seed102_frozen_path_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/mars_cl_result_check_20261028/seed102_frozen_path_daily.csv",
+      "bytes": 22177,
+      "sha256": "dfe530aecc30643be6f33f8f1ba25fa85807483f07d9f00c5549002b7ec9163a"
+    },
+    {
+      "file": "evidence/mars_cl_result_check_20261028/seed102_mars_cl_endpoint_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/mars_cl_result_check_20261028/seed102_mars_cl_endpoint_daily.csv",
+      "bytes": 22191,
+      "sha256": "5eddbfb6a5fff3030792ddeb250d224f19fb88460d39f83d26bc660a6c0c0a0c"
+    },
+    {
+      "file": "evidence/mars_cl_result_check_20261028/seed102_mars_cl_evaluation.json",
+      "source": "experiments/csi300_aligned/evaluations/mars_cl_result_check_20261028/seed102_mars_cl_evaluation.json",
+      "bytes": 390882,
+      "sha256": "2bfea0119f734a9bbb4157617b7488362e57a9a5757c659cf27c3199404e5a28"
+    },
+    {
+      "file": "evidence/mars_cl_result_check_20261028/seed102_mars_cl_path_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/mars_cl_result_check_20261028/seed102_mars_cl_path_daily.csv",
+      "bytes": 22169,
+      "sha256": "5154fa2bd9fd108f9f3e73a46d54ae138c9e905e8b79760de63cf7e12a9a9591"
+    },
+    {
+      "file": "evidence/mars_cl_result_check_20261028/sources.json",
+      "source": "experiments/csi300_aligned/evaluations/mars_cl_result_check_20261028/sources.json",
+      "bytes": 1119,
+      "sha256": "f5e09bfd850551990ffea41751ef417e146a0142143455956b5f0fca2c060836"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/audit.json",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/audit.json",
+      "bytes": 32819,
+      "sha256": "5a52a69b20ac7e4be618e30dcd616fe872e56a1c94284e381335170cd934e95d"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/Kronos_zero_shot_endpoint_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/Kronos_zero_shot_endpoint_daily.csv",
+      "bytes": 59775,
+      "sha256": "3a25436508914811ce1cf4a87f4348ae6ca9a3f05e047305f5ff55a683a7f195"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/Kronos_zero_shot_evaluation.json",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/Kronos_zero_shot_evaluation.json",
+      "bytes": 389157,
+      "sha256": "c5da9c96b1a91682cb49f29ec97fcec0e057a279290a114904cf767be7daae93"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/Kronos_zero_shot_path_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/Kronos_zero_shot_path_daily.csv",
+      "bytes": 60406,
+      "sha256": "e2232000b9b11d6e971b91adcfe808fbe7df46202a56523c96c786196c08ef0c"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/Linear_head_endpoint_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/Linear_head_endpoint_daily.csv",
+      "bytes": 60119,
+      "sha256": "a707240353ad7e431893398b21de8e9018c28ef1d893a9f34f42f0b2ef7d0357"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/Linear_head_evaluation.json",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/Linear_head_evaluation.json",
+      "bytes": 389656,
+      "sha256": "85404c6165ebda90a50fa10f3cf8557e8423e60469280b41c554c5f25582d2c8"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/Linear_head_path_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/Linear_head_path_daily.csv",
+      "bytes": 60566,
+      "sha256": "1f3231054e524e7774ccaf606573b808f1cf15cde24a88e97430cbdef70a5b7a"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/metrics.csv",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/metrics.csv",
+      "bytes": 2834,
+      "sha256": "46b6e6112a6df149156235c01245585e7baffbefbe0f44e9c11b332170a6fb29"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/paired_intervals.csv",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/paired_intervals.csv",
+      "bytes": 2796,
+      "sha256": "d7c3108e98d0937794732df844a0657efd226bb4f5c72912101efe770ca1243c"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/Prediction_online_endpoint_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/Prediction_online_endpoint_daily.csv",
+      "bytes": 59912,
+      "sha256": "cbcd8fac63ea605baa473167c71b103e93ce24fae89fd1f893c48a088b9749c6"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/Prediction_online_evaluation.json",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/Prediction_online_evaluation.json",
+      "bytes": 388789,
+      "sha256": "baa9e194c291b851c5123dd5f1bb6e67d2df6cfb560573bacd8f4c0fa819ed77"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/Prediction_online_path_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/Prediction_online_path_daily.csv",
+      "bytes": 59918,
+      "sha256": "7da5933f186a045ff894373add4b33d8808148ba854c8791a3e554096ea3ea40"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/Prediction_PCA_HCA_endpoint_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/Prediction_PCA_HCA_endpoint_daily.csv",
+      "bytes": 59699,
+      "sha256": "c035b9c89091132e9932e4fc5c8f9c124b792b10805f17c89282324ea62f53ea"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/Prediction_PCA_HCA_evaluation.json",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/Prediction_PCA_HCA_evaluation.json",
+      "bytes": 388623,
+      "sha256": "514687ed2e9b0da4b23b66ae91dd0b314f6a5e0a5618f01bcd4c8489c9251aab"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/Prediction_PCA_HCA_path_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/Prediction_PCA_HCA_path_daily.csv",
+      "bytes": 59959,
+      "sha256": "9a2da2a0c01660401df68c91319bb571ebce2c2a930751ca6110b0004de49bf1"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/Prediction_static_endpoint_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/Prediction_static_endpoint_daily.csv",
+      "bytes": 59982,
+      "sha256": "657f43ed5a9b0fa645ec9705fe55a5ddb0dcfd7c23445614569e97317c5868ae"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/Prediction_static_evaluation.json",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/Prediction_static_evaluation.json",
+      "bytes": 389094,
+      "sha256": "3cfe5e22652828cce62d766b560676f3d3f3a17d6752aaea6232bd33837decf3"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/Prediction_static_path_daily.csv",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/Prediction_static_path_daily.csv",
+      "bytes": 60162,
+      "sha256": "7e6755aa467c43e1da61b5159558d325abd33e4a3d2940c1340e6005919b5d0f"
+    },
+    {
+      "file": "evidence/prediction_progression_20261102/REPORT.md",
+      "source": "experiments/csi300_aligned/evaluations/prediction_progression_20261102/REPORT.md",
+      "bytes": 2341,
+      "sha256": "517071c42037a2b3749bb5ff9b7ef272c1c5da43e07d133227e7a120d532d0a8"
+    }
+  ],
+  "rule": "Top-level textual evidence <=500000 bytes per file; no nested predictions, raw market data or caches"
+}

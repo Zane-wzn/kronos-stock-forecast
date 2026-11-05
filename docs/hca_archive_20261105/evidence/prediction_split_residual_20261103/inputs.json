@@ -1,0 +1,30 @@
+{
+  "initial_checkpoint": {
+    "path": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\experiments\\csi300_aligned\\models\\prediction_adapter\\model.pt",
+    "sha256": "111f72975e77e165211b441a731b4da17dca4e26629b848839ce13aaffcd94eb"
+  },
+  "A_predictions": {
+    "path": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\experiments\\csi300_aligned\\models\\prediction_dct_full_20261102\\Prediction_Live_A\\causal_predictions.csv",
+    "sha256": "1ce530c18fdaec5bbe0de12b1d7cad8285f707074bf806c52075f05a166afe97"
+  },
+  "A_access_log": {
+    "path": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\experiments\\csi300_aligned\\models\\prediction_dct_full_20261102\\Prediction_Live_A\\access_log.csv",
+    "sha256": "84f3d1a0b3faea74a2f912be0538687425e1dc0493a5da19ad1b901f62da522d"
+  },
+  "PCA_basis": {
+    "path": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\experiments\\csi300_aligned\\models\\prediction_dct_full_20261102\\PCA_basis.npy",
+    "sha256": "4335dcc65a8ee5030642113c6d149c7a144a58aad9de6a12cc70c5a61b3c834d"
+  },
+  "hidden": {
+    "path": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\experiments\\csi300_aligned\\reference\\hidden_cache\\hidden_test.npy",
+    "sha256": "20e91f77ac595f119885a99f7a3c7f96672403879e9a85213bd5b9d55f349310"
+  },
+  "labels": {
+    "path": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\experiments\\csi300_aligned\\doubleadapt_cache_v2\\y.npy",
+    "sha256": "85abc8f98f916ca463270efe7824582a862fc3deb965649e53df7b61c1de60ee"
+  },
+  "metadata": {
+    "path": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\experiments\\csi300_aligned\\doubleadapt_cache_v2\\meta.csv",
+    "sha256": "1aecece5cf3bf6f0ee325fda28083f43db15f4543ce9a2558e7856e2d2bb20ab"
+  }
+}
