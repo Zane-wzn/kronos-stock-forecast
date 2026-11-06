@@ -4,6 +4,8 @@
 
 **外部模型预测归档：** [Chronos-2、TimesFM 3.0、ODEStream 与 HCA 统一比较](docs/baseline_comparison_20261105/REPORT.md)。含完整原始预测 ZIP、统一标签后的收益预测、逐日指标及源码；ODEStream 已保存结果存在同目标日逐股更新的时序问题，仅列历史诊断。
 
+**DoubleAdapt 三种子归档：** [论文外部基线及 DoubleAdapt 恢复说明](docs/paper_external_baselines_20261106/README.md)。保存种子100/101/102的完整预测、标签、任务索引、检查点、源码快照和统一重评结果。
+
 本仓库用于研究 Kronos 在 A 股日线数据上的时间序列预测、Adapter、持续学习、横截面排序和简化组合回测。仓库还保留一个独立的 ODEStream 对比实验；ODEStream 使用自己的 close 单变量 24→1 流式方案，不接入 Kronos、Adapter、Replay 或排序头。
 
 文档和目录只对应当前仓库中的代码、数据说明、实验记录和结果页面。原始行情文件、模型权重、缓存以及大规模逐样本预测明细由 `.gitignore` 排除；准备好数据后可按下文路径运行实验。

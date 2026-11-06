@@ -47,7 +47,7 @@ CSI300固定面板；2025-07-01—2026-06-05；66,103股票日期键；90日输�
 |MARS-CL复核|冻结Page1-C，新增有界残差；本地仅seed100/102可完整配对|Path静态→MARS：seed10062.4766%→59.0256%，seed10267.9646%→67.5903%；RankIC下降、MAE略降。seed101副本不完整，排除。未核验缺失的原训练日志。|
 |旧Continual/动态Hedge|D-RankIC，月末成熟标签更新、Replay、静态与持续分支动态融合|版本文档Path静态39.06%、持续33.70%、Hedge50.72%；是另一更新策略/起点，不把其改善解释为HCA增益。|
 |ODEStream|close单变量24→1独立流式模型|旧225日公共交集摘要净收益27.299%；输入/标签/公共样本窗口与HCA不同，仅作清楚标注协议的外部方法对照。|
-|DoubleAdapt|仓库保留GRU 90→10实现、旧实验名与历史归档清单|本轮未找到足以核验其完整配对结果的本地正式指标；旧MANIFEST引用的部分文件未在当前副本找到。不能把目录/清单当作已恢复结果，具体优劣无法验证。|
+|DoubleAdapt|2026-11-06补查种子子目录，恢复GRU 90→10三个完整226日种子|同口径重评Path净收益56.122%/19.817%/26.275%，均值34.071%；原运行配置仍缺失。预测、任务索引、检查点与源码已归档，见[恢复报告](../paper_external_baselines_20261106/README.md)。|
 
 对应证据：[归因报告](evidence/hca_gain_attribution_20261028/REPORT.md)、[CFUS](evidence/cfus_round1_20261022/REPORT.md)、[谱验证](evidence/spectral_validation_20261028/REPORT.md)、[DCT](evidence/prediction_dct_full_20261102/REPORT.md)、[残差分离](evidence/prediction_split_residual_20261103/REPORT.md)、[Attention](evidence/temporal_attention_pilot_60x80_20261104/REPORT.md)、[LoRA](evidence/lora_factorial_cpu_20261105/REPORT.md)、[Token](evidence/token_adapter_smoke_20261105/REPORT.md)、[MARS复核](evidence/mars_cl_result_check_20261028/RESULT_CHECK.md)、[Hedge版本](../VERSION_1.0_ADAPTER_CONTINUAL_HEDGE.md)、[ODEStream摘要](../../results/cumulative_return_curves/odestream_vs_existing/odestream_vs_existing_summary.csv)。
 

@@ -1,0 +1,50 @@
+[
+  {
+    "seed": 100,
+    "source": "experiments/csi300_aligned/models/doubleadapt_gru_90x10_suite_20261013/seed100/predictions.csv",
+    "sha256": "1d439182f3047da815a78369c45ddbaa2c1ce4b428217d5f341560d1b89fe34c",
+    "rows": 66103,
+    "dates": 226,
+    "duplicate_keys": 0,
+    "matches_reference_keys": true,
+    "target_max_abs_error": 4.586181634458342e-08,
+    "all_prediction_and_target_values_finite": true,
+    "run_evidence_present": {
+      "run_config.json": false,
+      "status.json": false
+    },
+    "qualification": "Recovered full forecasts; training provenance/configuration not fully verifiable. Not certified official reproduction."
+  },
+  {
+    "seed": 101,
+    "source": "experiments/csi300_aligned/models/doubleadapt_gru_90x10_suite_20261013/seed101/predictions.csv",
+    "sha256": "ed210aaf3c8109ab3643802c8b637ec216ee6e920d9d60101324da7a66dddefe",
+    "rows": 66103,
+    "dates": 226,
+    "duplicate_keys": 0,
+    "matches_reference_keys": true,
+    "target_max_abs_error": 4.586181634458342e-08,
+    "all_prediction_and_target_values_finite": true,
+    "run_evidence_present": {
+      "run_config.json": false,
+      "status.json": false
+    },
+    "qualification": "Recovered full forecasts; training provenance/configuration not fully verifiable. Not certified official reproduction."
+  },
+  {
+    "seed": 102,
+    "source": "experiments/csi300_aligned/models/doubleadapt_gru_90x10_suite_20261013/seed102/predictions.csv",
+    "sha256": "87e3aa4b4043d197b72a4c5aaafa06d65cdb3c95d87745fa5faf66c0c55df660",
+    "rows": 66103,
+    "dates": 226,
+    "duplicate_keys": 0,
+    "matches_reference_keys": true,
+    "target_max_abs_error": 4.586181634458342e-08,
+    "all_prediction_and_target_values_finite": true,
+    "run_evidence_present": {
+      "run_config.json": false,
+      "status.json": false
+    },
+    "qualification": "Recovered full forecasts; training provenance/configuration not fully verifiable. Not certified official reproduction."
+  }
+]

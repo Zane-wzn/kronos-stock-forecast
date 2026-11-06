@@ -1,0 +1,65 @@
+{"stage": "dry_run_windows", "rows": 15000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 30000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 45000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 60000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 75000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 90000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 105000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 120000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 135000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 150000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 165000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 180000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 195000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 210000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 225000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 240000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 255000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 270000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 285000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 300000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 315000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 330000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 345000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 360000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 375000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 390000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 405000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 420000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 435000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 450000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 465000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 480000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 495000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 510000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 525000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 540000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 555000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 570000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 585000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 600000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 615000, "total": 622692}
+{"stage": "dry_run_windows", "rows": 622692, "total": 622692}
+{
+  "status": "dry_run_passed",
+  "rows": 622692,
+  "test_rows": 66103,
+  "test_dates": 226,
+  "device": "cuda:0",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "packages": {
+    "torch": "2.10.0+cu126",
+    "numpy": "2.2.3",
+    "pandas": "2.2.3",
+    "higher": "0.2.1"
+  },
+  "pairs_sha256": "f5172f5135b7fd1fedf44ba254ba4a48f3f324c7bb0aadc24309fc4cfdbd6c5c",
+  "raw_files": 300,
+  "tasks": {
+    "train": 103,
+    "val": 6,
+    "test": 12
+  },
+  "writes": false,
+  "higher_compatibility": "passed"
+}

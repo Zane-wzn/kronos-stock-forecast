@@ -8,7 +8,7 @@
 
 Chronos-2、TimesFM 3.0各66,103行、226日，summary为complete；原始CSV各约182MB，含十步价格/收益及9分位数，已按原始字节打包在prediction_archives/。Kronos原始226个逐日文件67,390行，按固定键对齐到66,103行。ODEStream原始67,006行、226个目标日、297股，保留原文件。静态Prediction、普通在线A、HCA-PCA预测一并归档。ZIP通过逐成员CRC及SHA256核验，权重/原始行情不在这些预测包内。
 
-SSPT本地仅发现smoke结果，没有正式测试预测；不把smoke中的complete当作正式实验完成。DoubleAdapt此前正式结果不完整，继续标为无法验证。中断旧Chronos results-archive没有拼入最终输出。
+SSPT本地仅发现smoke结果，没有正式测试预测；不把smoke中的complete当作正式实验完成。2026-11-06补查DoubleAdapt种子子目录后已找到三种子完整预测，详见[恢复报告](../paper_external_baselines_20261106/README.md)；此前仅检查顶层而判结果不完整的说法已纠正，原运行配置仍缺失。中断旧Chronos results-archive没有拼入最终输出。
 
 ## 统一226日主表
 

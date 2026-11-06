@@ -1,0 +1,554 @@
+{
+  "archive_date": "2026-11-06",
+  "status": "all_member_hashes_verified",
+  "archives": [
+    {
+      "file": "archives/DoubleAdapt_seed100.zip",
+      "bytes": 21477174,
+      "sha256": "3494dead14b8e9ea6459652d0459cefdd427127c6a4eaf63861a58e5d926a7e2",
+      "members": [
+        {
+          "name": "checkpoints/best_offline.pt",
+          "bytes": 699970,
+          "sha256": "0fd65619cca684bca7fffe6c49f213fb2026952292fd0e83ec4894d5b237db21"
+        },
+        {
+          "name": "checkpoints/block_000.pt",
+          "bytes": 700235,
+          "sha256": "6a55b3eaefd5f964b1fe2e98d2f5ab1482a7ce2742ffef71b27cb9dbee1621a8"
+        },
+        {
+          "name": "checkpoints/block_001.pt",
+          "bytes": 700363,
+          "sha256": "c96802db2bbf7c0fb79d452b65d896c40963abae2f5e7480598eed092610def5"
+        },
+        {
+          "name": "checkpoints/block_002.pt",
+          "bytes": 700555,
+          "sha256": "3e83ed3a26c0baf85096f71405817f4fdb74ccf338bc46584ec092cd6fb77e13"
+        },
+        {
+          "name": "checkpoints/block_003.pt",
+          "bytes": 700683,
+          "sha256": "9b5c18ae3bbfc6dae6c8f2f52926ec070ccc9071b71887bd6cb8d3aaf527c3f9"
+        },
+        {
+          "name": "checkpoints/block_004.pt",
+          "bytes": 700811,
+          "sha256": "c1c26ca3e4573883beb8444ba41ba2fb70d3f6827aa2f14a4e2dd11a6ee8e677"
+        },
+        {
+          "name": "checkpoints/block_005.pt",
+          "bytes": 700939,
+          "sha256": "d81478093fbdb915510ea4d2d711842f55680df2ec95da936a3b67c6de350d41"
+        },
+        {
+          "name": "checkpoints/block_006.pt",
+          "bytes": 701067,
+          "sha256": "fed53677951be1a05a1901ecea24afc803df85d14632d731c9b8ac9003d3ac0b"
+        },
+        {
+          "name": "checkpoints/block_007.pt",
+          "bytes": 701259,
+          "sha256": "ffe401912e48b35c4e7bf113032cc07cc42e29139ea07bf3f9bb53f78d6cbb4a"
+        },
+        {
+          "name": "checkpoints/block_008.pt",
+          "bytes": 701387,
+          "sha256": "1c0c6de672865e7ba3cf7d2b5572d7b5b09036cef78385bfc4b0e3dd0969061c"
+        },
+        {
+          "name": "checkpoints/block_009.pt",
+          "bytes": 701515,
+          "sha256": "6465d19d9407efa12a8f6cdb58f66aa90c2c9b9dab4fc3297fd300217e46e2fa"
+        },
+        {
+          "name": "checkpoints/block_010.pt",
+          "bytes": 701643,
+          "sha256": "76b731cd0182d6aeceec744e52446f1667794ed168cb863213d6035bdc7b8343"
+        },
+        {
+          "name": "checkpoints/block_011.pt",
+          "bytes": 701707,
+          "sha256": "9d2b522f211804b5c4d5f6a4729002dd653070b4ff46c21fdb98f188f604e8ad"
+        },
+        {
+          "name": "checkpoints/offline_latest.pt",
+          "bytes": 1387397,
+          "sha256": "02739a1a00aaf92e88de760815f6acd9b694f4ad95128de7c9fda3df84699f0e"
+        },
+        {
+          "name": "checkpoints/online_latest.pt",
+          "bytes": 702207,
+          "sha256": "3014879c1815c2d0ed5d37b260fe1e3f198ff63b6654409fcbc28d7ea8a29c1e"
+        },
+        {
+          "name": "checkpoints/test_initial.pt",
+          "bytes": 699970,
+          "sha256": "df70a2fb6dab5dcfde7a31214140fe670bceb02603b9e54f9258e0e13d0a5aa0"
+        },
+        {
+          "name": "predictions.csv",
+          "bytes": 31566959,
+          "sha256": "1d439182f3047da815a78369c45ddbaa2c1ce4b428217d5f341560d1b89fe34c"
+        },
+        {
+          "name": "task_membership.npz",
+          "bytes": 2424183,
+          "sha256": "c9cdc6bb86b9966fe60d7653c837f72cee44006872475c0d5074ae9d0bec5f6a"
+        }
+      ]
+    },
+    {
+      "file": "archives/DoubleAdapt_seed101.zip",
+      "bytes": 21510034,
+      "sha256": "3cfa58bfa3912f6dc34e70f4511f2f99fbd747bbf15dc755c60ab0aa36e190e3",
+      "members": [
+        {
+          "name": "checkpoints/best_offline.pt",
+          "bytes": 700034,
+          "sha256": "1bbe081fcb83aaee78f66a99fe3e3614d0c7d7f369af6780b3ff1c70a0f9e792"
+        },
+        {
+          "name": "checkpoints/block_000.pt",
+          "bytes": 700299,
+          "sha256": "7b2203173f77b8be76e96cdc39844d8ab002d854ba9dc6c406056692be6302f1"
+        },
+        {
+          "name": "checkpoints/block_001.pt",
+          "bytes": 700427,
+          "sha256": "23ff91c56258306067b5dbace3e2dc5de0467756a79dbb923f4af0cabb5db68e"
+        },
+        {
+          "name": "checkpoints/block_002.pt",
+          "bytes": 700619,
+          "sha256": "1b6e13100a3ef47955efd38463a54a27e5d1611201842cc1e8c3a229f6c8df2b"
+        },
+        {
+          "name": "checkpoints/block_003.pt",
+          "bytes": 700747,
+          "sha256": "a790516b99feb7e6988d428daf75ccd18effa2ef0b6b803c65f8d6c7fea34f53"
+        },
+        {
+          "name": "checkpoints/block_004.pt",
+          "bytes": 700875,
+          "sha256": "51e29b878e0adde30329df937c864242c316f53beea8afb46094717e7fd3791a"
+        },
+        {
+          "name": "checkpoints/block_005.pt",
+          "bytes": 701003,
+          "sha256": "e47200f2bf340477ba0225a4fd39b96a85e1a6d40b742b0a22117b3b9cdc9862"
+        },
+        {
+          "name": "checkpoints/block_006.pt",
+          "bytes": 701131,
+          "sha256": "6b1cd5dcfffe75130f0176c12244bdf36308f7805beead432c248fea2ec7f480"
+        },
+        {
+          "name": "checkpoints/block_007.pt",
+          "bytes": 701323,
+          "sha256": "0a3d7257b2d6238be2ed8eef61c0754464d76149e6d00d55b632e8a446502f21"
+        },
+        {
+          "name": "checkpoints/block_008.pt",
+          "bytes": 701451,
+          "sha256": "5dd0c299a71ce7add10228b2c971afa3fe233365ad996865155854d0322050bc"
+        },
+        {
+          "name": "checkpoints/block_009.pt",
+          "bytes": 701579,
+          "sha256": "cb6342191ecb61838d7987b3b30fdd3ce1fb8692babf85c4f8d4e6dd0274961f"
+        },
+        {
+          "name": "checkpoints/block_010.pt",
+          "bytes": 701707,
+          "sha256": "fed49dcc10643a2f5dc4890c8cb7d1b35f95c4c1ce27a035f2277b042e75d0f5"
+        },
+        {
+          "name": "checkpoints/block_011.pt",
+          "bytes": 701771,
+          "sha256": "82c32986c9100f211e65014fe7bb0babab7448596af9733dc9c0f93a365339bd"
+        },
+        {
+          "name": "checkpoints/offline_latest.pt",
+          "bytes": 1386949,
+          "sha256": "2c91774d361e27c6e1648afb75ba9aacc0864031d66f437baf690397b930c660"
+        },
+        {
+          "name": "checkpoints/online_latest.pt",
+          "bytes": 702271,
+          "sha256": "e39e1325f805fb6f042b0d1d09d26274dc50a754c0320bcc0f14f3fe3a0fac0a"
+        },
+        {
+          "name": "checkpoints/test_initial.pt",
+          "bytes": 700034,
+          "sha256": "a4caba611b219ea58bb19b7e9800b8f4cf296664517c65c63e1a5d21b2b42aa5"
+        },
+        {
+          "name": "predictions.csv",
+          "bytes": 31519617,
+          "sha256": "ed210aaf3c8109ab3643802c8b637ec216ee6e920d9d60101324da7a66dddefe"
+        },
+        {
+          "name": "task_membership.npz",
+          "bytes": 2424183,
+          "sha256": "c9cdc6bb86b9966fe60d7653c837f72cee44006872475c0d5074ae9d0bec5f6a"
+        }
+      ]
+    },
+    {
+      "file": "archives/DoubleAdapt_seed102.zip",
+      "bytes": 21501320,
+      "sha256": "bf21e5481d262de30beb83c8766c42cb7fdba446beb25985944f5cf0ecdc56a1",
+      "members": [
+        {
+          "name": "checkpoints/best_offline.pt",
+          "bytes": 700098,
+          "sha256": "66ff5b3e4d025ea873945587bc0f2460c0982de34f9e6f80106e09375bf2f7c4"
+        },
+        {
+          "name": "checkpoints/block_000.pt",
+          "bytes": 700363,
+          "sha256": "75b4982d81fc169f65a2a1c27a971691013f45c62a5b7d85df2ecc7ad2b7d1f1"
+        },
+        {
+          "name": "checkpoints/block_001.pt",
+          "bytes": 700491,
+          "sha256": "723539b3173b89a60be2142961af65b6b24bd735aa62b7fef0b3a07fcdf01915"
+        },
+        {
+          "name": "checkpoints/block_002.pt",
+          "bytes": 700619,
+          "sha256": "1d8e05fc76f85a6590379201224537bf9b1205211812ab00056f14b8dcca3b64"
+        },
+        {
+          "name": "checkpoints/block_003.pt",
+          "bytes": 700747,
+          "sha256": "4de23804c79d04bfbf547b946aa1e24b8bdf307253c4fe4fc5a0e0d8966c9a27"
+        },
+        {
+          "name": "checkpoints/block_004.pt",
+          "bytes": 700875,
+          "sha256": "b4e869b0c3c1c585166496e06474881765c43fa42b45e258faa6310c3be59e5a"
+        },
+        {
+          "name": "checkpoints/block_005.pt",
+          "bytes": 701067,
+          "sha256": "bbbbcc7f2f53a1684e8f39d6f584024af26921d8218e66b522543e7485cd511c"
+        },
+        {
+          "name": "checkpoints/block_006.pt",
+          "bytes": 701195,
+          "sha256": "dda12d5065fb7c712ebea47e93d80d69bdc657f9d0426a413d921c4fee51719c"
+        },
+        {
+          "name": "checkpoints/block_007.pt",
+          "bytes": 701323,
+          "sha256": "72504a1b20925d611e71083aeee09096043c4627a83e8be226babdbbddba4c86"
+        },
+        {
+          "name": "checkpoints/block_008.pt",
+          "bytes": 701451,
+          "sha256": "6476612b2bd9c8228001e0924317248a5e1a97a55c692fddfd34aad6ea72b171"
+        },
+        {
+          "name": "checkpoints/block_009.pt",
+          "bytes": 701579,
+          "sha256": "d9130fd9485810f2288aa448406667385cfdd06b505cc4e354c9aaca93b8f033"
+        },
+        {
+          "name": "checkpoints/block_010.pt",
+          "bytes": 701771,
+          "sha256": "08350461bde84bc74f0946a9f9515a625d45023203fd512ff34605cf3716fc81"
+        },
+        {
+          "name": "checkpoints/block_011.pt",
+          "bytes": 701835,
+          "sha256": "744660746c2a8b9aef704715ad23741906fcda9ad0d3431468241ed8dc525d50"
+        },
+        {
+          "name": "checkpoints/offline_latest.pt",
+          "bytes": 1387461,
+          "sha256": "da679e0770b60a28b59f56f90555a062490c44f94f569bc8a54721981f509086"
+        },
+        {
+          "name": "checkpoints/online_latest.pt",
+          "bytes": 702335,
+          "sha256": "e88bf72a0d8b0ff71705b14a23ad792cd9a16a4be4fa55de48d28c33010001be"
+        },
+        {
+          "name": "checkpoints/test_initial.pt",
+          "bytes": 700098,
+          "sha256": "79971dc4b151172c64c52d85dd0b9553ab7acdbc960aeca673767e457152b8af"
+        },
+        {
+          "name": "predictions.csv",
+          "bytes": 31574602,
+          "sha256": "87e3aa4b4043d197b72a4c5aaafa06d65cdb3c95d87745fa5faf66c0c55df660"
+        },
+        {
+          "name": "task_membership.npz",
+          "bytes": 2424183,
+          "sha256": "c9cdc6bb86b9966fe60d7653c837f72cee44006872475c0d5074ae9d0bec5f6a"
+        }
+      ]
+    },
+    {
+      "file": "archives/DoubleAdapt_code_snapshots.zip",
+      "bytes": 101905,
+      "sha256": "9776492c31019c78ab64893deac7430a7297c5cdda1d9d29b4a7a76a2880a531",
+      "members": [
+        {
+          "name": "v2/src/doubleadapt/compare.py",
+          "bytes": 11836,
+          "sha256": "9a21acba404192f665a792f777e1ee3e65afe20d272654852b3309e81ba307bb"
+        },
+        {
+          "name": "v2/src/doubleadapt/data.py",
+          "bytes": 9480,
+          "sha256": "b8f8f895c389fc6f72209274418af8f95e5ede794bf218208626617e6d957874"
+        },
+        {
+          "name": "v2/src/doubleadapt/model.py",
+          "bytes": 9183,
+          "sha256": "1524fbe75ce9d6c8d7cad415d08a3c0e54d34402f262ef293922507467e1ce8b"
+        },
+        {
+          "name": "v2/src/doubleadapt/runner.py",
+          "bytes": 17857,
+          "sha256": "385782730ce5f7f93372624eeb219f4b15e623c92ba54f35769b56f5f7191391"
+        },
+        {
+          "name": "v2/src/doubleadapt/__init__.py",
+          "bytes": 77,
+          "sha256": "996f019320cd28feb050dd11090b3a99a8eb0eed055c3be35b9625bc36178509"
+        },
+        {
+          "name": "v2/src/__init__.py",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "v2/tests/test_doubleadapt.py",
+          "bytes": 10400,
+          "sha256": "4ac37bf704efbb3ea296c24e40db33f16fa15f1e4ef80658365cd0747383aeeb"
+        },
+        {
+          "name": "v2/pyproject.toml",
+          "bytes": 184,
+          "sha256": "0f9732e02c27bef022b64a422b1555b8b5bb8117221b10b983acec9e11b4c81e"
+        },
+        {
+          "name": "v2/requirements_doubleadapt.txt",
+          "bytes": 180,
+          "sha256": "43fe0c2e624018e869203acb4cba063a6e8ee5a37314f1133d014838d2ccc1c8"
+        },
+        {
+          "name": "v2/scripts/experiments/run_doubleadapt_csi300_90x10.py",
+          "bytes": 295,
+          "sha256": "a762e3fdde00da71fbe72faaa5420081144923af3e76bd0dcb1743dd3e07a4db"
+        },
+        {
+          "name": "v2/scripts/evaluation/evaluate_doubleadapt_comparison.py",
+          "bytes": 289,
+          "sha256": "c12d01173d3461e7fe0c3afd158a816a7652ec66253608c5ff11af6951d28dd6"
+        },
+        {
+          "name": "v2/evaluate/inputs.py",
+          "bytes": 1795,
+          "sha256": "1ac9dcb058e976355083dd0456e4f9059d4dc7630e2e0ad6fe912f4c63e4b6ac"
+        },
+        {
+          "name": "v2/evaluate/metrics.py",
+          "bytes": 19531,
+          "sha256": "a69b90e97b89769258d21c09f889c25c5a2901e0647126e91c868bebed4b41d7"
+        },
+        {
+          "name": "v2/evaluate/run_evaluation.py",
+          "bytes": 14730,
+          "sha256": "f154b925e62df28502196e00c7ed6947c8d0f472594100d4b7151c7451e7867f"
+        },
+        {
+          "name": "v2/evaluate/__init__.py",
+          "bytes": 178,
+          "sha256": "d64985dc201e1bfbe5026fb77dc8bae11da0066b692d4868933ecb255f7cd5ca"
+        },
+        {
+          "name": "v2/evaluate/__main__.py",
+          "bytes": 41,
+          "sha256": "9a39ee4ed13bdbe941582dc019462ac21d67ab6fd30588972ec6e4a4bd8b5ced"
+        },
+        {
+          "name": "final/src/doubleadapt/compare.py",
+          "bytes": 11836,
+          "sha256": "9a21acba404192f665a792f777e1ee3e65afe20d272654852b3309e81ba307bb"
+        },
+        {
+          "name": "final/src/doubleadapt/data.py",
+          "bytes": 9757,
+          "sha256": "d06eb1a1365d0b2767642f71c2e5f8afc3d50aa87851ad5b567c1aca315b705b"
+        },
+        {
+          "name": "final/src/doubleadapt/model.py",
+          "bytes": 9183,
+          "sha256": "1524fbe75ce9d6c8d7cad415d08a3c0e54d34402f262ef293922507467e1ce8b"
+        },
+        {
+          "name": "final/src/doubleadapt/runner.py",
+          "bytes": 18275,
+          "sha256": "f4581565910565ba26a56c4bcef9da79095f7788944f1bed4b90774e623505ce"
+        },
+        {
+          "name": "final/src/doubleadapt/__init__.py",
+          "bytes": 77,
+          "sha256": "996f019320cd28feb050dd11090b3a99a8eb0eed055c3be35b9625bc36178509"
+        },
+        {
+          "name": "final/tests/test_doubleadapt.py",
+          "bytes": 10400,
+          "sha256": "4ac37bf704efbb3ea296c24e40db33f16fa15f1e4ef80658365cd0747383aeeb"
+        },
+        {
+          "name": "final/requirements_doubleadapt.txt",
+          "bytes": 180,
+          "sha256": "43fe0c2e624018e869203acb4cba063a6e8ee5a37314f1133d014838d2ccc1c8"
+        },
+        {
+          "name": "final/scripts/experiments/run_doubleadapt_multiseed.py",
+          "bytes": 3030,
+          "sha256": "aa55f3c09d95d62009aeb3916733a3813cad15b0666f765d7736f74b6644cbfe"
+        },
+        {
+          "name": "final/scripts/evaluation/evaluate_doubleadapt_comparison.py",
+          "bytes": 289,
+          "sha256": "c12d01173d3461e7fe0c3afd158a816a7652ec66253608c5ff11af6951d28dd6"
+        },
+        {
+          "name": "final/docs/DOUBLEADAPT_CSI300_IMPLEMENTATION.md",
+          "bytes": 4371,
+          "sha256": "febb795e3705db37c07dbe757401690d849e1fd4515ffcc97a34f26cbbd7ba8a"
+        },
+        {
+          "name": "historical_source/src/doubleadapt/data.py",
+          "bytes": 9356,
+          "sha256": "3f329684d2fd4ca211f83f85493ba8f44ac4c24c7b1614aad07d2c882573cedd"
+        },
+        {
+          "name": "historical_source/src/doubleadapt/model.py",
+          "bytes": 9183,
+          "sha256": "1524fbe75ce9d6c8d7cad415d08a3c0e54d34402f262ef293922507467e1ce8b"
+        },
+        {
+          "name": "historical_source/src/doubleadapt/runner.py",
+          "bytes": 17795,
+          "sha256": "4e0431790a11e18b11daec094cf4c04408dbc3ef29e57c76efa1c0cbf5cb1bd5"
+        },
+        {
+          "name": "historical_source/src/doubleadapt/__init__.py",
+          "bytes": 77,
+          "sha256": "996f019320cd28feb050dd11090b3a99a8eb0eed055c3be35b9625bc36178509"
+        },
+        {
+          "name": "historical_source/src/__init__.py",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "historical_source/tests/test_doubleadapt.py",
+          "bytes": 9380,
+          "sha256": "448ffc8292b12d66cb9a45c06ad1e04b005fb0f2d3dbc1d7e4b27101debc87b8"
+        },
+        {
+          "name": "historical_source/pyproject.toml",
+          "bytes": 184,
+          "sha256": "0f9732e02c27bef022b64a422b1555b8b5bb8117221b10b983acec9e11b4c81e"
+        },
+        {
+          "name": "historical_source/requirements_doubleadapt.txt",
+          "bytes": 180,
+          "sha256": "43fe0c2e624018e869203acb4cba063a6e8ee5a37314f1133d014838d2ccc1c8"
+        },
+        {
+          "name": "historical_source/evaluate/inputs.py",
+          "bytes": 1795,
+          "sha256": "1ac9dcb058e976355083dd0456e4f9059d4dc7630e2e0ad6fe912f4c63e4b6ac"
+        },
+        {
+          "name": "historical_source/evaluate/metrics.py",
+          "bytes": 19531,
+          "sha256": "a69b90e97b89769258d21c09f889c25c5a2901e0647126e91c868bebed4b41d7"
+        },
+        {
+          "name": "historical_source/evaluate/run_evaluation.py",
+          "bytes": 14730,
+          "sha256": "f154b925e62df28502196e00c7ed6947c8d0f472594100d4b7151c7451e7867f"
+        },
+        {
+          "name": "historical_source/evaluate/__init__.py",
+          "bytes": 178,
+          "sha256": "d64985dc201e1bfbe5026fb77dc8bae11da0066b692d4868933ecb255f7cd5ca"
+        },
+        {
+          "name": "historical_source/evaluate/__main__.py",
+          "bytes": 41,
+          "sha256": "9a39ee4ed13bdbe941582dc019462ac21d67ab6fd30588972ec6e4a4bd8b5ced"
+        },
+        {
+          "name": "historical_source/third_party/DoubleAdapt_official_e20b6e46/src/higher_optim.py",
+          "bytes": 5656,
+          "sha256": "5bd2d52300b0a075eccbb7cdd31365d9432b43a2b15adcade5526480c1686380"
+        },
+        {
+          "name": "historical_source/third_party/DoubleAdapt_official_e20b6e46/src/model.py",
+          "bytes": 17129,
+          "sha256": "3b13456684a4a969b0a2f399bac922967074f9f34fcefd93d31849b268b41749"
+        },
+        {
+          "name": "historical_source/third_party/DoubleAdapt_official_e20b6e46/src/net.py",
+          "bytes": 5799,
+          "sha256": "aa8a17c44672d45730561167001c123f8b1c8ede7b070621acfffd5490b77f43"
+        },
+        {
+          "name": "historical_source/third_party/DoubleAdapt_official_e20b6e46/src/utils.py",
+          "bytes": 16267,
+          "sha256": "81747bd3d79430e3301a2c97fdd21f50e1c23de0616eb7e9ce2fc98685b460ba"
+        },
+        {
+          "name": "historical_source/scripts/experiments/run_doubleadapt_csi300_90x10.py",
+          "bytes": 295,
+          "sha256": "a762e3fdde00da71fbe72faaa5420081144923af3e76bd0dcb1743dd3e07a4db"
+        }
+      ]
+    }
+  ],
+  "code_package_sources": [
+    {
+      "source": ".runtime/doubleadapt_code_v2.zip",
+      "sha256": "9945da704709b546d2df373df79763519fd02c6116f5bd7a7097f0e31f77c81e"
+    },
+    {
+      "source": ".runtime/doubleadapt_code_final.zip",
+      "sha256": "bf25c5c92c14bf391b5f6ab0fd6b17d8c8e8d232a31cc2f6c3501183ff5f2396"
+    },
+    {
+      "source": ".runtime/doubleadapt_source.zip",
+      "sha256": "6e102780af3375d7a1437277ac9f0191081f9852cb6a5fbed4eb5cb312488c48"
+    }
+  ],
+  "historical_logs": [
+    {
+      "file": "historical_verification/remote_cuda_final_tests.txt",
+      "sha256": "d14cd78c21d9b961077785cf153d74daa3b5cf9999158fb4093420a3abdc3a75"
+    },
+    {
+      "file": "historical_verification/remote_cuda_tests.txt",
+      "sha256": "82bace51a93e75bcb54c1540114085b46ac1d2b455c7f38d4bb8c7f02e47020f"
+    },
+    {
+      "file": "historical_verification/remote_readonly_preflight.txt",
+      "sha256": "9ee2582a610a006437c42eea270b1dd24b7f09bb776ba2efbe801b6822655d5c"
+    }
+  ],
+  "excluded_duplicate": "_import/seed102 matches canonical seed102; not duplicated",
+  "missing": "Per-run run_config.json and status.json absent. Source snapshots/defaults are not proof of actual training settings."
+}
