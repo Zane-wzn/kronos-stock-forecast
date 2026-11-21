@@ -1,99 +1,16 @@
-# Python caches and local environments
-__pycache__/
-*.py[cod]
-*$py.class
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
 .venv/
-.venv_kronos/
-venv/
-env/
-
-# Editor, OS and local configuration files
-.idea/
-.vscode/
-*.code-workspace
-.DS_Store
-Thumbs.db
-desktop.ini
-.env
-.env.*
-!.env.example
-*.log
-*.tmp
-*.temp
-~$*
-
-# Downloaded model/runtime environments
-.runtime/
-.cache/
-huggingface/
-chronos2/
-timesfm3/
-sspt/
-master/
-
-# Raw market files are documented in data/README.md but are not vendored.
-data/csi300_daily/
-data/csi800_daily/
-data/yahoo_sp500/
-stocks(1)/
-
-# Generated experiment outputs that remain local.
-experiments/**/predictions*.csv
-experiments/**/rolling_predictions*.csv
-experiments/**/online_loss*.csv
-experiments/**/cache/
-experiments/**/checkpoints/
-experiments/**/model.pt
-experiments/**/odestream_warmup.pt
-experiments/**/online_checkpoint.pt
-experiments/analysis/
-experiments/dashboards/
-
-# Keep compact, reviewable result pages and summaries only. Results are grouped
-# by dataset and experiment family below results/cumulative_return_curves/.
-results/analysis/
-results/continual_multiseed/
-results/continual_seed100_mae_gate_audit/
-results/dashboards/
-results/figures/
-results/cumulative_return_curves/*.csv
-results/cumulative_return_curves/*.json
-results/cumulative_return_curves/**/*.csv
-results/cumulative_return_curves/**/*.json
-!results/cumulative_return_curves/**/
-!results/cumulative_return_curves/**/*.html
-!results/cumulative_return_curves/**/*_summary.csv
-!results/cumulative_return_curves/**/*_summary.json
-results/cumulative_return_curves/odestream_vs_existing/*_daily_returns.csv
-results/cumulative_return_curves/odestream_vs_existing/*_normalized_predictions.csv
-results/cumulative_return_curves/odestream_vs_existing/*_portfolio_holdings.csv
-
-# Temporary analysis scripts and copied source/paper artifacts.
-tmp_*
-refine-logs/
-MANIFEST.*
-odestream-*.py
-odestream-*.md
-odestream-*.png
-papers-*
-continual_ABC_mae_strict_gate_retry01/
-continual_ABC_mae_strict_gate_retry01.zip
-
-# Do not commit model checkpoints or serialized arrays anywhere.
-*.pt
-*.pth
-*.ckpt
+.venv*/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.peer_pca_inputs/
+last_try/
+runs/
 *.npy
 *.npz
-
-# Local reference papers (not redistributed).
-docs/references/
-
-# Large derived sample-key panels (>100MB, exceed GitHub limit; regenerate locally)
-experiments/csi300_aligned/reference/eligible_stock_date_pairs.csv
-experiments/sp500/reference_panel/eligible_stock_date_pairs.csv
+*.pt
+*.pth
+*.safetensors
+*.csv.gz
+.env
+.env.*

@@ -1,7 +1,6 @@
 numpy>=1.24
 pandas>=2.0
-torch>=2.0
-matplotlib>=3.7
-huggingface_hub>=0.20
-yfinance>=0.2.40
+scipy>=1.10
+torch>=2.5.1
+threadpoolctl>=3.1
 pytest>=7.4

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "alpha": 0.025,
+  "seeds": [
+    100,
+    101,
+    102
+  ],
+  "windows": [
+    60,
+    120
+  ],
+  "min_overlap": 40,
+  "pca_half_life": 30,
+  "source_replay": "us-alpha1",
+  "original_predictions_and_controls_matched": true
+}

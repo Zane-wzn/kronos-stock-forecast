@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "alpha": 1,
+  "windows": [
+    60,
+    120
+  ],
+  "min_overlap": 40,
+  "pca_half_life": 30,
+  "runs": [
+    {
+      "market": "nasdaq100",
+      "seed": 100,
+      "pca_updates": 235,
+      "stock_days": 23030,
+      "fallback_stock_days": 0,
+      "baseline_updates": 225,
+      "baseline_prediction_max_error": 0.0,
+      "final_state_max_error": 0.0,
+      "baseline_weight_source": "native replay",
+      "baseline_device": "cuda:0"
+    },
+    {
+      "market": "nasdaq100",
+      "seed": 101,
+      "pca_updates": 235,
+      "stock_days": 23030,
+      "fallback_stock_days": 0,
+      "baseline_updates": 225,
+      "baseline_prediction_max_error": 0.0,
+      "final_state_max_error": 0.0,
+      "baseline_weight_source": "native replay",
+      "baseline_device": "cuda:0"
+    },
+    {
+      "market": "nasdaq100",
+      "seed": 102,
+      "pca_updates": 235,
+      "stock_days": 23030,
+      "fallback_stock_days": 0,
+      "baseline_updates": 225,
+      "baseline_prediction_max_error": 0.0,
+      "final_state_max_error": 0.0,
+      "baseline_weight_source": "native replay",
+      "baseline_device": "cuda:0"
+    },
+    {
+      "market": "sp500",
+      "seed": 100,
+      "pca_updates": 235,
+      "stock_days": 117464,
+      "fallback_stock_days": 123,
+      "baseline_updates": 225,
+      "baseline_prediction_max_error": 0.0,
+      "final_state_max_error": 0.0,
+      "baseline_weight_source": "native replay",
+      "baseline_device": "cuda:0"
+    },
+    {
+      "market": "sp500",
+      "seed": 101,
+      "pca_updates": 235,
+      "stock_days": 117464,
+      "fallback_stock_days": 123,
+      "baseline_updates": 225,
+      "baseline_prediction_max_error": 0.0,
+      "final_state_max_error": 0.0,
+      "baseline_weight_source": "native replay",
+      "baseline_device": "cuda:0"
+    },
+    {
+      "market": "sp500",
+      "seed": 102,
+      "pca_updates": 235,
+      "stock_days": 117464,
+      "fallback_stock_days": 123,
+      "baseline_updates": 225,
+      "baseline_prediction_max_error": 0.0,
+      "final_state_max_error": 0.0,
+      "baseline_weight_source": "native replay",
+      "baseline_device": "cuda:0"
+    }
+  ]
+}

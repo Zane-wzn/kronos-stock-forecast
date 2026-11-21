@@ -1,3 +1,3 @@
-# Contributing
+# 贡献说明
 
-Create a focused branch or pull request, keep generated experiment outputs out of source changes, and document the command used to reproduce results. Run the test suite with `pytest` before submitting.
+提交研究改动时，记录市场、数据切分、种子、信号定义、监督成熟规则和对照配置。将小型可核查的汇总、运行命令和审计记录与实验说明一起提交。运行 `python -m pytest -q`，并说明使用了哪一组本地归档做回放验证。项目结构与入口见 [README](README.md)。

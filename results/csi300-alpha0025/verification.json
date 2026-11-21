@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "seeds": [
+    100,
+    101,
+    102
+  ],
+  "windows": [
+    120,
+    60
+  ],
+  "min_overlap": 40,
+  "pca_half_life": 30,
+  "alpha": 0.025,
+  "fallback_stock_days": 639,
+  "stock_days": 66103,
+  "archived_metrics_matched": true,
+  "runs": [
+    {
+      "seed": 100,
+      "pca_updates": 226,
+      "baseline_updates": 216,
+      "checkpoint": ".peer_pca_inputs/csi300/native/seed100/offline/model.pt",
+      "checkpoint_sha256": "111f72975e77e165211b441a731b4da17dca4e26629b848839ce13aaffcd94eb",
+      "access": ".peer_pca_inputs/csi300/native/seed100/A/A/access_log.csv",
+      "access_sha256": "c1445974b8b28030399cfa5d7ee8fbbf0a3f1b3dfce3e28fac999aec8379bd5c",
+      "baseline_prediction_max_error": 0.0,
+      "final_state_max_error": null,
+      "baseline_weight_source": "daily checkpoints",
+      "baseline_device": "cpu"
+    },
+    {
+      "seed": 101,
+      "pca_updates": 226,
+      "baseline_updates": 216,
+      "checkpoint": ".peer_pca_inputs/csi300/native/seed101/offline/model.pt",
+      "checkpoint_sha256": "94237d1658f8b198b95c9f9d0baabd1d34c2ae3f20a322051db8edcc4c4acded",
+      "access": ".peer_pca_inputs/csi300/native/seed101/A/A/access_log.csv",
+      "access_sha256": "c4a7c6f1f63651e949d7caae5e58b261a3fcae8b952c2896904bf4f1e58211a5",
+      "baseline_prediction_max_error": 0.0,
+      "final_state_max_error": null,
+      "baseline_weight_source": "daily checkpoints",
+      "baseline_device": "cpu"
+    },
+    {
+      "seed": 102,
+      "pca_updates": 226,
+      "baseline_updates": 216,
+      "checkpoint": ".peer_pca_inputs/csi300/native/seed102/offline/model.pt",
+      "checkpoint_sha256": "f5e51c572c1954052236c34e62fd75e7e58bcea9e5351eed1e5f3d226dd35a6a",
+      "access": ".peer_pca_inputs/csi300/native/seed102/A/A/access_log.csv",
+      "access_sha256": "5fb77b8c497be3a6f8bd980e0fca4ba56ecbae81fcd5f91615d94eb3a5172ba4",
+      "baseline_prediction_max_error": 0.0,
+      "final_state_max_error": null,
+      "baseline_weight_source": "daily checkpoints",
+      "baseline_device": "cpu"
+    }
+  ]
+}
