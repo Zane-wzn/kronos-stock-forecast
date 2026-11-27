@@ -1,59 +1,27 @@
-# Stock Forecast
+# FinCA
 
-基于冻结 Kronos 的日频股票预测实验。模型在个股残差 Adapter 和持续学习线性头的基础上，聚合当日其他股票的 Adapter 表征，并通过在线 PCA 生成跨股票收益修正。输入为最近 90 个交易日，输出为未来 1 至 10 个交易日相对信号日收盘价的累计收益。
+FinCA (Financial Continual Adaptation) adapts frozen Kronos features for stock return forecasting and selection. A residual adapter, a linear return head, and an online PCA correction produce ten-session adjusted return forecasts. Each day's stock rankings are recorded before the model updates on matured return paths from earlier forecasts.
 
-```mermaid
-flowchart LR
-  A["90 日价量序列"] --> K["冻结 Kronos · 512 维表征"]
-  K --> D["残差 Adapter"]
-  D --> H["线性头 · 10 个期限"]
-  D --> P["其他股票表征 · 滚动相关加权"]
-  P --> C["在线 PCA · 共享线性头权重"]
-  H --> S["个股预测 + α × 跨股票修正"]
-  C --> S
-  S --> U["当日预测完成后处理成熟标签"]
-  U --> D
-  U --> H
-```
+The main ablation starts all three variants from the same offline checkpoint for each seed. All variants use the same peer correction and trade at the next recorded open. Returns include corporate actions and a fee of 15 basis points per purchase or sale.
 
-## 当前结果
+| Market | Static Adapter | Head Only | Continual Update | Update vs. Static, 95% interval |
+| --- | ---: | ---: | ---: | ---: |
+| CSI300 | 38.71% | 60.21% | 69.71% | +30.99 pp [4.03, 78.38] |
+| Nasdaq-100 | 31.99% | 46.56% | 52.51% | +20.51 pp [−38.36, 86.86] |
+| S&P 500 | 23.27% | 30.56% | 32.81% | +9.54 pp [−3.56, 25.73] |
 
-2026-11-21 的实验比较同市场、同面板、同种子的 Adapter 持续学习基线与 60 日和 120 日跨股票修正。下表展示 60 日窗口、α = 0.025 的第 10 日 Endpoint 结果，数值为种子 100、101、102 的均值。
+Annualized returns use 252 sessions and are averaged across seeds 100–102. The pointwise paired intervals use 5,000 resamples of ten-session blocks.
 
-| 市场 | 测试日 | 基线 RankIC | 修正 RankIC | 基线净累计收益 | 修正净累计收益 |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| CSI300 | 226 | 0.044606 | 0.044725 | 64.79% | 65.77% |
-| Nasdaq-100 | 235 | 0.031280 | 0.031300 | 44.03% | 45.18% |
-| S&P 500 | 235 | 0.006962 | 0.006945 | 28.51% | 28.51% |
+## Quick start
 
-CSI300 的 Endpoint RankIC 增量约为 0.000119，10 日配对区块 bootstrap 的 95% 区间约为 [0.000006, 0.000249]。三个市场的 Endpoint 净累计收益增量区间均跨零。美股将 α 提到 1 后，两个市场的 Endpoint RankIC 和净累计收益均值均下降。完整的 Endpoint、Path、分种子结果和区间见 [实验报告](results/README.md)。
-
-## 快速开始
-
-使用 Python 3.12。从项目根目录执行以下命令。美股归档回放需要支持 CUDA 的 PyTorch，CSI300 回放和单元测试可使用 CPU。
+Use Python 3.12 in a virtual environment. Run the commands from the repository root.
 
 ```bash
-python -m venv .venv
-# Windows PowerShell: .\.venv\Scripts\Activate.ps1
-# Linux/macOS: source .venv/bin/activate
 python -m pip install -r requirements.txt
 python -m pytest -q
-python scripts/experiments/run_peer_pca_60d_csi300.py --help
-python scripts/experiments/run_peer_pca_60d_us.py --help
+python -m scripts.finca.adjusted_ablation_20261125.summarize --verify-archive results/finca
 ```
 
-完整回放使用已有的 Kronos 表征、Adapter 检查点、监督日志和 120 日对照归档。输入契约和运行命令见 [复现指南](docs/reproduction.md)。
+The included daily portfolio returns and RankIC series suffice for the archive check. The full replay uses locally archived market data, frozen features, adjusted labels, baseline forecasts and checkpoints. See the [FinCA reproduction guide](docs/finca-reproduction.md) and [result files](results/finca/README.md).
 
-## 项目导航
-
-| 内容 | 入口 |
-| --- | --- |
-| 架构、公式和在线更新顺序 | [模型说明](docs/method.md) |
-| 测试窗口、输入文件和命令 | [复现指南](docs/reproduction.md)、[数据契约](data/README.md) |
-| 三市场评估和审计摘要 | [实验结果](results/README.md) |
-| 跨股票关系、Kronos 和在线适应阅读笔记 | [paper_reading](paper_reading/README.md) |
-| 摘要、方法草稿和论断依据 | [paper_writing](paper_writing/README.md) |
-| 运行器、评估与测试 | [scripts](scripts/experiments)、[src](src/kronos_continual)、[tests](tests) |
-| 引用与改动说明 | [CITATION.cff](CITATION.cff)、[CONTRIBUTING.md](CONTRIBUTING.md) |
-
-本分支是现有 [kronos-stock-forecast 项目](https://github.com/Zane-wzn/kronos-stock-forecast)的聚焦研究快照。仓库原有研究授权以原项目为准。Kronos 权重和行情数据适用各自的条款。
+The [2026-11-21 exploratory experiments](results/README.md) use an earlier evaluation protocol. Their replay commands are in the [historical reproduction guide](docs/reproduction.md). Kronos weights and market inputs are subject to their respective terms.

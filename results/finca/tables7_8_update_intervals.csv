@@ -1,0 +1,55 @@
+market,experiment,metric,treatment,control,block_days,delta,low,high
+csi300,online_updates,annualized_return_pp,Full Model,Static Adapter,10,30.991090131992504,4.030328248214714,78.38448017517469
+csi300,online_updates,annualized_return_pp,Full Model,Static Adapter,20,30.991090131992504,6.122157787772641,69.37859726331197
+csi300,online_updates,annualized_return_pp,Full Model,Static Adapter,40,30.991090131992504,9.110140379731464,61.3236208625344
+csi300,online_updates,annualized_return_pp,Full Model,Online Head Only,10,9.499496454325412,-0.6372599389788142,25.359812556058987
+csi300,online_updates,annualized_return_pp,Full Model,Online Head Only,20,9.499496454325412,-0.26330362960714543,23.23653658505293
+csi300,online_updates,annualized_return_pp,Full Model,Online Head Only,40,9.499496454325412,0.8565386790929213,22.690118816595465
+csi300,online_updates,annualized_return_pp,Online Head Only,Static Adapter,10,21.491593677667094,0.747948802126344,58.0931736892638
+csi300,online_updates,annualized_return_pp,Online Head Only,Static Adapter,20,21.491593677667094,2.584052778876642,51.570600511618395
+csi300,online_updates,annualized_return_pp,Online Head Only,Static Adapter,40,21.491593677667094,6.608398103829457,40.34956848238726
+csi300,online_updates,rankic,Full Model,Static Adapter,10,0.00863488636057875,-0.02407654789656666,0.0363499121179821
+csi300,online_updates,rankic,Full Model,Static Adapter,20,0.00863488636057875,-0.028686238374071367,0.04241858084817301
+csi300,online_updates,rankic,Full Model,Static Adapter,40,0.00863488636057875,-0.029397780207081115,0.041259050880697645
+csi300,online_updates,rankic,Full Model,Online Head Only,10,0.0017875391587615062,-0.007505805447125597,0.009871655004223767
+csi300,online_updates,rankic,Full Model,Online Head Only,20,0.0017875391587615062,-0.008380737706586344,0.010844514805113635
+csi300,online_updates,rankic,Full Model,Online Head Only,40,0.0017875391587615062,-0.00827253675184864,0.011189947769508731
+csi300,online_updates,rankic,Online Head Only,Static Adapter,10,0.0068473472018172445,-0.017652543824563736,0.027612237165542033
+csi300,online_updates,rankic,Online Head Only,Static Adapter,20,0.0068473472018172445,-0.02193908255725339,0.03307834990460141
+csi300,online_updates,rankic,Online Head Only,Static Adapter,40,0.0068473472018172445,-0.021598375145327284,0.030504952819166438
+nasdaq100,online_updates,annualized_return_pp,Full Model,Static Adapter,10,20.513732738696667,-38.358118869958105,86.85601247643106
+nasdaq100,online_updates,annualized_return_pp,Full Model,Static Adapter,20,20.513732738696667,-40.62871928912175,71.77973671760166
+nasdaq100,online_updates,annualized_return_pp,Full Model,Static Adapter,40,20.513732738696667,-25.62244069018091,70.25724547837402
+nasdaq100,online_updates,annualized_return_pp,Full Model,Online Head Only,10,5.941928063114274,-0.6606470819733065,18.651371999172454
+nasdaq100,online_updates,annualized_return_pp,Full Model,Online Head Only,20,5.941928063114274,-0.8596549684226202,19.63095955319694
+nasdaq100,online_updates,annualized_return_pp,Full Model,Online Head Only,40,5.941928063114274,-1.111811343838715,19.4918286887329
+nasdaq100,online_updates,annualized_return_pp,Online Head Only,Static Adapter,10,14.571804675582397,-45.76906731803111,76.34120689455087
+nasdaq100,online_updates,annualized_return_pp,Online Head Only,Static Adapter,20,14.571804675582397,-50.74043657714773,63.84202533531327
+nasdaq100,online_updates,annualized_return_pp,Online Head Only,Static Adapter,40,14.571804675582397,-35.91574003472555,65.1501315606632
+nasdaq100,online_updates,rankic,Full Model,Static Adapter,10,0.027388468491937396,-0.027229232383082023,0.07730937019225886
+nasdaq100,online_updates,rankic,Full Model,Static Adapter,20,0.027388468491937396,-0.025212866651596784,0.07386820106780413
+nasdaq100,online_updates,rankic,Full Model,Static Adapter,40,0.027388468491937396,0.003198902716109197,0.0529998178322309
+nasdaq100,online_updates,rankic,Full Model,Online Head Only,10,-4.5614575029086224e-05,-0.0010721904725422176,0.000865099781790616
+nasdaq100,online_updates,rankic,Full Model,Online Head Only,20,-4.5614575029086224e-05,-0.0010124052598968745,0.0006978320922815067
+nasdaq100,online_updates,rankic,Full Model,Online Head Only,40,-4.5614575029086224e-05,-0.0009293644523221828,0.000647305268468898
+nasdaq100,online_updates,rankic,Online Head Only,Static Adapter,10,0.027434083066966482,-0.02633318388934827,0.07723811114358686
+nasdaq100,online_updates,rankic,Online Head Only,Static Adapter,20,0.027434083066966482,-0.02460054794671029,0.07388859511206651
+nasdaq100,online_updates,rankic,Online Head Only,Static Adapter,40,0.027434083066966482,0.00382137220633312,0.052617730804901945
+sp500,online_updates,annualized_return_pp,Full Model,Static Adapter,10,9.541404386669711,-3.559656298996238,25.731244009235425
+sp500,online_updates,annualized_return_pp,Full Model,Static Adapter,20,9.541404386669711,-3.699089322870953,27.54506976841398
+sp500,online_updates,annualized_return_pp,Full Model,Static Adapter,40,9.541404386669711,0.21032655496613875,26.946965534940816
+sp500,online_updates,annualized_return_pp,Full Model,Online Head Only,10,2.2507099525882257,-1.855388872534217,8.375647252119107
+sp500,online_updates,annualized_return_pp,Full Model,Online Head Only,20,2.2507099525882257,-1.5941707383123858,7.840367497633065
+sp500,online_updates,annualized_return_pp,Full Model,Online Head Only,40,2.2507099525882257,-0.42197461953147763,8.098226134319852
+sp500,online_updates,annualized_return_pp,Online Head Only,Static Adapter,10,7.2906944340814865,-4.9051239773653545,21.001796689704133
+sp500,online_updates,annualized_return_pp,Online Head Only,Static Adapter,20,7.2906944340814865,-5.704836142926748,23.03293969268113
+sp500,online_updates,annualized_return_pp,Online Head Only,Static Adapter,40,7.2906944340814865,-2.4559575703691086,22.421881096291855
+sp500,online_updates,rankic,Full Model,Static Adapter,10,0.002650903622298493,-0.015470871911979626,0.02203418292088897
+sp500,online_updates,rankic,Full Model,Static Adapter,20,0.002650903622298493,-0.012436453468064322,0.02067617985926376
+sp500,online_updates,rankic,Full Model,Static Adapter,40,0.002650903622298493,-0.007833940396126157,0.01985348319066709
+sp500,online_updates,rankic,Full Model,Online Head Only,10,-0.0021231643987891526,-0.006072007150814844,0.0014738895392538644
+sp500,online_updates,rankic,Full Model,Online Head Only,20,-0.0021231643987891526,-0.005489877668154677,0.00115802910572747
+sp500,online_updates,rankic,Full Model,Online Head Only,40,-0.0021231643987891526,-0.004647510070896968,0.0010905850216835708
+sp500,online_updates,rankic,Online Head Only,Static Adapter,10,0.004774068021087645,-0.010718565839409007,0.021889307426908197
+sp500,online_updates,rankic,Online Head Only,Static Adapter,20,0.004774068021087645,-0.008399771882159809,0.021225667793216437
+sp500,online_updates,rankic,Online Head Only,Static Adapter,40,0.004774068021087645,-0.004894294819235942,0.020542223958901287

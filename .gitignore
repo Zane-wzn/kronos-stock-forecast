@@ -14,3 +14,5 @@ runs/
 *.csv.gz
 .env
 .env.*
+delete/files/
+!results/finca/all_daily.csv.gz

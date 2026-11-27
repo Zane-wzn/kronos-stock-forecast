@@ -1,7 +1,7 @@
 cff-version: 1.2.0
-message: "If you use this experiment snapshot, please cite this repository and the relevant papers in paper_reading."
-title: "Stock Forecast: Cross-Stock Adapter with Continual Learning"
+message: "If you use FinCA, please cite this software repository and the underlying Kronos work."
+title: "FinCA: Financial Continual Adaptation"
 type: software
 authors:
   - name: "kronos-stock-forecast contributors"
-repository-code: "https://github.com/Zane-wzn/kronos-stock-forecast"
+repository-code: "https://github.com/Zane-wzn/kronos-stock-forecast/tree/release/finca-dasfaa-2027"

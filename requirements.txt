@@ -4,3 +4,6 @@ scipy>=1.10
 torch>=2.5.1
 threadpoolctl>=3.1
 pytest>=7.4
+matplotlib>=3.9
+requests>=2.32
+beautifulsoup4>=4.12

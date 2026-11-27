@@ -1,0 +1,19 @@
+market,experiment,metric,treatment,control,block_days,delta,low,high
+csi300,peer_correction,annualized_return_pp,Online PCA,Target only,10,-0.07207733054324095,-2.7125867542781954,2.9988863226342906
+csi300,peer_correction,annualized_return_pp,Online PCA,Unprojected peers,10,0.05471997850476917,-1.4714930025371336,1.7908800218865566
+csi300,peer_correction,annualized_return_pp,Online PCA,Fixed PCA basis,10,-0.5598005195419049,-3.5205941347026224,2.9954871983866127
+csi300,peer_correction,rankic,Online PCA,Target only,10,0.00017157094116996888,4.832627712282781e-05,0.00031625047080454196
+csi300,peer_correction,rankic,Online PCA,Unprojected peers,10,-9.970571377792188e-05,-0.00028975118604952945,0.00010785884680554396
+csi300,peer_correction,rankic,Online PCA,Fixed PCA basis,10,5.740835221509921e-05,-5.052280917240328e-05,0.00016541183437889607
+nasdaq100,peer_correction,annualized_return_pp,Online PCA,Target only,10,0.9947968366095905,-0.5812280381827133,3.3149178679298923
+nasdaq100,peer_correction,annualized_return_pp,Online PCA,Unprojected peers,10,2.019410098668195,-0.3761842451040889,5.656207734716034
+nasdaq100,peer_correction,annualized_return_pp,Online PCA,Fixed PCA basis,10,0.43005491283412134,-2.6645352591003757e-13,1.613106614382971
+nasdaq100,peer_correction,rankic,Online PCA,Target only,10,-3.138041493319065e-05,-0.0002810305753344914,0.00021199907562851155
+nasdaq100,peer_correction,rankic,Online PCA,Unprojected peers,10,-0.0002325044326460246,-0.00041534011877487475,-8.312824171177048e-05
+nasdaq100,peer_correction,rankic,Online PCA,Fixed PCA basis,10,-8.11911637318014e-05,-0.00022038542841551232,3.570493698567764e-05
+sp500,peer_correction,annualized_return_pp,Online PCA,Target only,10,0.6637927889950064,-0.08989534444021746,1.8941382116975367
+sp500,peer_correction,annualized_return_pp,Online PCA,Unprojected peers,10,1.2768347299412377,0.006591498205685507,2.9198326355586732
+sp500,peer_correction,annualized_return_pp,Online PCA,Fixed PCA basis,10,0.9790102115710075,0.01701673496197673,2.6529598954744897
+sp500,peer_correction,rankic,Online PCA,Target only,10,-2.0994851101238984e-05,-5.832198373092292e-05,2.672714731203035e-05
+sp500,peer_correction,rankic,Online PCA,Unprojected peers,10,-2.904433339997161e-05,-0.00014317587932515294,8.525461598125761e-05
+sp500,peer_correction,rankic,Online PCA,Fixed PCA basis,10,1.160942850242389e-05,-5.376467821154833e-05,6.235638869873353e-05

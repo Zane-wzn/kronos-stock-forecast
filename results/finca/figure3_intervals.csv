@@ -1,0 +1,4 @@
+market,experiment,metric,treatment,control,block_days,delta,low,high
+csi300,online_updates,annualized_return_pp,Full Model,Static Adapter,10,30.991090131992504,4.030328248214714,78.38448017517469
+nasdaq100,online_updates,annualized_return_pp,Full Model,Static Adapter,10,20.513732738696667,-38.358118869958105,86.85601247643106
+sp500,online_updates,annualized_return_pp,Full Model,Static Adapter,10,9.541404386669711,-3.559656298996238,25.731244009235425
